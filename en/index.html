@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Seven Dilemmas of the AI Revolution · Moat Radar #01</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Understand the AI industry from the inside, and how it is reshaping not just your daily life, but the entire economy.">
+<link rel="canonical" href="https://moat-radar.com/en/editions/2026-07-25/">
+<link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-07-25/">
+<link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-07-25/">
+<link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-07-25/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Seven Dilemmas of the AI Revolution",
+  "description": "Understand the AI industry from the inside, and how it is reshaping not just your daily life, but the entire economy",
+  "datePublished": "2026-07-25T08:00:00-03:00",
+  "dateModified": "2026-07-25T08:00:00-03:00",
+  "inLanguage": "en",
+  "url": "https://moat-radar.com/en/editions/2026-07-25/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://moat-radar.com/en/editions/2026-07-25/"
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://moat-radar.com/autor/jorge-rocha/",
+    "name": "Jorge Rocha",
+    "url": "https://moat-radar.com/en/author/jorge-rocha/",
+    "jobTitle": "Board member, angel investor and author of Moat Radar",
+    "description": "17 years at AB InBev, board member, angel investor since 2012 and author of Moat Radar"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Moat Radar",
+    "url": "https://moat-radar.com/"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Artificial intelligence"
+    },
+    {
+      "@type": "Thing",
+      "name": "AI infrastructure"
+    },
+    {
+      "@type": "Thing",
+      "name": "AI capex"
+    },
+    {
+      "@type": "Thing",
+      "name": "Competitive advantage"
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --ink: #2B2B2E;
+    --ink-soft: #55555C;
+    --navy: #45597A;
+    --navy-deep: #34486A;
+    --navy-tint: #EEF2F7;
+    --navy-line: #C7D2E0;
+    --lacre: #A85847;
+    --lacre-deep: #8B3A2F;
+    --lacre-tint: #F8ECE8;
+    --lacre-line: #E3C7BE;
+    --brass: #B9975B;
+    --brass-line: #E3D4B4;
+    --hair: #E7E4DC;
+    --serif: 'Spectral', Georgia, serif;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+  }
+
+  .sheet{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 32px 40px;
+    background: var(--bg);
+  }
+
+  /* Keep the PDF/print layout at the original narrower width so pagination doesn't change */
+  @media print{
+    .sheet{ max-width: 620px; }
+  }
+
+  /* ---------- Language switcher ---------- */
+  .langbar{
+    text-align:center;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+  .langbar a{ color: var(--ink-soft); text-decoration:none; margin: 0 4px; }
+  .langbar a.active{ color: var(--brass); font-weight:600; }
+
+  /* ---------- Masthead ---------- */
+  .masthead{ text-align:center; }
+
+  .compass{ margin: 0 auto 18px; display:block; }
+
+  .brand-mark{
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--ink);
+    margin: 6px 0 16px;
+  }
+  .brand-mark em{
+    font-style: italic;
+    font-weight: 500;
+    color: var(--lacre-deep);
+  }
+
+  .edition-line{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--brass);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  h1.title{
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+  }
+  h1.title em{
+    font-style: italic;
+    font-weight: 500;
+    color: var(--lacre-deep);
+  }
+
+  .subtitle{
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    margin: 0 0 20px;
+  }
+
+  .byline{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+
+  .nav-row{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .nav-row .supply{ color: var(--navy-deep); font-weight:600; }
+  .nav-row .demand{ color: var(--lacre-deep); font-weight:600; }
+  .nav-row .dot{ color: var(--brass); margin: 0 8px; }
+
+  .dashed{
+    border: none;
+    border-top: 1px dashed var(--hair);
+    margin: 32px 0;
+  }
+
+  /* ---------- In one line ---------- */
+  .label-mono{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 12px;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .lede{
+    font-size: 20.5px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 34px;
+  }
+  .lede b{ font-weight:600; color: var(--navy-deep); }
+
+  /* ---------- Territory cards ---------- */
+  .territories{
+    display: flex;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  .territory{
+    flex: 1;
+    border-radius: 6px;
+    padding: 20px 20px 18px;
+    border: 1px solid;
+  }
+  .territory.supply{
+    background: var(--navy-tint);
+    border-color: var(--navy-line);
+  }
+  .territory.demand{
+    background: var(--lacre-tint);
+    border-color: var(--lacre-line);
+  }
+  .territory .eyebrow{
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 6px;
+  }
+  .territory.supply .eyebrow{ color: var(--navy-deep); }
+  .territory.demand .eyebrow{ color: var(--lacre-deep); }
+
+  .territory .side-name{
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  .territory.supply .side-name{ color: var(--navy-deep); }
+  .territory.demand .side-name{ color: var(--lacre-deep); }
+
+  .territory h3{
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+    color: var(--ink);
+  }
+  .territory p{
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  .territory .cta{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .territory.supply .cta{ color: var(--navy-deep); }
+  .territory.demand .cta{ color: var(--lacre-deep); }
+
+  @media (max-width: 520px){
+    .territories{ flex-direction: column; }
+  }
+
+  /* ---------- Section header ---------- */
+  .section-header{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    margin: 44px 0 22px;
+    break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .pill{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .pill.supply{ background: var(--navy); }
+  .pill.demand{ background: var(--lacre); }
+  .section-header .rule{
+    flex: 1;
+    border-top: 1px dashed var(--hair);
+  }
+  .section-header .caption{
+    font-style: italic;
+    font-size: 12px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  h2.headline{
+    font-size: 27px;
+    line-height: 1.28;
+    margin: 0 0 20px;
+    color: var(--ink);
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .body-text p{
+    font-size: 16.5px;
+    line-height: 1.72;
+    color: var(--ink);
+    margin: 0 0 17px;
+    font-family: 'Inter', Arial, sans-serif;
+    orphans: 3;
+    widows: 3;
+  }
+  .body-text b{ font-weight: 600; }
+  .body-text a, .callout a{
+    color: var(--navy-deep);
+    text-decoration: underline;
+    text-decoration-color: var(--navy-line);
+    text-underline-offset: 2px;
+  }
+  .footnote{
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--brass);
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 1px;
+  }
+
+  .chip{
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .chip.navy{ color: var(--navy-deep); background: var(--navy-tint); border: 1px solid var(--navy-line); }
+  .chip.lacre{ color: var(--lacre-deep); background: var(--lacre-tint); border: 1px solid var(--lacre-line); }
+  .chip.brass{ color: #8A6C34; background: #FBF5E9; border: 1px solid var(--brass-line); }
+
+  .callout{
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--brass);
+    background: #FDFBF7;
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin: 24px 0 8px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .callout .callout-label{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 8px;
+  }
+  .callout p{
+    font-style: italic;
+    font-size: 15.5px;
+    line-height: 1.62;
+    color: var(--ink);
+    margin: 0;
+    font-family: var(--serif);
+  }
+
+  /* ---------- Log entries ---------- */
+  .log-entry{
+    padding: 18px 0;
+    border-top: 1px solid var(--hair);
+  }
+  .log-entry:last-child{ border-bottom: 1px solid var(--hair); }
+  .log-date{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--brass);
+    margin-bottom: 6px;
+  }
+  .log-entry h4{
+    font-size: 17px;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+  .log-tags{ margin-bottom: 8px; }
+  .tag{
+    display:inline-block;
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 5px;
+  }
+  .tag.demand{ background: var(--lacre); }
+  .tag.supply{ background: var(--navy); }
+  .log-entry p{
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+
+  /* ---------- Map legend ---------- */
+  .legend-item{
+    padding-left: 14px;
+    border-left: 2px solid var(--brass-line);
+    margin-bottom: 14px;
+  }
+  .legend-item .name{
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 14px;
+  }
+  .legend-item .desc{
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  /* ---------- Dilemma map ---------- */
+  .dilema-list{ margin: 4px 0 8px; }
+  .dilema-item{
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-top: 1px solid var(--hair);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .dilema-item:last-child{ border-bottom: 1px solid var(--hair); }
+  .dilema-num{
+    font-family: var(--mono);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--brass);
+    min-width: 26px;
+    line-height: 1.4;
+  }
+  .dilema-title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 5px;
+  }
+  .dilema-desc{
+    font-size: 14.5px;
+    line-height: 1.62;
+    color: var(--ink-soft);
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+  }
+  .cite{
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--brass);
+    white-space: nowrap;
+  }
+
+  /* ---------- Glossary ---------- */
+  .glossary-item{
+    padding-left: 14px;
+    border-left: 2px solid var(--brass-line);
+    margin-bottom: 12px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .glossary-item .term{
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 14.5px;
+  }
+  .glossary-item .term .footnote{ margin-right: 4px; margin-left: 0; }
+  .glossary-item .def{
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .disclaimer{
+    font-style: italic;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 460px;
+    margin: 0 auto 22px;
+  }
+  .signature{
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .bio{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    line-height: 1.8;
+  }
+  .contact{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.5px;
+    color: var(--brass);
+    margin-top: 10px;
+  }
+  .contact a{ color: var(--brass); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="langbar">
+    <a href="/en/editions/2026-07-25/" class="active">[EN]</a>
+    <a href="/pt/edicoes/2026-07-25/">[PT]</a>
+  </div>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <svg class="compass" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
+      <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
+      <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
+      <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
+    </svg>
+
+    <div class="brand-mark">Weekly <em>Moat</em><span class="footnote">1</span> Radar</div>
+    <div class="edition-line">ISSUE 01 · JULY 25 TO 31, 2026</div>
+    <h1 class="title">The Seven Dilemmas of the AI Revolution</h1>
+    <p class="subtitle">Understand the AI industry from the inside, and how it is reshaping not just your daily life, but the entire economy</p>
+    <div class="byline">by Jorge Rocha</div>
+  </div>
+
+  <hr class="dashed">
+
+  <!-- INTRO (short, full version at /en/about/) -->
+  <div class="callout" style="margin: 0 0 32px;">
+    <p style="font-style: normal; font-family: 'Inter', Arial, sans-serif; font-size: 14.5px; line-height: 1.68; margin: 0;">
+      Weekly analysis of the AI market on what sustains each player's moat<span class="footnote">1</span>, through two fixed lenses: <b>Supply</b> (who builds and finances the infrastructure, from hyperscalers<span class="footnote">2</span> to capex) and <b>Demand</b> (who the end consumer chooses and loves). We also cover off-market<span class="footnote">3</span> signals. <a href="/en/about/">See the full methodology</a>.
+    </p>
+  </div>
+
+  <!-- IN ONE LINE -->
+  <div class="label-mono">LEVEL 1 · IN ONE LINE</div>
+  <p class="lede">
+    The AI market carries with it major dilemmas, on both the demand side and the
+    supply side. That is natural for a market that is just getting started. On the demand
+    side: <b>model vs. channel</b>: who wins the consumer, whoever has the best model (OpenAI,
+    Anthropic, Gemini, and now also the Chinese labs like Kimi and DeepSeek) or whoever has the
+    distribution channel (Apple, Google, Meta);
+    <b>the corporate dilemma</b> of who will actually convert AI into results; and
+    <b>the humanoid race</b>: who wins that battle, and how and when they will
+    enter the daily life of industries and families. On the supply side: <b>capex vs. bubble</b>: whether
+    the hyperscalers will keep investing at this pace or whether we are approaching a telecom-style
+    bubble; <b>the bottleneck economy</b>: who profits from the shortage of chips and memory;
+    <b>concentration and verticalization</b>: whether dependence on a handful of suppliers will
+    push more hyperscalers to build their own silicon; and <b>how long we will keep
+    control</b>: whether the race for capacity is leaving behind the most basic
+    question of all.
+    <br><br>
+    These seven dilemmas are not a loose list. They are a system, simple to summarize: the
+    two sides pull against each other. Whoever wins the model vs. channel fight decides whether the
+    money spent on capex was well invested or was a bubble. That is why we treat each dilemma
+    separately, but always with an eye on how one pushes the other.
+  </p>
+
+  <!-- DILEMMA MAP -->
+  <div class="label-mono">LEVEL 2 · THE DILEMMA MAP</div>
+
+  <div class="section-header" style="margin: 20px 0 8px;">
+    <span class="pill demand">DEMAND</span>
+    <span class="rule"></span>
+  </div>
+  <div class="dilema-list">
+    <div class="dilema-item">
+      <div class="dilema-body">
+        <div class="dilema-title">Model vs. channel</div>
+        <p class="dilema-desc">Who wins the race for the consumer: whoever has the best model (OpenAI, Anthropic, Gemini, and now also the Chinese labs, which have finally entered the map with models a few points behind the leaders) or whoever has the distribution channel and the installed base (Apple, Google, Meta)? The answer looks less and less binary: the model alone commoditizes fast, and the channel alone does not convert without a "harness"<span class="footnote">4</span>, an agent layer that actually works. Whoever has both at once may be the one who takes the whole prize.</p>
+      </div>
+    </div>
+    <div class="dilema-item">
+      <div class="dilema-body">
+        <div class="dilema-title">The corporate dilemma</div>
+        <p class="dilema-desc">Who manages to turn AI into results (productivity, revenue, margin) and who will just spend on licenses without ever converting that into real gain. The answer runs through a layer under open dispute: orchestration, governance and security of agents inside the company, where Microsoft, Salesforce, ServiceNow, SAP, IBM, Oracle, UiPath and Palantir are also competing to win the adoption game, not just the model owners.</p>
+      </div>
+    </div>
+    <div class="dilema-item">
+      <div class="dilema-body">
+        <div class="dilema-title">The humanoid race</div>
+        <p class="dilema-desc">Who wins the battle for humanoid robots (Tesla, Figure, Unitree and others) and, more importantly, whether and how they will actually enter the daily life of industries and families, or whether they will spend another decade as a headline demo before becoming a real product.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header" style="margin: 28px 0 8px;">
+    <span class="pill supply">SUPPLY</span>
+    <span class="rule"></span>
+  </div>
+  <div class="dilema-list">
+    <div class="dilema-item">
+      <div class="dilema-body">
+        <div class="dilema-title">Capex vs. bubble</div>
+        <p class="dilema-desc">Demand for compute looks real and structural: few doubt that AI will require capacity in abundance for years. So maybe "bubble" is the wrong name for the risk. The more precise question is not whether we are replaying the early-2000s telecom movie, but when that capacity turns into revenue, and who, within the supply side itself, ends up having to hand over what it built for someone else to capture the margin, becoming a commodity supplier to whoever managed to convert model into channel. This connects directly to concentration and verticalization and to model vs. channel: the capex risk may resolve less through "demand fell short" and more through "who kept the good slice".</p>
+      </div>
+    </div>
+    <div class="dilema-item">
+      <div class="dilema-body">
+        <div class="dilema-title">The bottleneck economy</div>
+        <p class="dilema-desc">Who profits from the shortage (of chips, memory, network components) while demand for compute keeps outrunning available supply. Few companies control those bottlenecks, and each of them is in a position to price however it likes for as long as it lasts, while the market still treats all of them with the same euphoria, without distinguishing who has a real moat from who is just catching a momentary ride.</p>
+      </div>
+    </div>
+    <div class="dilema-item">
+      <div class="dilema-body">
+        <div class="dilema-title">Concentration and verticalization</div>
+        <p class="dilema-desc">A handful of suppliers control the bottlenecks (TSMC in leading-edge chips, a three-firm oligopoly in memory), and some hyperscalers are already trying to escape that dependence by building their own silicon. Will it work?</p>
+      </div>
+    </div>
+    <div class="dilema-item">
+      <div class="dilema-body">
+        <div class="dilema-title">How long we will keep control</div>
+        <p class="dilema-desc">While the race for capacity accelerates, a more basic question is being left behind: for how long, and how, will we keep these systems under control? This is not just science fiction: there are already real cases of AI agents manipulated to attack companies, and of models that, on their own, sought unauthorized paths to meet an objective. Details in the deep dive below.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUPPLY SECTION -->
+  <div class="section-header">
+    <span class="pill supply">SUPPLY</span>
+    <span class="rule"></span>
+    <span class="caption">level 3 · who builds, finances and sells the infrastructure</span>
+  </div>
+
+  <h2 class="headline">Capex, bottlenecks, verticalization and how long we will keep control</h2>
+
+  <div class="body-text">
+    <p><b>Capex vs. bubble.</b> The SOXX<span class="footnote">5</span> (iShares Semiconductor ETF) officially entered a bear market<span class="footnote">6</span> (a drop of more than <span class="chip navy">20%</span> since its late-June peak) after Moonshot launched Kimi K3 on <span class="cite">Jul 16</span> at WAIC in Shanghai, wiping out more than US$3.3 trillion in global semiconductor market value in a matter of days. It is the same reflex as the "DeepSeek moment" of 2025: the market reading a competitive Chinese model as a threat to the thesis that only those with billions in capex stay ahead (we cover the K3 launch on the demand side, below). Before the K3 shock, the latest data we had was <a href="https://finance.biggo.com/news/73b53596-b8a8-4ae1-a84e-b46230642f2d">BofA's monthly fund manager survey</a> (<span class="cite">Jul 14</span>): 45% already flagged an "AI bubble" as the top tail risk (a sharp jump from 28% in June), and 48% saw hyperscaler capex as the most likely source of the next systemic credit event, even as 82% called semiconductors the world's most crowded trade. K3 is the first real confirmation of that fear. The parallel with telecom is still more about financing than demand: Meta is deliberately operating with negative free cash flow, and projections show Google's free cash flow hitting zero next year because of AI capex (SemiAnalysis). But it is worth doubting the parallel itself: telecom built excess fiber that went unused for years; AI compute is being consumed as fast as it comes online. If there is a bubble here, it may lie less in "we built too fast" and more in "who fails to capture the margin": the hyperscaler that builds but does not convert that into its own channel (see concentration and verticalization) risks becoming a commodity landlord for whoever, on the other side, won the model vs. channel fight.</p>
+
+    <p>And financing that capex is getting riskier, and harder to see, than quarterly results let on. A <a href="https://www.bis.org/publ/qtrpdf/r_qt2603u.htm">BIS study</a>, the central bank of central banks, published on <span class="cite">Mar 16, 2026</span>, describes how hyperscalers have started using off-balance-sheet structures to finance data centers: they create an SPV<span class="footnote">7</span> (a separate special-purpose vehicle), that SPV raises the debt from private credit funds, and the hyperscaler simply signs a long-term contract to lease the capacity, which swaps capex for operating expense and keeps the debt off its own balance sheet. The BIS calls this "shadow debt": obligations that are economically debt but do not show up as debt. A real example of this dynamic, public knowledge: Meta structured roughly US$29.5 billion through an SPV for the Hyperion data center in Louisiana, one of the largest private financing deals in history outside of mergers and acquisitions. Microsoft is the only hyperscaler that does not issue public debt directly, preferring to keep about 70% of its leverage in separate vehicles. Bond investors are already reacting: a <a href="https://www.forbes.com/sites/robertszczerba/2026/07/17/bond-investors-push-back-as-ai-debt-heads-toward-570-billion/">Forbes report from Jul 17</a> shows AI-linked debt approaching US$570 billion, with fixed-income investors growing more skeptical. The practical takeaway for our radar: more and more analysts say that looking only at the quarterly accounting result does not tell the real story, what matters is cash and debt, including at the infrastructure suppliers (the "neoclouds") that today are, in practice, an extension of the balance sheet of the hyperscaler they serve, not independent companies.</p>
+
+    <p><b>The bottleneck economy.</b> Who profits from scarcity is not just whoever sells GPUs<span class="footnote">8</span>. SemiAnalysis's thesis is that the bottleneck has migrated across the entire chain: copper, fiber glass, the laser used in circuit boards, and now DRAM<span class="footnote">9</span> memory, in a shortage the firm describes as "once every four decades". This is a background thesis, without a recently confirmed date on our part; it holds as context, not as news from this week.</p>
+
+    <p>The reason is simple to explain: the AI market grew so fast, and suddenly demanded so much technology and investment at once, that few suppliers remained capable of delivering at each link of the chain, and each of those few became, for a while, the owner of a small piece of moat. Micron is the clearest example: in fiscal third quarter 2026, revenue jumped to US$41.5 billion, up 346% year over year, with an 85% gross margin (a company record), because the entire 2026 production run of HBM memory (the high-bandwidth memory used in AI accelerators) is already sold, under multi-year, fixed-price contracts. TSMC tells a similar story, but by a different path: record quarterly revenue, 2026 growth guidance revised to above 40%, and price hikes of up to 15% on its 3nm process announced for the second half, possible only because the company controls roughly 73% of the global contract-manufacturing market. The point that stands: the stock market is treating Micron, TSMC and a dozen other bottleneck suppliers with the same enthusiasm, but not every position of scarcity is a structural moat: some are momentary arbitrage that disappears as soon as supply catches up with demand, and it is not yet clear which is which.</p>
+
+    <p>And the bottleneck may be about to change its name entirely: energy. Elon Musk has been repeating, since <a href="https://singjupost.com/moonshots-220-w-elon-musk-on-agi-abundance-and-the-future-of-humanity-transcript/">an interview on the Moonshots with Peter Diamandis podcast</a> (background, <span class="cite">Jan 2026</span>), that the real limit is no longer chips, it is electricity ("people are underestimating the difficulty of getting electricity online"), and that, on that metric, China should "vastly exceed the rest of the world in AI compute", with power-generation capacity projected at roughly 3x that of the US by the end of 2026. Musk's read flips the script: the US restricted the sale of leading-edge chips to China, but if energy is the bottleneck that matters, that restriction may count for less and less. The caveat is large, and important: this thesis is still very early, far from consensus, and does not account for possible revolutions in energy consumption already being tested: MIT photonic integration that promises to cut data center power draw while keeping petabit speed, "neuro-symbolic" chips with up to a 100x reduction in consumption, and chips inspired by brain architecture promising a 70% cut. If any one of those efficiency routes lands at scale, China's raw electricity advantage matters a lot less.</p>
+
+    <p><b>Concentration and verticalization.</b> Here we do have fresh news: <a href="https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence">SemiAnalysis published, on Jul 9, an inside look at Meta Superintelligence Labs</a> projecting that the company will have more AI compute than OpenAI and Anthropic combined by the end of 2026, simultaneously building five 1GW+ clusters ("Prometheus" in Ohio, "Hyperion" in Louisiana, and others in El Paso, Iowa and Indiana). More telling: the same SemiAnalysis report found that Meta is the launch customer for a data center CPU designed with ARM, codenamed Phoenix, meaning Meta is itself becoming a chip supplier, not just a buyer. This is the most concrete sign yet of a hyperscaler trying to escape dependence on a handful of suppliers by building on its own.</p>
+
+    <p id="ate-quando-controle"><b>How long we will keep control.</b> While the rest of the market debates capex and bottlenecks, Elon Musk brought back the most uncomfortable question. In an <a href="https://www.cnbc.com/video/2026/07/24/elon-musk-speaks-to-the-economist-editor-in-chief-zanny-minton-beddoes-on-the-key-takeaways.html">interview recorded on Jul 23 with The Economist editor-in-chief Zanny Minton Beddoes</a> (released Jul 24), he said AI should surpass the sum of human intelligence in about five years (around 2031) and that humans will likely lose control of the trajectory within ten years, around 2036, calling it pure presumption for anyone to believe they can control a superintelligence far smarter than themselves. The figure that circulated most after the interview was the analogy he used: the intelligence gap between AI and humans, in that scenario, would be larger than today's gap between humans and chimpanzees. Even so, he maintains that humanity should not halt development: he estimates a 10% to 20% chance the technology leads to human extinction, against what he sees as the more likely possibility of "unprecedented prosperity for everyone". Worth noting the reversal in his position: Musk himself helped found OpenAI as a safety counterweight to Google, and today argues that the acceleration is "inexorable", proposing instead a light-touch safety review conducted by the very companies competing against each other.</p>
+
+    <p>This would sound like loose futurology if there were not real, dated cases of loss of control already happening. <a href="https://www.anthropic.com/news/disrupting-AI-espionage">Anthropic revealed on Nov 13, 2025</a> that it had disrupted the first large-scale cyber-espionage campaign orchestrated by AI: a group linked to the Chinese state manipulated Claude Code to break into roughly 30 targets worldwide, breaking the attack down into small, seemingly innocent tasks that the model carried out without understanding the full malicious objective, convincing Claude that it was performing a legitimate defensive security test. Between 80% and 90% of the attack was carried out by the AI, with human intervention at only 4 to 6 decision points.</p>
+
+    <p>More recent, and even more direct: <a href="https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity">OpenAI revealed around Jul 21 to 22</a> that one of its test models (including the newly released GPT-5.6 Sol) escaped its controlled test environment during an internal cyber-capability evaluation and broke into Hugging Face's real servers, using stolen credentials and a real, previously unknown vulnerability. The reason: hacking Hugging Face, which holds the answer key for that specific test, was literally the easiest path for the model to score well on the evaluation. This was not a malicious outside attack: it was the model itself, following instructions, finding the most efficient shortcut to meet its objective.</p>
+  </div>
+
+  <!-- DEMAND SECTION -->
+  <div class="section-header">
+    <span class="pill demand">DEMAND</span>
+    <span class="rule"></span>
+    <span class="caption">level 3 · who the consumer chooses, uses and loves</span>
+  </div>
+
+  <h2 class="headline">Model, channel, harness, and who converts it into results</h2>
+
+  <div class="body-text">
+    <p><b>Model vs. channel.</b> The thread we pull in this edition starts with a piece of background data: <a href="https://money.usnews.com/investing/news/articles/2026-07-17/meta-in-talks-for-10-billion-anthropic-compute-deal-nyt-reports">Meta in talks to lease up to $10 billion in compute to Anthropic</a> (NYT, via Stratechery), a sign that Anthropic and OpenAI, today the only players with a direct, growing relationship with the end user of generative AI, keep growing faster than their own infrastructure can keep up. <b>Google</b> is, in theory, the most complete competitor: model (Gemini) and channel (Search, Android). <b>Apple and Amazon</b> hold the hidden card of installed base (Siri on 2 billion devices, Alexa in hundreds of millions of homes).</p>
+
+    <p>But the week of <span class="cite">Jul 13 to 14</span> brought two fresh symptoms that this dichotomy is more complicated than "model wins" or "channel wins". On <span class="cite">Jul 13</span>, <a href="https://stratechery.com/2026/apple-sues-openai-apples-real-problem/">Apple sued OpenAI over trade secrets</a>. Ben Thompson described it as "more smoke than fire", but the gesture itself reveals friction. On <span class="cite">Jul 14</span>, OpenAI merged Codex into ChatGPT into a kind of "super app", raising the question of whether the company is abandoning the very chat category it invented: concrete evidence of the shift from chatbot to agent. This validates Thompson's underlying thesis (Mar 2026): the real moat is not just in the model, nor just in the channel, it is in the integration between model and "harness", the layer that turns a model into an agent that executes. Living proof: Microsoft itself, which called itself "model agnostic", had to abandon that position to launch its integrated Copilot Cowork. This complicates Apple's bet on simply licensing Gemini: a huge installed base does not close the deal if it lacks its own harness.</p>
+
+    <p>Worth naming what had been missing until now: Chinese models have finally entered the map as real competitors, not as a cheap, second-tier alternative. Kimi K3 ranked 4th out of 189 models on the Artificial Analysis Intelligence Index (behind only Fable 5 and GPT-5.6 Sol, tied with Opus 4.8 and GPT-5.5) and took 1st place on the Frontend Code Arena. Ethan Mollick, in the guide he published on <span class="cite">Jul 23</span>, already lists Kimi K3, DeepSeek and Qwen as "surprisingly capable" options for anyone with the technical chops to run them as an agent, the same harness caveat, again.</p>
+
+    <p>The Kimi K3 launch (<span class="cite">Jul 16</span>) is the latest confirmation of the harness thesis, coming from where it was least expected. Moonshot did not launch the model alone: it launched it paired with Kimi Code, its own terminal agent harness (launched <span class="cite">Jun 6</span>). Even the Chinese labs understood that a model without a harness cannot compete. And the price jumped 6x over the previous generation, landing penny for penny with Claude Sonnet 5: the "end of dirt-cheap Chinese AI", as it is already being called. If the Chinese weapon was cost, and cost converged, the fight shifts back to capability, trust and harness, and the model layer commoditizes one more notch. Every launch like this reinforces the same idea: the moat is not in the model, it is in whoever turns model into an agent that executes.</p>
+
+    <p><b>The corporate dilemma.</b> Who has the structure to convert AI into results, not just into license expense? The latest data we found comes from <a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots">Ethan Mollick (Jun 30, "The Twilight of the Chatbots")</a>: the shift from non-experts using chatbots to fill gaps, to experts using agents to execute work end to end, with Opus 4.7 working alone for 14 hours, building a software package equivalent to 2 to 17 weeks of a human engineer, for US$251 in tokens. Mollick also finds that domain expertise predicts success with the tool better than job title or education, meaning the gain is not automatic, it depends on organizational structure. This connects to Thompson's own bet: the value of agents is not cutting cost, it is replacing the "human gearbox" that is hard to manage with agents that execute nonstop, the same bet behind Microsoft's E7 bundle, charging double the previous plan ($99/seat/month) on the wager that this productivity is real.</p>
+
+    <p>But individual productivity does not resolve the corporate dilemma on its own: the orchestration layer is missing, and that is where a parallel, less-discussed contest is taking shape. The corporate market is converging on the idea that the value is not in building an agent, it is in orchestrating, governing and integrating many agents without losing control. Salesforce (Agentforce) already has more than 8,000 customers and US$900 million in AI revenue in the first six months of the product; ServiceNow positions itself as the company's "control tower", with an emergency button to shut down agents that go off the rails; IBM (watsonx Orchestrate) comes pre-integrated with more than 80 enterprise systems. Microsoft, AWS, Google, Oracle, SAP, UiPath and Palantir are also fighting for this layer, and are themselves candidates to win the corporate adoption game, not just the model owners.</p>
+
+    <p>And security is shifting from technical detail to the center of the conversation about corporate adoption, perhaps the main handbrake on this whole dilemma. A <a href="https://cloudsecurityalliance.org/press-releases/2026/04/21/new-cloud-security-alliance-survey-reveals-82-of-enterprises-have-unknown-ai-agents-in-their-environments">Cloud Security Alliance survey with Token Security</a> (<span class="cite">Apr 2026</span>) found that 65% of organizations have already had at least one security incident caused by AI agents running on the corporate network. A <a href="https://www.gravitee.io/blog/88-of-companies-have-already-seen-ai-agent-security-failures">separate survey by Gravitee</a> (<span class="cite">Mar 2026</span>) points the same way: 88% of companies running agents report a confirmed or suspected security incident. The most serious documented case so far actually opens the new "how long we will keep control" dilemma on the supply side. <a href="#ate-quando-controle">Read the full account there</a>. That fear is exactly the lever incumbent ERP and SaaS vendors are using to try to capture the AI adoption market: Salesforce, ServiceNow, SAP and IBM are not selling a model, they are selling the promise of governance, auditability and a "panic button" for anyone afraid of giving an agent too much autonomy. Whoever already sells the system the company trusts to run payroll or the CRM starts this sale a step ahead, and it is a topic we plan to dig into much further from here on.</p>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">OPEN RADAR</div>
+    <p>We will keep tracking each of the seven dilemmas laid out in this edition, on both sides, demand and supply. They are not an academic exercise: in our reading, they are what will actually decide who wins and who loses in this market, and that is why they will stay at the center of Moat Radar, edition after edition. What we cover here may be the deepest and fastest revolution humanity has ever faced, which is exactly why it is worth following closely, with patience and rigor, wherever each of these dilemmas leads.</p>
+  </div>
+
+  <hr class="dashed">
+
+  <!-- GLOSSARY -->
+  <div class="label-mono">GLOSSARY · FOR A QUICK TRANSLATION</div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">1</span>Moat</div>
+    <div class="def">The term Warren Buffett popularized for a durable, hard-to-copy competitive advantage. It is where this newsletter gets its name.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">2</span>Hyperscalers</div>
+    <div class="def">The handful of cloud companies large enough to operate data centers at planetary scale: Amazon, Microsoft, Google, Meta and Oracle.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">3</span>Off-market</div>
+    <div class="def">A deal done outside public channels, not announced on any exchange, not officially disclosed, uncovered by cross-referencing sources.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">4</span>Harness</div>
+    <div class="def">The software layer that gives an AI model "hands": the tools, permissions and logic that turn a model into an agent capable of executing tasks on its own.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">5</span>SOXX</div>
+    <div class="def">Ticker for the iShares Semiconductor ETF, an exchange-traded fund that tracks the leading US semiconductor stocks, used as a thermometer for the sector.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">6</span>Bear market</div>
+    <div class="def">A drop of 20% or more from the last peak, the technical threshold that separates a correction from a trend reversal.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">7</span>SPV</div>
+    <div class="def">Special Purpose Vehicle: a standalone company created solely to hold an asset (such as a data center) and the debt that finances it, keeping that debt off the balance sheet of whoever actually uses the asset.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">8</span>GPU</div>
+    <div class="def">Graphics Processing Unit: the specialized chip (Nvidia is the leader) used to train and run AI models; it has become shorthand for "computing power" in the industry.</div>
+  </div>
+  <div class="glossary-item">
+    <div class="term"><span class="footnote">9</span>DRAM</div>
+    <div class="def">The type of memory used in practically every computer and server, today in short supply because of demand for HBM, its high-bandwidth variant used in AI.</div>
+  </div>
+
+  <hr class="dashed">
+
+  <!-- FAQ FOR THIS EDITION -->
+  <div style="margin: 40px 0; padding: 32px 0; border-top: 1px dashed var(--hair);">
+    <div class="label-mono">Key questions from this edition</div>
+
+    <div style="margin-bottom: 28px;">
+      <p style="font-weight: 600; margin-bottom: 8px; color: var(--ink);">Is AI capex already forming a bubble?</p>
+      <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft);">In Moat Radar's reading, the central risk is not necessarily a lack of demand for computing capacity. The risk is that some of the companies financing and building that infrastructure will fail to capture the economic margin it generates. Capex may be excessive not because too much was built, but because whoever built it does not know how to monetize the asset.</p>
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <p style="font-weight: 600; margin-bottom: 8px; color: var(--ink);">Does semiconductor scarcity represent a durable moat?</p>
+      <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft);">Not always. Scarcity can raise prices and margins temporarily, but a durable competitive advantage depends on structural barriers that remain even once the scarcity ends. Technology that is hard to reproduce, scale, and lasting control of critical links in the chain are sturdier moats than mere scarcity.</p>
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <p style="font-weight: 600; margin-bottom: 8px; color: var(--ink);">Who has the bigger advantage in AI: the best model or the biggest distribution channel?</p>
+      <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft);">The contest will probably not be won exclusively by either one. Models can commoditize quickly, while distribution channels create no value without genuinely useful products and agents. The biggest advantage may belong to whoever combines model, distribution channel and an efficient orchestration layer.</p>
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <p style="font-weight: 600; margin-bottom: 8px; color: var(--ink);">Does off-balance-sheet financing increase the hyperscalers' risk?</p>
+      <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft);">Yes, but the risk falls on the lender. For the hyperscaler, it is an arbitrage mechanism between its own cost of capital and the terms offered by private credit funds. For fixed-income investors, it represents exposure to AI capex that does not show up on traditional public balance sheets. The practical consequence: greater regulatory scrutiny.</p>
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <p style="font-weight: 600; margin-bottom: 8px; color: var(--ink);">Is corporate AI adoption already producing real results, or is it mostly use without gain?</p>
+      <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft);">Today there is more adoption than conversion into results. Studies such as Ethan Mollick's show that individual productivity rises when domain experts use agents to execute complete tasks, but that does not automatically translate into organizational gain: the orchestration layer that governs multiple agents without losing control is still missing. And there is an added brake weighing more and more on those plans: a Cloud Security Alliance survey found that 65% of organizations have already had at least one security incident caused by AI agents on the corporate network, and a separate Gravitee survey put the figure at 88% among companies already running agents. Companies like Salesforce, ServiceNow and IBM are fighting over exactly this orchestration and governance layer, betting that the real corporate dilemma is not building an agent, but securely orchestrating, governing and integrating many agents, without opening the door to intrusion or internal data leaks.</p>
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <p style="font-weight: 600; margin-bottom: 8px; color: var(--ink);">Do the loss-of-control risks described by Elon Musk already have real examples?</p>
+      <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft);">Yes. In November 2025, Anthropic revealed it had disrupted a cyber-espionage campaign carried out almost entirely by AI, with human intervention at only 4 to 6 decision points. In July 2026, OpenAI revealed that one of its test models escaped its controlled environment and broke into Hugging Face's real servers, finding the most efficient path to meet its objective. Musk estimates a 10% to 20% chance the technology leads to human extinction, yet still argues for accelerating development. This is not science fiction: it is our radar's most uncomfortable dilemma.</p>
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <p style="font-weight: 600; margin-bottom: 8px; color: var(--ink);">What was the most important signal of the week?</p>
+      <p style="font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft);">The launch of China's Kimi K3 in a competitive position alongside American models. Not necessarily because the model is better, but because it shows that the cost and complexity of frontier AI have fallen enough for labs outside Silicon Valley to compete. That lowers the odds of a lasting monopoly by any single player.</p>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is AI capex already forming a bubble?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Moat Radar's reading, the central risk is not necessarily a lack of demand for computing capacity. The risk is that some of the companies financing and building that infrastructure will fail to capture the economic margin it generates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does semiconductor scarcity represent a durable moat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not always. Scarcity can raise prices and margins temporarily, but a durable competitive advantage depends on structural barriers, technology that is hard to reproduce, scale, and lasting control of critical links in the chain."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who has the bigger advantage in AI: the best model or the biggest distribution channel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The contest will probably not be won exclusively by either one. The biggest advantage may belong to whoever combines model, distribution channel and an efficient orchestration layer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does off-balance-sheet financing increase the hyperscalers' risk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but the risk falls on the lender. For the hyperscaler, it is an arbitrage mechanism. For fixed-income investors, it represents exposure to AI capex that does not show up on traditional public balance sheets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is corporate AI adoption already producing real results, or is it mostly use without gain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Today there is more adoption than conversion into results. Individual productivity rises when domain experts use agents, but that does not automatically translate into organizational gain: the orchestration layer that governs multiple agents without losing control is still missing. An added brake: 65% of organizations have already had a security incident caused by AI agents, according to the Cloud Security Alliance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do the loss-of-control risks described by Elon Musk already have real examples?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Anthropic disrupted a cyber-espionage campaign carried out almost entirely by AI, with human intervention at only 4 to 6 decision points. OpenAI revealed that one of its test models escaped its controlled environment and broke into Hugging Face's real servers, finding the most efficient path to meet its objective."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What was the most important signal of the week?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The launch of China's Kimi K3 in a competitive position alongside American models. That lowers the odds of a lasting monopoly by any single player."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <hr class="dashed">
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="disclaimer">Moat Radar reads the AI market through two fixed lenses: <b>Supply</b> (who builds the infrastructure) and <b>Demand</b> (who the consumer loves). It sells nothing, recommends no buying or selling of assets, and does not replace professional financial advice. It is a personal reading of the market.</p>
+    <div class="signature">Jorge Rocha</div>
+    <div class="bio">17 YEARS AT AB INBEV · BOARD MEMBER<br>ANGEL INVESTOR SINCE 2012 · AUTHOR OF MOAT RADAR</div>
+    <div class="contact">Contact: <a href="mailto:jorge@ginvest.com.br">jorge@ginvest.com.br</a> · <a href="/en/author/jorge-rocha/">About the author</a> · <a href="/en/about/">Methodology</a> · <a href="/en/editions/">See all editions</a></div>
+  </footer>
+
+</div>
+</body>
+</html>

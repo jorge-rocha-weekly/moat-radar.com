@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>What Moat Radar Is · About and Methodology</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moat Radar is a weekly newsletter on the AI market, organized around seven core dilemmas between supply and demand.">
+<link rel="canonical" href="https://moat-radar.com/en/about/">
+<link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/sobre/">
+<link rel="alternate" hreflang="en" href="https://moat-radar.com/en/about/">
+<link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/about/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "What Moat Radar Is",
+  "url": "https://moat-radar.com/en/about/",
+  "description": "Moat Radar is a weekly newsletter on the AI market, organized around seven core dilemmas between supply and demand.",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://moat-radar.com/"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Moat Radar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A weekly newsletter that analyzes the AI market through two fixed lenses: Supply (who builds, finances and sells the infrastructure) and Demand (who the end consumer chooses, uses and loves)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Moat Radar's methodology?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each edition has three layers of depth: a one-line summary, a dilemma map explaining each theme, and deep-dive Supply and Demand sections with data, dates and examples that support each dilemma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do Supply and Demand mean at Moat Radar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Supply covers who builds, finances and sells AI infrastructure: hyperscalers, semiconductors, capex. Demand covers who the end consumer chooses, uses and loves: the models and products that become habits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who writes Moat Radar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jorge Rocha, with 17 years of executive career at AB InBev, board member and angel investor since 2012."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Moat Radar's content investment advice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Moat Radar sells nothing, recommends no buying or selling of assets, and does not replace professional financial advice. It is a personal reading of the market."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are Moat Radar's sources selected and verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Curation cross-checks multiple market sources, prioritizing primary documents, specialist analysis and verifiable reporting, always with a date and access link. Among the fixed references that shape this reading are Stratechery, SemiAnalysis, One Useful Thing, Axios AI+ and the Dwarkesh Podcast."
+        }
+      }
+    ]
+  }
+}
+</script>
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --ink: #2B2B2E;
+    --ink-soft: #55555C;
+    --navy: #45597A;
+    --navy-deep: #34486A;
+    --navy-tint: #EEF2F7;
+    --navy-line: #C7D2E0;
+    --lacre: #A85847;
+    --lacre-deep: #8B3A2F;
+    --brass: #B9975B;
+    --hair: #E7E4DC;
+    --serif: 'Spectral', Georgia, serif;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+  * { box-sizing: border-box; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+  }
+  .sheet{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 32px 60px;
+  }
+  .masthead{ text-align:center; margin-bottom: 40px; }
+  .compass{ margin: 0 auto 18px; display:block; }
+  .edition-line{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--brass);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  h1{
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+  }
+  .subtitle{
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin: 0;
+  }
+  hr.dashed{
+    border: none;
+    border-top: 1px dashed var(--hair);
+    margin: 32px 0;
+  }
+  .body-text{
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+  .body-text p{ margin: 0 0 22px; }
+  .body-text b{ color: var(--navy-deep); font-weight: 600; }
+  h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    color: var(--ink);
+  }
+  .faq-item{ margin-bottom: 24px; }
+  .faq-item p.q{ font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+  .faq-item p.a{ font-size: 15px; line-height: 1.6; margin: 0; color: var(--ink-soft); }
+  .back{
+    display: block;
+    text-align: center;
+    margin-top: 48px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--navy-deep);
+  }
+  .langbar{
+    text-align:center;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    margin-bottom: 22px;
+  }
+  .langbar a{ color: var(--ink-soft); text-decoration:none; margin: 0 4px; }
+  .langbar a.active{ color: var(--brass); font-weight:600; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="langbar">
+    <a href="/en/about/" class="active">[EN]</a>
+    <a href="/pt/sobre/">[PT]</a>
+  </div>
+
+  <div class="masthead">
+    <svg class="compass" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
+      <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
+      <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
+      <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
+    </svg>
+    <div class="edition-line">ABOUT MOAT RADAR</div>
+    <h1>What Moat Radar Is</h1>
+    <p class="subtitle">Methodology, scope and editorial criteria</p>
+  </div>
+
+  <hr class="dashed">
+
+  <div class="body-text">
+    <p>Every week, Moat Radar covers what mattered most for the AI market over the past few days, through two fixed lenses. <b>Supply</b> covers who builds, finances and sells the infrastructure: hyperscalers, semiconductors, capex. <b>Demand</b> covers who the end consumer chooses, uses and loves: the models and products that become habits.</p>
+
+    <p>This newsletter has three layers of depth, each for a different kind of reader. "In One Line" is the summary, for anyone who just wants to catch up on the week's themes. "The Dilemma Map" walks through each dilemma more slowly, for anyone who wants to understand what it is about. And the Supply and Demand sections, further down in each edition, are the deep dive: the data, dates and examples that support each dilemma, for anyone who wants to go deeper.</p>
+
+    <p>Beyond original insights gathered by cross-referencing multiple sources (what we call "below the radar"), we also cover off-market deals, institutional moves, executive transactions, business noise and innovations still emerging or in early stages, before they become headlines.</p>
+
+    <p>Curation cross-checks multiple market sources, already split along the same supply and demand lens, plus a cross-cutting read covering both sides day to day. The source hierarchy prioritizes primary documents (company reports, regulatory filings, original papers), followed by specialist analysis, journalistic reporting and, only when there is no alternative, aggregators.</p>
+
+    <p>Written by <a href="/en/author/jorge-rocha/">Jorge Rocha</a>, with nothing for sale, no investment recommendation: a personal reading of the market, shared openly.</p>
+  </div>
+
+  <h2>The seven dilemmas</h2>
+  <div class="body-text">
+    <p>Moat Radar's core framework organizes the AI market into seven dilemmas, four on the demand side and three on the supply side:</p>
+    <p><b>On the demand side:</b> model vs. channel (who will win the end consumer); the corporate dilemma (who converts AI into results); and the humanoid race (when this technology enters daily life).</p>
+    <p><b>On the supply side:</b> capex vs. bubble (whether the pace of investment is sustainable); the bottleneck economy (who profits from chip and memory shortages); concentration and verticalization (dependence on a handful of suppliers); and how long we will keep control (the most basic question of all, about the security and governance of AI systems).</p>
+  </div>
+
+  <h2>References that shape us</h2>
+  <div class="body-text">
+    <p>Beyond each week's own curation, Moat Radar's reading is shaped by a fixed set of voices we follow closely: <a href="https://stratechery.com/" target="_blank" rel="noopener">Stratechery</a> (Ben Thompson), <a href="https://newsletter.semianalysis.com/" target="_blank" rel="noopener">SemiAnalysis</a> (Dylan Patel), <a href="https://www.oneusefulthing.org/" target="_blank" rel="noopener">One Useful Thing</a> (Ethan Mollick), <a href="https://www.axios.com/signup/ai-plus" target="_blank" rel="noopener">Axios AI+</a> and the <a href="https://www.dwarkeshpatel.com/" target="_blank" rel="noopener">Dwarkesh Podcast</a>. They are not our only input, but they are the recurring reference behind the tone and the themes we prioritize.</p>
+  </div>
+
+  <hr class="dashed">
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <p class="q">What is Moat Radar?</p>
+    <p class="a">A weekly newsletter that analyzes the AI market through two fixed lenses: Supply (who builds, finances and sells the infrastructure) and Demand (who the end consumer chooses, uses and loves).</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">What is Moat Radar's methodology?</p>
+    <p class="a">Each edition has three layers of depth: a one-line summary, a dilemma map explaining each theme, and deep-dive Supply and Demand sections with data, dates and examples that support each dilemma.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">What do Supply and Demand mean at Moat Radar?</p>
+    <p class="a">Supply covers who builds, finances and sells AI infrastructure: hyperscalers, semiconductors, capex. Demand covers who the end consumer chooses, uses and loves: the models and products that become habits.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Who writes Moat Radar?</p>
+    <p class="a">Jorge Rocha, with 17 years of executive career at AB InBev, board member and angel investor since 2012. <a href="/en/author/jorge-rocha/">See the full author page</a>.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Is Moat Radar's content investment advice?</p>
+    <p class="a">No. Moat Radar sells nothing, recommends no buying or selling of assets, and does not replace professional financial advice. It is a personal reading of the market.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">How are Moat Radar's sources selected and verified?</p>
+    <p class="a">Curation cross-checks multiple market sources, prioritizing primary documents, specialist analysis and verifiable reporting, always with a date and access link. Among the fixed references that shape this reading are Stratechery, SemiAnalysis, One Useful Thing, Axios AI+ and the Dwarkesh Podcast.</p>
+  </div>
+
+  <a class="back" href="/en/">← Back to home</a>
+
+</div>
+</body>
+</html>
