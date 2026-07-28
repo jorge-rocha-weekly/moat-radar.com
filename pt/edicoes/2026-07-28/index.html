@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Moat Radar - Flash · Bolha de IA Estoura na Bolsa Coreana</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --ink: #2B2B2E;
+    --ink-soft: #55555C;
+    --navy: #45597A;
+    --navy-deep: #34486A;
+    --lacre: #A85847;
+    --lacre-deep: #8B3A2F;
+    --brass: #B9975B;
+    --hair: #E7E4DC;
+    --serif: 'Spectral', Georgia, serif;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif); }
+  .sheet { max-width: 700px; margin: 0 auto; padding: 48px 32px 60px; }
+
+  .label-mono { font-family: var(--mono); font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 12px; }
+
+  .masthead { text-align: center; margin-bottom: 20px; }
+  .compass { margin: 0 auto 16px; display: block; }
+  .brand-mark { font-family: var(--serif); font-size: 22px; font-weight: 500; letter-spacing: -0.3px; margin-bottom: 8px; }
+  .brand-mark em { color: var(--lacre); font-style: italic; font-weight: 600; }
+  .brand-mark .footnote { font-size: 10px; vertical-align: super; color: var(--brass); }
+
+  .langbar { text-align: center; font-family: var(--mono); font-size: 10px; letter-spacing: 1px; color: var(--ink-soft); margin-bottom: 22px; }
+  .langbar a { color: var(--ink-soft); text-decoration: none; margin: 0 4px; }
+  .langbar a.active { color: var(--brass); font-weight: 600; }
+  .edition-line { font-family: var(--mono); font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 14px; margin-top: 14px; text-align: center; }
+  .breaking-news { background: var(--lacre-deep); color: white; padding: 20px 24px; margin: 0 -32px 32px -32px; text-align: center; }
+  .breaking-news-label { font-family: var(--mono); font-size: 18px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; margin: 0; }
+  .breaking-news-line { height: 2px; background: white; width: 80px; margin: 12px auto; }
+
+  h1 { font-size: 42px; font-weight: 700; margin: 0 0 10px; color: var(--ink); letter-spacing: -0.5px; line-height: 1.1; }
+  .subtitle { font-style: italic; color: var(--ink-soft); font-size: 16px; margin: 0 0 28px; line-height: 1.6; }
+
+  h2 { font-size: 18px; font-weight: 700; margin: 32px 0 16px; color: var(--ink); letter-spacing: -0.3px; }
+
+  .numero-grande { font-size: 36px; font-weight: 700; color: var(--lacre-deep); line-height: 1; }
+  .numero-label { font-size: 12px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 6px; font-family: var(--mono); }
+
+  .grid-numeros { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+  .numero-card { background: #FBF5E9; border: 1px solid #E3D4B4; border-radius: 0; padding: 20px; text-align: center; }
+
+  .corpo { font-size: 17px; line-height: 1.75; margin: 0 0 22px; color: var(--ink); }
+  .corpo b { font-weight: 600; color: var(--navy-deep); }
+
+  .hr-dashed { border: none; border-top: 1px dashed var(--hair); margin: 28px 0; }
+
+  .cenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+  .cenario { border: 1px solid var(--hair); padding: 16px; text-align: center; }
+  .cenario-titulo { font-family: var(--mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy-deep); font-weight: 600; margin-bottom: 8px; }
+  .cenario-desc { font-size: 14px; line-height: 1.6; color: var(--ink-soft); }
+
+  .watchlist { margin: 20px 0; }
+  .watchlist-item { font-size: 15px; line-height: 1.7; margin: 10px 0; color: var(--ink); }
+  .watchlist-item strong { color: var(--navy-deep); font-weight: 600; }
+
+  .rodape { font-size: 12px; color: #999; margin-top: 32px; border-top: 1px dashed var(--hair); padding-top: 16px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="langbar">
+    <a href="/en/">[EN]</a>
+    <a href="/pt/" class="active">[PT]</a>
+  </div>
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <svg class="compass" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
+      <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
+      <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
+      <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
+    </svg>
+
+    <div class="brand-mark">Weekly <em>Moat</em><span class="footnote">1</span> Radar</div>
+    <div class="edition-line">EDIÇÃO EXTRAORDINÁRIA · 28 DE JULHO DE 2026</div>
+  </div>
+
+  <div class="breaking-news">
+    <p class="breaking-news-label">⚡ BREAKING NEWS</p>
+    <div class="breaking-news-line"></div>
+  </div>
+
+  <div class="label-mono">DILEMA 04: SUPPLY / CAPEX VS. BOLHA</div>
+
+  <h1>BOLHA DE IA ESTOURA NA BOLSA COREANA NA VÉSPERA DA SUPER QUARTA</h1>
+
+  <div class="label-mono" style="text-align: center; margin-bottom: 20px; font-style: italic;">por Jorge Rocha</div>
+
+  <p class="subtitle">Kospi -10,8%. Samsung -13,4% (pior em 20 anos). SK Hynix -14,7%. Bolha de varejo doméstica em liquidação forçada, no dia antes de 4 catalisadores que podem transformar isto em repricing institucional global.</p>
+
+  <h2>O que ocorreu</h2>
+
+  <div class="grid-numeros">
+    <div class="numero-card">
+      <div class="numero-grande">-10,8%</div>
+      <div class="numero-label">Kospi</div>
+    </div>
+    <div class="numero-card">
+      <div class="numero-grande">-13,4%</div>
+      <div class="numero-label">Samsung</div>
+    </div>
+    <div class="numero-card">
+      <div class="numero-grande">-14,7%</div>
+      <div class="numero-label">SK Hynix</div>
+    </div>
+    <div class="numero-card">
+      <div class="numero-grande">3x</div>
+      <div class="numero-label">Alavancagem dos varejo</div>
+    </div>
+  </div>
+
+  <p class="corpo">
+    <b>Kospi</b> (코스피) é o índice da bolsa de valores coreana — e desabou 10,8% em um dia porque uma bolha pura de alavancagem doméstica estourou. Investidores de varejo coreano, com margem de até 3x (empréstimos bancários), apostaram tudo em dois papéis: Samsung e SK Hynix (juntos = 50%+ do índice). A tese era simples: escassez global de DRAM = lucros eternos. Mas no dia 13/07, um relatório de corretora (KIS Securities) cortou bruscamente a previsão de "preço médio de venda" de DRAM. Não era fundamentalmente errado — era real. Mas para quem tinha alavancagem, real virou colapso: primeira liquidação. Depois, cascata automática.
+  </p>
+
+  <p class="corpo">
+    <b>A engrenagem da bolha:</b> SK Hynix não consegue ampliar muito mais seus resultados porque já tem vendas fechadas (contratos multi-ano com a Nvidia até 2030) que travam o preço. Se DRAM sobe no spot market (bull case), ela não captura esse rali — fica presa ao preço do contrato. Seu crescimento não segue a narrativa: lucros abaixo do esperado, valor não sobe indefinidamente. Eis a armadilha: o varejo coreano apostou empréstimo em crescimento infinito, mas SK Hynix está com capacidade cheia e preço travado.
+  </p>
+
+  <p class="corpo">
+    <b>Contagio já acontecendo:</b> SK Hynix é substituto direto de Micron no HBM (High Bandwidth Memory). Reprecificar dúvida em um lado do Pacífico move o outro: Nikkei -3,95%, Kioxia -18,3%, Tokyo Electron -9%. Nos EUA: MU, ASML, LRCX caindo junto. Não é volatilidade aleatória — é repricing mecânico de quem estava alavancado em "escassez = ouro".
+  </p>
+
+  <p class="corpo">
+    <b>O alerta e a explosão:</b> 13/07 foi o alerta (KIS cortou previsão). Ontem, 27/07, explodiu. Agora, 28/07, o mercado institucional global está perguntando: é só bolha coreana de varejo, ou é o primeiro racha de uma bolha maior de capex de IA global?
+  </p>
+
+  <hr class="hr-dashed">
+
+  <h2>Por que isto importa hoje?</h2>
+
+  <p class="corpo">
+    Porque a Coreia não é mercado pequeno. SK Hynix é substituto direto de Micron no HBM — ligar de Nvidia. Samsung é a maior fabricante de DRAM do mundo. E hoje, 28/07, o mercado institucional global está perguntando: isto é um acidente de alavancagem doméstica coreana, ou é o **primeiro sinal de que a bolha de capex de IA global está rachando?** A diferença entre esses dois cenários é trilhões de dólares em repricing. E amanhã, 29/07, temos 4 eventos no mesmo dia que podem tirar essa dúvida da ambiguidade.
+  </p>
+
+  <hr class="hr-dashed">
+
+  <h2>Super Quarta — 29 de julho: 4 catalisadores</h2>
+
+  <p class="corpo">
+    Se estes 4 eventos convergirem errado, a dúvida vira convicção: "bolha de capex de IA é real, e a Coreia foi apenas o canário na mina".
+  </p>
+
+  <p class="corpo">
+    <b>SK Hynix reporta (0h30 NY):</b> Lucros abaixo do esperado = prova de que "escassez não é ouro". Todos olham esse número.
+  </p>
+
+  <p class="corpo">
+    <b>Meta reporta (16h30 NY):</b> Um dia após anunciar JV de US$14bi com BlackRock. Se capex guidance cair, vira prova de que "bolha de data center está rachando".
+  </p>
+
+  <p class="corpo">
+    <b>Microsoft reporta (17h30 NY):</b> Azure & IA. Se cloud growth desacelerar, "demanda não existe" entra na conversa.
+  </p>
+
+  <p class="corpo">
+    <b>Fed decide juros (14h NY):</b> Se apertar, joga gasolina: "juros altos + bolha reconhecida = crash".
+  </p>
+
+  <hr class="hr-dashed">
+
+  <h2>Três caminhos possíveis</h2>
+
+  <div class="cenarios">
+    <div class="cenario">
+      <div class="cenario-titulo">Melhor</div>
+      <div class="cenario-desc">SK Hynix surpreende positivo. MSFT + Meta confirmam demanda. Fed pausa. Contagio limita-se a Ásia.</div>
+    </div>
+    <div class="cenario">
+      <div class="cenario-titulo">Provável</div>
+      <div class="cenario-desc">SK Hynix em linha. MSFT/Meta neutros. Fed faz cut pequeno. Volatilidade continua, mas sem crash sistêmico.</div>
+    </div>
+    <div class="cenario">
+      <div class="cenario-titulo">Pior</div>
+      <div class="cenario-desc">SK Hynix decepciona. MSFT fraco em cloud. Fed pausa/aperta. Mercado reconstrói "bolha de capex".</div>
+    </div>
+  </div>
+
+  <h2>Monitore até sexta</h2>
+
+  <div class="watchlist">
+    <div class="watchlist-item"><strong>SK Hynix EPS guidance</strong> — Continua piorando ou recupera?</div>
+    <div class="watchlist-item"><strong>Nikkei vs. S&P500</strong> — Contagio desacopla ou amplifica?</div>
+    <div class="watchlist-item"><strong>VIX</strong> — Ainda baixo? (Indicador de "sem medo")</div>
+    <div class="watchlist-item"><strong>ASP de DRAM (spot market)</strong> — Continua caindo ou estabiliza?</div>
+    <div class="watchlist-item"><strong>Yield da T10 year</strong> — Fed cut sinaliza corte de ciclo?</div>
+    <div class="watchlist-item"><strong>SOXX vs. Kospi</strong> — Divergência morre ou vira crença institucional?</div>
+  </div>
+
+  <div class="rodape">
+    <b>Píula de Atenção:</b> Publicada 28/jul/2026, 11h30 BR. Não é recomendação de investimento. O risco amanhã não é acadêmico — é institucional decidindo se "bolha de varejo coreana" (risco local) ou "primeiro racha de bolha de capex de IA global" (risco sistêmico).<br><br>
+    <b>Dilema no radar:</b> Supply / Capex vs. Bolha<br>
+    <b>Análise por:</b> Jorge Rocha, Conselheiro de Administração e Editor do Moat Radar<br>
+    <b>Próximo update:</b> Análise completa na Edição 2 do Moat Radar.
+  </div>
+
+</div>
+</body>
+</html>
