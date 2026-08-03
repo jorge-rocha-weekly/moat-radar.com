@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moat-radar.com/sitemap.xml
