@@ -2,306 +2,90 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>The Trillion-Dollar AI Race: Why No One Can Slow Down · Moat Radar #02</title>
+<title>Weekly Moat Radar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is driving this industry to advance at such a frightening pace, chasing ever-smarter models and pouring in investment at a scale rarely seen in so little time?">
-<link rel="canonical" href="https://moat-radar.com/en/editions/2026-08-01/">
-<link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-01/">
-<link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-01/">
-<link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-01/">
+<meta name="description" content="A weekly compass for navigating the AI revolution, through the six dilemmas that define the industry.">
+<link rel="canonical" href="https://moat-radar.com/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/">
+<link rel="alternate" hreflang="en" href="https://moat-radar.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "The Trillion-Dollar AI Race: Why No One Can Slow Down",
-  "description": "What is driving this industry to advance at such a frightening pace, chasing ever-smarter models and pouring in investment at a scale rarely seen in so little time?",
-  "datePublished": "2026-08-01T08:00:00-03:00",
-  "dateModified": "2026-08-03T08:00:00-03:00",
+  "@type": "WebSite",
+  "name": "Weekly Moat Radar",
+  "url": "https://moat-radar.com/en/",
+  "description": "A weekly newsletter on the AI market, organized around six central dilemmas between supply and demand.",
   "inLanguage": "en",
-  "url": "https://moat-radar.com/en/editions/2026-08-01/",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://moat-radar.com/en/editions/2026-08-01/"
-  },
-  "author": {
-    "@type": "Person",
-    "@id": "https://moat-radar.com/autor/jorge-rocha/",
-    "name": "Jorge Rocha",
-    "url": "https://moat-radar.com/en/author/jorge-rocha/",
-    "jobTitle": "Board member, angel investor and author of Moat Radar",
-    "description": "17 years at AB InBev, board member, angel investor since 2012 and author of Moat Radar"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Moat Radar",
-    "url": "https://moat-radar.com/"
-  },
-  "about": [
-    { "@type": "Thing", "name": "Artificial intelligence" },
-    { "@type": "Thing", "name": "AI capex" },
-    { "@type": "Thing", "name": "AI agents" },
-    { "@type": "Thing", "name": "Competitive advantage" }
-  ]
+  "author": { "@type": "Person", "name": "Jorge Rocha", "url": "https://moat-radar.com/en/author/jorge-rocha/" }
 }
 </script>
 <style>
   :root{
-    --bg: #FFFFFF;
-    --ink: #2B2B2E;
-    --ink-soft: #55555C;
-    --navy: #45597A;
-    --navy-deep: #34486A;
-    --navy-tint: #EEF2F7;
-    --navy-line: #C7D2E0;
-    --lacre: #A85847;
-    --lacre-deep: #8B3A2F;
-    --lacre-tint: #F8ECE8;
-    --lacre-line: #E3C7BE;
-    --brass: #B9975B;
-    --brass-line: #E3D4B4;
-    --hair: #E7E4DC;
-    --serif: 'Spectral', Georgia, serif;
-    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+    --bg: #FFFFFF; --ink: #2B2B2E; --ink-soft: #55555C;
+    --navy: #45597A; --navy-deep: #34486A; --navy-tint: #EEF2F7; --navy-line: #C7D2E0;
+    --lacre: #A85847; --lacre-deep: #8B3A2F; --lacre-tint: #F8ECE8; --lacre-line: #E3C7BE;
+    --brass: #B9975B; --brass-line: #E3D4B4; --hair: #E7E4DC;
+    --serif: 'Spectral', Georgia, serif; --mono: 'IBM Plex Mono', 'Courier New', monospace;
   }
-
   * { box-sizing: border-box; }
+  body{ margin:0; background: var(--bg); color: var(--ink); font-family: var(--serif); }
+  .sheet{ max-width: 760px; margin: 0 auto; }
 
-  body{
-    margin:0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--serif);
+  .topbar{
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 24px 14px; border-bottom: 1px solid var(--hair);
   }
-
-  .sheet{
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 48px 32px 40px;
-    background: var(--bg);
+  .brand{ display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand .wordmark{ font-family: var(--serif); font-size: 19px; font-weight: 700; color: var(--ink); }
+  .brand .wordmark em{ font-style: italic; font-weight: 500; color: var(--lacre-deep); }
+  .topbar-actions{ display: flex; align-items: center; gap: 18px; }
+  .icon-btn{
+    width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--hair);
+    display: flex; align-items: center; justify-content: center; color: var(--ink-soft);
+    background: none; cursor: pointer; padding: 0;
   }
-
-  @media print{
-    .sheet{ max-width: 620px; }
-  }
-
-  .langbar{
-    text-align:center;
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 1px;
-    color: var(--ink-soft);
-    margin-bottom: 18px;
-  }
-  .langbar a{ color: var(--ink-soft); text-decoration:none; margin: 0 4px; }
+  .icon-btn svg{ width: 15px; height: 15px; }
+  .langbar{ font-family: var(--mono); font-size: 10px; letter-spacing: 1px; color: var(--ink-soft); }
+  .langbar a{ color: var(--ink-soft); text-decoration:none; margin: 0 3px; }
   .langbar a.active{ color: var(--brass); font-weight:600; }
 
-  .masthead{ text-align:center; }
-  .compass{ margin: 0 auto 18px; display:block; }
+  .subnav{
+    display: flex; gap: 28px; padding: 0 24px; border-bottom: 1px solid var(--hair);
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase;
+    overflow-x: auto;
+  }
+  .subnav a{ color: var(--ink-soft); text-decoration: none; padding: 14px 0; display: inline-block; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .subnav a.active{ color: var(--ink); border-bottom-color: var(--brass); font-weight: 600; }
 
-  .brand-mark{
-    font-family: var(--serif);
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: var(--ink);
-    margin: 6px 0 16px;
-  }
-  .brand-mark em{ font-style: italic; font-weight: 500; color: var(--lacre-deep); }
+  hr.dashed{ border: none; border-top: 1px dashed var(--hair); margin: 18px 24px; }
 
-  .edition-line{
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 2.5px;
-    color: var(--brass);
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
+  .feed{ padding: 0 24px 60px; }
+  .feed-label{ font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--brass); margin-bottom: 12px; }
+  .featured{ border: 1px solid var(--hair); border-radius: 10px; padding: 28px 26px; background: #FDFBF7; margin-bottom: 40px; }
+  .featured .cover{ height: 140px; border-radius: 6px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; }
+  .featured .cover svg{ width: 108px; height: 108px; }
+  .featured .edition-line{ font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 10px; }
+  .featured h2{ font-size: 26px; line-height: 1.28; margin: 0 0 10px; color: var(--ink); }
+  .featured h2 a{ color: inherit; text-decoration: none; }
+  .featured p.sub{ font-size: 15px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 18px; }
+  .featured .read-more{ font-family: var(--mono); font-size: 12px; color: var(--lacre-deep); text-decoration: none; font-weight: 600; }
 
-  h1.title{
-    font-size: 38px;
-    font-weight: 700;
-    margin: 0 0 10px;
-    color: var(--ink);
-    letter-spacing: -0.5px;
-  }
+  .entry{ display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid var(--hair); align-items: flex-start; }
+  .entry .thumb{ width: 58px; height: 58px; border-radius: 6px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .entry .thumb svg{ width: 52px; height: 52px; }
+  .entry .date{ font-family: var(--mono); font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .entry h3{ font-size: 17px; margin: 0 0 6px; color: var(--ink); line-height: 1.3; }
+  .entry h3 a{ color: inherit; text-decoration: none; }
+  .entry p{ font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); margin: 0; }
+  .see-all{ display: block; text-align: center; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--navy-deep); text-decoration: none; }
 
-  .subtitle{
-    font-style: italic;
-    font-weight: 400;
-    color: var(--ink-soft);
-    font-size: 15.5px;
-    margin: 0 0 20px;
-  }
-
-  .byline{
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin: 0 0 14px;
-  }
-
-  .dashed{
-    border: none;
-    border-top: 1px dashed var(--hair);
-    margin: 32px 0;
-  }
-
-  .label-mono{
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin-bottom: 12px;
-  }
-
-  h2.headline{
-    font-size: 26px;
-    line-height: 1.28;
-    margin: 44px 0 18px;
-    color: var(--ink);
-    break-after: avoid;
-    page-break-after: avoid;
-  }
-
-  .body-text p{
-    font-size: 16.5px;
-    line-height: 1.72;
-    color: var(--ink);
-    margin: 0 0 17px;
-    font-family: 'Inter', Arial, sans-serif;
-    orphans: 3;
-    widows: 3;
-  }
-  .body-text b{ font-weight: 600; color: var(--navy-deep); }
-  .body-text em{ font-style: italic; font-weight: 600; color: var(--ink); }
-  .body-text a{
-    color: var(--navy-deep);
-    text-decoration: underline;
-    text-decoration-color: var(--navy-line);
-    text-underline-offset: 2px;
-  }
-  .footnote{
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--brass);
-    vertical-align: super;
-    line-height: 0;
-    margin-left: 1px;
-  }
-
-  /* ---------- Figure frame ---------- */
-  .figure-frame{
-    margin: 30px 0;
-    padding: 18px 18px 16px;
-    border: 1px solid var(--hair);
-    border-radius: 8px;
-    background: #FDFBF7;
-    text-align: center;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-  .figure-frame img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
-  }
-  .figure-frame .fig-caption{
-    font-family: var(--mono);
-    font-size: 10.5px;
-    letter-spacing: 0.3px;
-    color: var(--ink-soft);
-    margin-top: 12px;
-    line-height: 1.5;
-  }
-
-  .callout{
-    border: 1px solid var(--hair);
-    border-left: 3px solid var(--brass);
-    background: #FDFBF7;
-    padding: 16px 18px;
-    border-radius: 4px;
-    margin: 24px 0 8px;
-  }
-  .callout .callout-label{
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin-bottom: 8px;
-  }
-  .callout p{
-    font-style: italic;
-    font-size: 15.5px;
-    line-height: 1.62;
-    color: var(--ink);
-    margin: 0;
-    font-family: var(--serif);
-  }
-
-  /* ---------- FAQ ---------- */
-  .faq-block{
-    margin: 40px 0;
-    padding: 32px 0;
-    border-top: 1px dashed var(--hair);
-  }
-  .faq-block .q{
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: var(--ink);
-    font-size: 16px;
-  }
-  .faq-block .a{
-    font-size: 15px;
-    line-height: 1.65;
-    margin: 0;
-    color: var(--ink-soft);
-    font-family: 'Inter', Arial, sans-serif;
-  }
-
-  footer{
-    text-align: center;
-    margin-top: 40px;
-  }
-  .disclaimer{
-    font-style: italic;
-    font-size: 12.5px;
-    color: var(--ink-soft);
-    line-height: 1.6;
-    max-width: 460px;
-    margin: 0 auto 22px;
-  }
-  .signature{
-    font-size: 19px;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 6px;
-  }
-  .bio{
-    font-family: var(--mono);
-    font-size: 10.5px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    line-height: 1.8;
-  }
-  .contact{
-    font-family: var(--mono);
-    font-size: 10.5px;
-    letter-spacing: 0.5px;
-    color: var(--brass);
-    margin-top: 10px;
-  }
-  .contact a{ color: var(--brass); text-decoration: none; }
-
+  footer{ text-align: center; padding: 30px 24px 50px; border-top: 1px solid var(--hair); }
+  footer p{ font-size: 12px; color: var(--ink-soft); font-style: italic; max-width: 420px; margin: 0 auto; }
 </style>
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -313,229 +97,124 @@
 <body>
 <div class="sheet">
 
-  <div class="langbar">
-    <a href="/en/editions/2026-08-01/" class="active">[EN]</a>
-    <a href="/pt/edicoes/2026-08-01/">[PT]</a>
+  <div class="topbar">
+    <a class="brand" href="/en/">
+      <svg width="30" height="30" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
+        <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
+        <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
+        <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
+      </svg>
+      <div class="wordmark">Weekly <em>Moat</em> Radar</div>
+    </a>
+    <div class="topbar-actions">
+      <div class="langbar"><a href="/en/" class="active">EN</a> · <a href="/pt/">PT</a></div>
+      <button class="icon-btn" title="Search" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="icon-btn" id="shareBtn" title="Share" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg></button>
+    </div>
   </div>
 
-  <div style="text-align: center; margin-bottom: 20px; font-size: 12px;"><a href="/en/editions/" style="color: var(--brass); text-decoration: none; font-family: var(--mono); letter-spacing: 0.5px;">↑ See all editions</a></div>
-
-  <div class="masthead">
-    <svg class="compass" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
-      <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
-      <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
-      <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
-    </svg>
-
-    <div class="brand-mark">Weekly <em>Moat</em> Radar</div>
-    <div class="edition-line">ISSUE 02 · AUGUST 1 TO 7, 2026</div>
-    <h1 class="title">The Trillion-Dollar AI Race: Why No One Can Slow Down</h1>
-    <p class="subtitle">What is driving this industry to advance at such a frightening pace, chasing ever-smarter models and pouring in investment at a scale rarely seen in so little time?</p>
-    <div class="byline">by Jorge Rocha</div>
+  <div class="subnav">
+    <a href="/en/" class="active">Home</a>
+    <a href="/en/editions/">Editions</a>
+    <a href="/en/about/">About</a>
+    <a href="/en/methodology/">Methodology</a>
+    <a href="/en/author/jorge-rocha/">Author</a>
   </div>
 
   <hr class="dashed">
 
-  <div class="body-text">
-    <p>Moat Radar was built to be a compass, a lighthouse, helping readers navigate this new AI revolution. We look at this market through six dilemmas, three on the demand side and three on the supply side. In this piece, we cross two of them: the corporate dilemma (adoption), on the demand side, and capex vs. bubble, on the supply side.</p>
-  </div>
+  <div class="feed">
+    <div class="feed-label">Latest issue</div>
 
-  <h2 class="headline">The foundations</h2>
-
-  <div class="body-text">
-    <p>To explain the race for capex and superintelligent models, we first need to answer two questions: <b>what does it actually take for an AI model to work in practice? And how far do the major labs believe this technology can go?</b></p>
-
-    <p>The first question: what does it take for an AI model to work in practice? Think of three stacked layers (figure 1). At the bottom sits infrastructure: the chips, the data centers, the electricity, the network that ties it all together. It's the industrial park. In the middle sits the model: the system trained on a massive amount of data that has learned to recognize patterns and generate responses. It's the brain. This is the layer where we already recognize the models we test and adopt, both personally and inside organizations: Claude, from Anthropic; ChatGPT, from OpenAI; Gemini, from Google; Grok, from xAI, to name some of the best known in the market.</p>
-
-    <p>On top sits the application: the product you, the end user, actually touch. It's the storefront. Although thousands of applications already exist, few categories beyond general assistants and coding tools have so far shown recurring use, deep integration and durable monetization, and that is exactly where a vast ocean of opportunity opens up for technology companies. We can compare this moment to the arrival of the internet in the 1990s, when its uses were very basic, like reading a newspaper, and we had no idea how profoundly the products and services built on top of it would transform our lives. Mobile internet, cloud computing and smartphones together created ecosystems like Waze, Uber and countless services we now consider indispensable. This layer of products and services is the one that generates the most value for the entire industry, and in this new revolution we don't even know yet what's coming.</p>
-  </div>
-
-  <div class="figure-frame">
-    <img src="figura1_recolor_v2_hq.png" alt="Figure 1: The three layers of the AI industry, products and services, models and infrastructure, with the moat question for each layer">
-    <div class="fig-caption">FIGURE 1 · The three layers of the AI industry · Moat Radar</div>
-  </div>
-
-  <div class="body-text">
-    <p>We see one clear layer on the consumer side, in demand, one clear supply-side layer, infrastructure, and a hybrid layer in the models. Here another question emerges: as products and services become better known and more widely used, will every layer beneath them start being treated as a commodity? Will models stop mattering to the consumer, the same way we barely remember today that, in the 1990s, we had to buy a connection kit and pay a provider just to stay online, for tasks as simple as reading a newspaper, checking the news or sending an email? Will there come a point, a few years from now, when we're no longer debating whether we use Grok or Claude and defending their abilities?</p>
-
-    <p>It's worth turning now to the second question, which will help us understand the AI industry a little better: what destination does one of the leading AI labs envision<span class="footnote">1</span>? In July 2024, Bloomberg obtained an internal OpenAI discussion that mapped out a path for the development of this industry, still in its early stages of forming. It proposed a five-level progression, shown in figure 2.</p>
-
-    <p>At the first level, conversational systems: they hold a natural dialogue, answer questions and draft text from learned patterns, which is what we already use every day in the tools mentioned above. At the second, systems capable of human-level reasoning: the difference here isn't conversing well, it's thinking in steps before responding, breaking down a complex problem, testing hypotheses, arriving at a solution the way a specialist would, the kind of capability that has reached very high performance on math and coding benchmarks over the past year. At the third level are agents, systems capable of acting autonomously on the user's behalf. This is the frontier the industry is now trying to turn into practical adoption, still mostly within bounded environments and under supervision. At the fourth, models that help invent, creating paths and solutions not proposed by a human. At the fifth, systems that do the work of an entire organization, orchestrating intelligent agents across every front of value creation.</p>
-  </div>
-
-  <div class="figure-frame">
-    <img src="figura2_recolor_hq.png" alt="Figure 2: The five levels and real-world adoption, comparing technical capability with practical adoption at each level">
-    <div class="fig-caption">FIGURE 2 · The five levels and real-world adoption · Moat Radar</div>
-  </div>
-
-  <div class="body-text">
-    <p>In the figure, we can compare OpenAI's vision against real adoption of each level over the past few years. From the second stage onward, however, a growing gap opens up between the technical capability models demonstrate and their practical adoption. The clearest early adopters have been programmers, who have used models to speed up their coding work. And over the past year we've seen accelerating adoption among users for research, writing and more routine tasks, such as drafting contracts. In some cases, a small number of consumers are already starting to automate tasks with AI agents. At the corporate level, this stage still looks far more nascent.</p>
-
-    <p>What matters here is that the step between everyday model use, like queries and task execution, and true agentization looks far more complex than assumed. In many cases, what we see are basic automations that don't require a high degree of sophistication or reasoning from the models. Which brings us to another question: if models have mostly been used for such basic tasks, or for coding, why are labs racing so hard to have the fastest, most efficient and most intelligent model on the market?</p>
-  </div>
-
-  <h2 class="headline">Who loses</h2>
-
-  <div class="body-text">
-    <p>Anthropic launched legal plugins capable of automating parts of contract review, NDA triage, compliance, briefing drafts and standardized responses. What rattled the market in February 2026 wasn't just the model's progress, but the signal that the model owner was starting to directly capture workflows previously served by specialized software. The market read this as a sign that part of the value captured by the intermediary could be compressed, not as proof that it would cease to exist. Thomson Reuters fell close to 18%, RELX dropped 14%, and two S&amp;P indices tracking software, financial data and exchanges together lost roughly $300 billion in market value that day.</p>
-
-    <p>The episode spilled over into the rest of the SaaS sector, which began to be treated as an incumbent at risk of obsolescence, even outside the legal field. As of June 22, 2026, Salesforce was down 43% year to date, even though Agentforce's ARR (annual recurring revenue) had grown 205% year over year, to $1.2 billion. Atlassian, for its part, fell as much as 46% over six months, the kind of contrast that shows the market is pricing in a structural risk, not the quarter's results.</p>
-
-    <p>Not even the biggest, most solid tech giants escape the same logic, just at a pace that's still manageable. According to Similarweb, 68% of Google searches now end without a click to an external site. The shift directly threatens publishers and businesses that depend on organic traffic; for Google itself, it represents both a cannibalization of the traditional search format and an attempt to preserve its centrality in information distribution. Meta and Amazon, for their part, have already understood they need to lead innovation in their own domains, or risk watching their businesses turn to dust through obsolescence.</p>
-
-    <p>This doesn't mean every specialized software company is doomed. Owners of proprietary data, systems deeply integrated into workflows, brands associated with trust, and companies protected by regulatory requirements can use frontier models as an input rather than being replaced by them. The moat doesn't necessarily disappear, it often migrates from code to data, distribution, integration and trust.</p>
-  </div>
-
-  <h2 class="headline">Why the rush</h2>
-
-  <div class="body-text">
-    <p>The previous sections already make clear why this new technological revolution will require technology companies to move, and fast. Still, to help the reader follow along, let's break this challenge down within each of the three structural layers of the AI industry we proposed above, since the players in each one have their own reasons to keep accelerating. We'll work from the layer closest to the consumer down to the most basic one, infrastructure, since the layers above pull more speed out of the ones below.</p>
-
-    <p><b>The products and services layer.</b> Given everything above, it's clear the entire technology industry, without exception, is under pressure and needs to reinvent itself. It knows its current empires will be challenged by insurgents that are faster and more agile with AI. The labs themselves (Anthropic's Claude, for instance) seem willing to climb into this products-and-services layer too. That's exactly why we see every major technology corporation investing not only to redesign its existing business, but to build new businesses that can replace revenue that risks becoming obsolete. Meta is an example of a company that hasn't yet felt this blow in its results: its revenue grew 28% in the second quarter of 2026, to $60.8 billion. In the same earnings presentation, the company reported that 9 million small businesses were already using at least one of its generative AI creative tools, and maintained a capex projection of $130 billion to $145 billion for the year, a sign it knows it needs to move before feeling the same blow that hit the SaaS sector. Most tech giants have also realized they couldn't accelerate innovation in their own segments without owning computing capacity, and that this layer would become a bottleneck for their own growth, exactly the reasoning behind the verticalization we already covered in the bottleneck economy dilemma: building their own silicon and expanding their own data center infrastructure to reduce dependence on critical suppliers and secure capacity.</p>
-
-    <p><b>The models layer, where the labs live.</b> Here we identify four main motivators keeping them in acceleration mode.</p>
-
-    <p>The first is reliability for the next level: today's models are already good enough to deliver the basic agentization we're seeing now, but labs aren't confident they're reliable enough for the next level, in which agents solve problems without human supervision, breaking down goals, creating subtasks and correcting their own execution. It's a cautious race: whoever is technically ready once market trust allows agents to run unsupervised gets there first.</p>
-
-    <p>The second is effectiveness, measured both in speed and sophistication of reasoning and in the cost of every response a model generates, delivering more with less infrastructure consumption. And the bar has moved fast here: according to the Stanford AI Index, the cost of achieving GPT-3.5-equivalent performance on the MMLU benchmark fell more than 280-fold between November 2022 and October 2024, from $20 to $0.07 per million tokens. Competition keeps accelerating that drop: OpenAI cut the price of GPT-5.6 Luna by 80%, while Chinese open-weight models, such as DeepSeek's, continue to offer very low-cost APIs, though comparisons vary depending on the model, token volume, cache use and the level of performance required.</p>
-
-    <p>The third motivator is controlling the orchestration layer, the harness, the set of tools, memory, context, permissions and verification wrapped around the model, and using it to become a platform. According to a Menlo Ventures estimate, Anthropic reached 54% of the enterprise market for coding models in 2025, a performance driven largely by the popularity of Claude Code. Separately, the company is also building vertical products for the legal, financial and healthcare sectors, including a partnership with TCS (Tata Consultancy Services, one of the world's largest IT services firms) to bring Claude to 50,000 employees across 56 countries.</p>
-
-    <p>The fourth is leadership, prestige, staying in the media and the conversation, which helps attract more investment to keep feeding this engine. That's why every model launch comes wrapped in benchmarks and announcements, even when the practical gain for the end user is marginal.</p>
-
-    <p><b>The infrastructure layer.</b> Here, the race for growth and investment is driven by the two layers above it: big tech in a defensive move to secure compute for its own growth, and labs investing in dedicated compute to train and ship their next models faster. That leaves an open question, one that deserves its own future edition: is all this capacity being built backed by real demand, or is it already running ahead of it? That's the basis for the concern that we may be building an investment bubble that could burst at any moment.</p>
-  </div>
-
-  <h2 class="headline">Conclusion</h2>
-
-  <div class="body-text">
-    <p>Everyone is running, but behind the individual reasons we've walked through here, one for each layer, lies a simpler and more uncomfortable explanation: this isn't innovation, it's revolution. Innovation improves what already exists. Revolution redefines who gets to exist at all. And a revolution forgives no one: no player in the technology industry, no matter how large or established, is exempt from having to move.</p>
-
-    <p>OpenAI may feel this pressure in a particular way: according to Bloomberg, it was the one that drew the five-level map we opened this piece with, and it's now racing against the very clock it built, trying to prove that the vision it laid out internally also holds up in practice. The other labs, even without having signed on to the same map, are chasing a similar logic, each with its own yardstick for progress.</p>
-
-    <p>The result is an unprecedented volume of investment. A baseline estimate from Goldman Sachs points to roughly $765 billion in AI infrastructure-related capex in 2026, spanning compute, data centers and energy. Cumulatively between 2026 and 2031, that same estimate reaches $7.6 trillion. And everything suggests we're only at the beginning.</p>
-
-    <p>Against this backdrop, a practical answer has already surfaced throughout this piece: as researcher <a href="https://www.oneusefulthing.org/" target="_blank" rel="noopener">Ethan Mollick</a> has been pointing out, an AI's usefulness no longer depends on the model alone, it also depends on the application and the harness, the set of tools, instructions, context, permissions and verification mechanisms that turns intelligence into action. It's this harness that's still missing to take a model from the role of assistant to that of an agent able to execute, with growing autonomy, a specific process once carried out by a person, the step that has proven far harder to climb than the industry expected. LangChain itself documented this: using the exact same model, without changing anything about it, it climbed from 52.8% to 66.5% on Terminal-Bench 2.0, moving from 30th to 5th place at the time of publication, simply by rebuilding the harness.</p>
-
-    <p>But the question that remains, running through everything we've covered here, is bigger than any model or harness: how will society keep up with change of this magnitude, at this speed? That question still has no ready answer, and it may be the most important theme Moat Radar will need to grapple with going forward.</p>
-  </div>
-
-  <hr class="dashed">
-
-  <div class="faq-block">
-    <div class="label-mono">Questions and answers on this issue</div>
-
-    <div style="margin-bottom: 26px;">
-      <p class="q">What is Moat Radar?</p>
-      <p class="a">Moat Radar is a weekly newsletter by Jorge Rocha that tracks the AI industry through six structural dilemmas. On the supply side: capex vs. bubble, the bottleneck economy, and how long we'll keep control. On the demand side: model vs. channel, the corporate dilemma, and the humanoid race. Its goal is to turn recent events into a clear, in-depth read on where this industry's risks, opportunities and moats actually are.</p>
+    <div class="featured">
+      <div class="cover">
+        <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
+          <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
+          <rect x="22" y="53" width="19" height="7" rx="1.2" fill="#34486A" opacity="0.85" transform="rotate(-4 22 53)"/>
+          <rect x="45" y="53" width="19" height="7" rx="1.2" fill="#34486A" opacity="0.85" transform="rotate(3 45 53)"/>
+          <rect x="24" y="41" width="16" height="7" rx="1.2" fill="#A85847" opacity="0.9" transform="rotate(3 24 41)"/>
+          <rect x="46" y="41" width="16" height="7" rx="1.2" fill="#A85847" opacity="0.9" transform="rotate(-3 46 41)"/>
+          <rect x="35" y="27" width="16" height="7" rx="1.2" fill="#B9975B" transform="rotate(-6 35 27)"/>
+          <g stroke="#34486A" stroke-width="1.6" stroke-linecap="round">
+            <line x1="30" y1="24" x2="24" y2="15"/>
+            <line x1="44" y1="20" x2="44" y2="10"/>
+            <line x1="58" y1="24" x2="64" y2="15"/>
+          </g>
+        </svg>
+      </div>
+      <div class="edition-line">Issue 02 · August 1 to 7, 2026</div>
+      <h2><a href="/en/editions/2026-08-01/">The Trillion-Dollar AI Race: Why No One Can Slow Down</a></h2>
+      <p class="sub">What is driving this industry to advance at such a frightening pace, chasing ever-smarter models and pouring in investment at a scale rarely seen in so little time?</p>
+      <a class="read-more" href="/en/editions/2026-08-01/">Read the full issue →</a>
     </div>
 
-    <div style="margin-bottom: 26px;">
-      <p class="q">How is the AI industry organized? How is it structured to deliver models people actually use day to day?</p>
-      <p class="a">In three stacked layers. At the base, infrastructure: chips, data centers, energy and networks — the industrial park. In the middle, models: the trained systems that recognize patterns and generate responses — the brain. At the top, the application: the product the end user actually touches — the storefront. Each layer depends on the others, and each has its own moat question: who controls the scarce resource, who controls the intelligence and the harness, and who controls the customer.</p>
+    <div class="feed-label">Previous issues</div>
+
+    <div class="entry">
+      <div class="thumb">
+        <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
+          <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
+          <polygon points="49,17 30,46 42,46 39,71 60,39 47,39" fill="#A85847"/>
+        </svg>
+      </div>
+      <div>
+        <div class="date">Flash · July 28, 2026</div>
+        <h3><a href="/en/editions/2026-07-28/">AI bubble bursts on Korean exchange on the eve of Super Wednesday</a></h3>
+        <p>Breaking news: Kospi -10.8%, Samsung -13.4%, SK Hynix -14.7%. A domestic retail bubble explodes on the eve of 4 catalysts that could trigger global repricing.</p>
+      </div>
     </div>
 
-    <div style="margin-bottom: 26px;">
-      <p class="q">What are the proposed stages of AI development?</p>
-      <p class="a">Five rungs, according to an internal OpenAI classification reported by Bloomberg in 2024: conversation; reasoning, with systems able to solve complex, multi-step problems; agents, capable of acting autonomously on the user's behalf; innovation, creating paths not proposed by humans; and organization, coordinating agents across every function of a company. In Moat Radar's assessment, starting at the second rung, a growing gap opens between demonstrated technical capability and practical adoption.</p>
+    <div class="entry">
+      <div class="thumb">
+        <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
+          <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
+          <polygon points="44,18 65.8,31 65.8,57 44,70 22.2,57 22.2,31"
+            fill="none" stroke="#34486A" stroke-width="1.8" stroke-linejoin="round"/>
+          <g fill="#A85847">
+            <circle cx="44" cy="18" r="2.6"/>
+            <circle cx="65.8" cy="31" r="2.6"/>
+            <circle cx="65.8" cy="57" r="2.6"/>
+            <circle cx="44" cy="70" r="2.6"/>
+            <circle cx="22.2" cy="57" r="2.6"/>
+            <circle cx="22.2" cy="31" r="2.6"/>
+          </g>
+          <circle cx="44" cy="44" r="2.2" fill="#34486A"/>
+        </svg>
+      </div>
+      <div>
+        <div class="date">Issue 01 · July 25–31, 2026</div>
+        <h3><a href="/en/editions/2026-07-25/">The six dilemmas of the AI revolution</a></h3>
+        <p>Understand the AI industry from the inside, and how it's transforming not just your daily life, but the entire economy.</p>
+      </div>
     </div>
 
-    <div style="margin-bottom: 26px;">
-      <p class="q">Why do labs keep racing for the fastest model, if most of today's usage is still basic?</p>
-      <p class="a">Because the race isn't just about today's usage — it's about technical readiness for the next rung: agents that are more autonomous, more reliable, and able to execute long tasks with less supervision. Labs are also competing on four fronts: greater reliability, a better capability-to-cost ratio, control of the orchestration layer (the harness), and enough of a lead to attract users, talent and capital.</p>
-    </div>
-
-    <div style="margin-bottom: 26px;">
-      <p class="q">Does an official OpenAI document describing the five levels of AI evolution actually exist?</p>
-      <p class="a">No. It's an internal discussion captured by Bloomberg in July 2024, never officially published by the company. That distinction matters: it's the view the report attributes to OpenAI, not a public statement from the company.</p>
-    </div>
-
-    <div style="margin-bottom: 26px;">
-      <p class="q">What is a harness, and why is it decisive in turning a model into an agent?</p>
-      <p class="a">In everyday English, a harness is the gear that turns raw force into controlled force — think of a horse pulling a carriage. In AI, it's the layer wrapped around the model that defines how it acts: tools, instructions, memory, context, permissions, integrations and verification mechanisms. The harness doesn't replace the model's intelligence; it turns that intelligence into organized, reliable execution. Ethan Mollick has been helping explain this new architecture to a broader audience through three elements: model, application and harness. LangChain showed its impact in practice: keeping the same model, it raised performance from 52.8% to 66.5% on Terminal-Bench 2.0 — moving from roughly 30th to 5th place at the time — simply by rebuilding the harness.</p>
-    </div>
-
-    <div style="margin-bottom: 26px;">
-      <p class="q">Is the $765 billion in AI infrastructure capex projected for 2026 a sign of a bubble?</p>
-      <p class="a">Not by itself. The figure is a Goldman Sachs baseline estimate for the annual investment needed in compute, data centers, energy and related infrastructure — it isn't a direct forecast of end demand for AI. Whether a bubble exists will depend on how much of that capacity gets used, how fast demand actually grows, the useful life of the equipment, and the economic return it produces. The piece leaves this question open, as one of the dilemmas Moat Radar will keep tracking in future issues.</p>
-    </div>
-
-    <div style="margin-bottom: 26px;">
-      <p class="q">Are SaaS companies really doomed by AI?</p>
-      <p class="a">Not necessarily. The market reaction hit SaaS, software, data and professional-services companies alike, reflecting the fear that models and agents will capture workflows once handled by specialized intermediaries. But companies with proprietary data, deep integration into customer processes, distribution, trusted brands, or regulatory protection can preserve — or rebuild — their moats by using models as an input, rather than simply being replaced by them.</p>
-    </div>
-
-    <div>
-      <p class="q">Is this just another wave of innovation, or, as the piece argues, a revolution?</p>
-      <p class="a">Per the issue's central argument, it's a revolution: it doesn't just improve what already exists, it redefines who has the right to exist in the tech industry. That's why no player, however large, is exempt from having to move.</p>
-    </div>
+    <a class="see-all" href="/en/editions/">See all issues →</a>
   </div>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is Moat Radar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Moat Radar is a weekly newsletter by Jorge Rocha that tracks the AI industry through six structural dilemmas. On the supply side: capex vs. bubble, the bottleneck economy, and how long we'll keep control. On the demand side: model vs. channel, the corporate dilemma, and the humanoid race." }
-      },
-      {
-        "@type": "Question",
-        "name": "How is the AI industry organized? How is it structured to deliver models people actually use day to day?",
-        "acceptedAnswer": { "@type": "Answer", "text": "In three stacked layers: infrastructure (chips, data centers, energy and networks), models (the trained systems that recognize patterns and generate responses) and application (the product the end user actually touches). Each layer depends on the others, and each has its own moat question." }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the proposed stages of AI development?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Five rungs, according to an internal OpenAI classification reported by Bloomberg in 2024: conversation, reasoning, agents, innovation and organization. In Moat Radar's assessment, starting at the second rung, a growing gap opens between demonstrated technical capability and practical adoption." }
-      },
-      {
-        "@type": "Question",
-        "name": "Why do labs keep racing for the fastest model, if most of today's usage is still basic?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Because the race isn't just about today's usage, but about technical readiness for the next rung: agents that are more autonomous, reliable and able to execute long tasks with less supervision. Labs also compete on reliability, cost, control of the harness, and market leadership." }
-      },
-      {
-        "@type": "Question",
-        "name": "Does an official OpenAI document describing the five levels of AI evolution actually exist?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. It's an internal discussion captured by Bloomberg in July 2024, never officially published by the company." }
-      },
-      {
-        "@type": "Question",
-        "name": "What is a harness, and why is it decisive in turning a model into an agent?",
-        "acceptedAnswer": { "@type": "Answer", "text": "A harness is the set of tools, instructions, memory, context, permissions and verification mechanisms that wraps around a model and turns its intelligence into organized execution. LangChain raised performance from 52.8% to 66.5% on Terminal-Bench 2.0 using the same model, simply by rebuilding the harness." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is the $765 billion in AI infrastructure capex projected for 2026 a sign of a bubble?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Not by itself. It's a Goldman Sachs baseline estimate for the annual investment needed in compute, data centers and energy, not a direct forecast of end demand. Whether a bubble exists depends on how much of that capacity gets used and the economic return it produces." }
-      },
-      {
-        "@type": "Question",
-        "name": "Are SaaS companies really doomed by AI?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Companies with proprietary data, deep integration, distribution, trusted brands or regulatory protection can preserve or rebuild their moats by using models as an input, rather than being replaced by them." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is this just another wave of innovation, or, as the piece argues, a revolution?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Per the issue's central argument, it's a revolution: it doesn't just improve what already exists, it redefines who has the right to exist in the tech industry." }
-      }
-    ]
-  }
-  </script>
-
-  <hr class="dashed">
 
   <footer>
-    <p class="disclaimer"><span class="footnote">1</span> There is no official OpenAI document, post or report describing this framework. The accurate phrasing is "according to Bloomberg's reporting, OpenAI presented internally," never "OpenAI published." The original report itself (Rachel Metz, July 11, 2024) notes that the scale was a work in progress.</p>
-    <p class="disclaimer">Moat Radar reads the AI market through two fixed lenses: <b>Supply</b> (who builds the infrastructure) and <b>Demand</b> (who the consumer loves). It sells nothing, recommends no buying or selling of assets, and does not replace professional financial advice. It is a personal reading of the market. <a href="/en/about/">To learn more about Moat Radar, click here.</a></p>
-    <div class="signature">Jorge Rocha</div>
-    <div class="bio">17 YEARS AT AB INBEV · BOARD MEMBER<br>ANGEL INVESTOR SINCE 2012 · AUTHOR OF MOAT RADAR</div>
-    <div class="contact">Contact: <a href="mailto:jorge@ginvest.com.br">jorge@ginvest.com.br</a> · <a href="/en/author/jorge-rocha/">About the author</a> · <a href="/en/about/">Methodology</a> · <a href="/en/editions/">See all editions</a></div>
+    <p>Moat Radar reads the AI market through two fixed lenses: Supply (who builds the infrastructure) and Demand (what consumers love). It does not sell anything, does not recommend buying or selling assets, and is not a substitute for professional financial advice.</p>
   </footer>
 
 </div>
+<script>
+  document.getElementById('shareBtn').addEventListener('click', async function(){
+    var shareData = { title: document.title, url: window.location.href };
+    if (navigator.share) {
+      try { await navigator.share(shareData); } catch(e) {}
+    } else {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        var btn = document.getElementById('shareBtn');
+        var original = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>';
+        setTimeout(function(){ btn.innerHTML = original; }, 1500);
+      } catch(e) {}
+    }
+  });
+</script>
 </body>
 </html>

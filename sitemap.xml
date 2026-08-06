@@ -3,6 +3,26 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://moat-radar.com/pt/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/en/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/"/>
+  </url>
+
+  <url>
     <loc>https://moat-radar.com/pt/edicoes/2026-08-01/</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -60,7 +80,7 @@
 
   <url>
     <loc>https://moat-radar.com/pt/edicoes/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/"/>
@@ -69,7 +89,7 @@
 
   <url>
     <loc>https://moat-radar.com/en/editions/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/"/>
@@ -78,7 +98,7 @@
 
   <url>
     <loc>https://moat-radar.com/pt/sobre/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/sobre/"/>
@@ -87,11 +107,29 @@
 
   <url>
     <loc>https://moat-radar.com/en/about/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/sobre/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/about/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/pt/metodologia/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/metodologia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/methodology/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/en/methodology/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/metodologia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/methodology/"/>
   </url>
 
   <url>
