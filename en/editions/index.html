@@ -60,7 +60,7 @@
   .page{ padding: 30px 24px 60px; }
   h1{ font-size: 28px; font-weight: 700; margin: 0 0 30px; color: var(--ink); letter-spacing: -0.5px; }
 
-  .entry{ display: flex; gap: 16px; padding: 20px 0; border-top: 1px solid var(--hair); align-items: flex-start; }
+  .entry{ position: relative; display: flex; gap: 16px; padding: 20px 0; border-top: 1px solid var(--hair); align-items: flex-start; cursor: pointer; }
   .entry:last-child{ border-bottom: 1px solid var(--hair); }
   .entry .thumb{ width: 58px; height: 58px; border-radius: 6px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
   .entry .thumb svg{ width: 52px; height: 52px; }
@@ -68,6 +68,7 @@
   .entry h2{ font-size: 18px; margin: 0 0 6px; color: var(--ink); line-height: 1.3; }
   .entry h2 a{ color: inherit; text-decoration: none; }
   .entry h2 a:hover{ color: var(--navy-deep); }
+  .entry h2 a::after{ content: ""; position: absolute; inset: 0; }
   .entry p{ font-size: 14px; line-height: 1.55; color: var(--ink-soft); margin: 0; }
 
   footer{ text-align: center; padding: 30px 24px 50px; border-top: 1px solid var(--hair); }
