@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Has Already Arrived. The Results Haven't Yet. · Moat Radar #03</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The technology is already in companies' hands, and in their employees'. The challenge now is turning scattered capability and usage into real business results.">
+<link rel="canonical" href="https://moat-radar.com/en/editions/2026-08-08/">
+<link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-08/">
+<link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-08/">
+<link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-08/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Has Already Arrived. The Results Haven't Yet.",
+  "description": "The technology is already in companies' hands, and in their employees'. The challenge now is turning scattered capability and usage into real business results.",
+  "datePublished": "2026-08-08T08:00:00-03:00",
+  "dateModified": "2026-08-08T08:00:00-03:00",
+  "inLanguage": "en",
+  "url": "https://moat-radar.com/en/editions/2026-08-08/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://moat-radar.com/en/editions/2026-08-08/"
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://moat-radar.com/autor/jorge-rocha/",
+    "name": "Jorge Rocha",
+    "url": "https://moat-radar.com/en/author/jorge-rocha/",
+    "jobTitle": "Board member, angel investor and author of Moat Radar",
+    "description": "17 years at AB InBev, board member, angel investor since 2012 and author of Moat Radar"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Moat Radar",
+    "url": "https://moat-radar.com/"
+  },
+  "about": [
+    { "@type": "Thing", "name": "Artificial intelligence" },
+    { "@type": "Thing", "name": "Corporate AI adoption" },
+    { "@type": "Thing", "name": "AI agents" },
+    { "@type": "Thing", "name": "Data governance" }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --ink: #2B2B2E;
+    --ink-soft: #55555C;
+    --navy: #45597A;
+    --navy-deep: #34486A;
+    --navy-tint: #EEF2F7;
+    --navy-line: #C7D2E0;
+    --lacre: #A85847;
+    --lacre-deep: #8B3A2F;
+    --lacre-tint: #F8ECE8;
+    --lacre-line: #E3C7BE;
+    --brass: #B9975B;
+    --brass-line: #E3D4B4;
+    --hair: #E7E4DC;
+    --serif: 'Spectral', Georgia, serif;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+  }
+
+  .sheet{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 32px 40px;
+    background: var(--bg);
+  }
+
+  @media print{
+    .sheet{ max-width: 620px; }
+  }
+
+  .langbar{
+    text-align:center;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+  .langbar a{ color: var(--ink-soft); text-decoration:none; margin: 0 4px; }
+  .langbar a.active{ color: var(--brass); font-weight:600; }
+
+  .masthead{ text-align:center; }
+  .compass{ margin: 0 auto 18px; display:block; }
+
+  .brand-mark{
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--ink);
+    margin: 6px 0 16px;
+  }
+  .brand-mark em{ font-style: italic; font-weight: 500; color: var(--lacre-deep); }
+
+  .edition-line{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--brass);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  h1.title{
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle{
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    margin: 0 0 20px;
+  }
+
+  .byline{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+
+  .dashed{
+    border: none;
+    border-top: 1px dashed var(--hair);
+    margin: 32px 0;
+  }
+
+  .label-mono{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 12px;
+  }
+
+  h2.headline{
+    font-size: 26px;
+    line-height: 1.28;
+    margin: 44px 0 18px;
+    color: var(--ink);
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .body-text p{
+    font-size: 16.5px;
+    line-height: 1.72;
+    color: var(--ink);
+    margin: 0 0 17px;
+    font-family: 'Inter', Arial, sans-serif;
+    orphans: 3;
+    widows: 3;
+  }
+  .body-text b{ font-weight: 600; color: var(--navy-deep); }
+  .body-text em{ font-style: italic; font-weight: 600; color: var(--ink); }
+  .body-text a{
+    color: var(--navy-deep);
+    text-decoration: underline;
+    text-decoration-color: var(--navy-line);
+    text-underline-offset: 2px;
+  }
+  .footnote{
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--brass);
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 1px;
+  }
+
+  .callout{
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--brass);
+    background: #FDFBF7;
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin: 24px 0 8px;
+  }
+  .callout .callout-label{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 8px;
+  }
+  .callout p{
+    font-style: italic;
+    font-size: 15.5px;
+    line-height: 1.62;
+    color: var(--ink);
+    margin: 0 0 12px;
+    font-family: var(--serif);
+  }
+  .callout p:last-child{ margin-bottom: 0; }
+
+  /* ---------- Numbered callout (six questions) ---------- */
+  .callout-numbered{
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--brass);
+    background: #FDFBF7;
+    padding: 22px 22px 20px;
+    border-radius: 4px;
+    margin: 36px 0 8px;
+  }
+  .callout-numbered .callout-label{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 10px;
+  }
+  .callout-numbered .intro{
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+    font-family: var(--serif);
+  }
+  .callout-numbered ol{ list-style: none; counter-reset: qnum; margin: 0; padding: 0; }
+  .callout-numbered li{
+    counter-increment: qnum;
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  .callout-numbered li:last-child{ margin-bottom: 0; }
+  .callout-numbered li::before{
+    content: counter(qnum, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--brass);
+  }
+  .callout-numbered li b{ color: var(--navy-deep); font-weight: 600; }
+
+  /* ---------- FAQ ---------- */
+  .faq-block{
+    margin: 40px 0;
+    padding: 32px 0;
+    border-top: 1px dashed var(--hair);
+  }
+  .faq-block .q{
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--ink);
+    font-size: 16px;
+  }
+  .faq-block .a{
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0;
+    color: var(--ink-soft);
+    font-family: 'Inter', Arial, sans-serif;
+  }
+
+  /* ---------- Sources ---------- */
+  .sources-block{
+    margin: 40px 0;
+    padding: 32px 0;
+    border-top: 1px dashed var(--hair);
+  }
+  .sources-block ol{ list-style: none; counter-reset: srcnum; margin: 0; padding: 0; }
+  .sources-block li{
+    counter-increment: srcnum;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 18px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  .sources-block li:last-child{ margin-bottom: 0; }
+  .sources-block li::before{
+    content: counter(srcnum);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--brass);
+  }
+  .sources-block li a{
+    color: var(--navy-deep);
+    text-decoration: underline;
+    text-decoration-color: var(--navy-line);
+    text-underline-offset: 2px;
+  }
+  .sources-block .caveat{
+    display: block;
+    margin-top: 6px;
+    font-style: italic;
+    color: var(--lacre-deep);
+  }
+
+  footer{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .disclaimer{
+    font-style: italic;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 460px;
+    margin: 0 auto 22px;
+  }
+  .signature{
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .bio{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    line-height: 1.8;
+  }
+  .contact{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.5px;
+    color: var(--brass);
+    margin-top: 10px;
+  }
+  .contact a{ color: var(--brass); text-decoration: none; }
+
+  .back { display: block; font-size: 14px; color: var(--brass); text-decoration: none; margin-top: 28px; font-family: var(--mono); letter-spacing: 0.5px; text-align: center; }
+  .back:hover { color: var(--lacre); text-decoration: underline; }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5XX9GQKDK0');
+</script>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="langbar">
+    <a href="/en/editions/2026-08-08/" class="active">[EN]</a>
+    <a href="/pt/edicoes/2026-08-08/">[PT]</a>
+  </div>
+
+  <div style="text-align: center; margin-bottom: 20px; font-size: 12px;"><a href="/en/editions/" style="color: var(--brass); text-decoration: none; font-family: var(--mono); letter-spacing: 0.5px;">↑ See all editions</a></div>
+
+  <div class="masthead">
+    <svg class="compass" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
+      <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
+      <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
+      <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
+    </svg>
+
+    <div class="brand-mark">Weekly <em>Moat</em> Radar</div>
+    <div class="edition-line">ISSUE 03 · AUGUST 8 TO 14, 2026</div>
+    <h1 class="title">AI Has Already Arrived. The Results Haven't Yet.</h1>
+    <p class="subtitle">The technology is already in companies' hands, and in their employees'. The challenge now is turning scattered capability and usage into real business results.</p>
+    <div class="byline">by Jorge Rocha</div>
+  </div>
+
+  <hr class="dashed">
+
+  <div class="callout">
+    <div class="callout-label">Summary of this issue</div>
+    <p>AI has already arrived inside companies. Models can carry out increasingly complex tasks, agents are starting to operate on corporate systems, and employees are already folding these tools into their work. But there's a meaningful gap between technological capability, adoption and economic result. The real challenge now isn't just having access to AI. It's figuring out how to turn that capability into real business value.</p>
+    <p>This gap wouldn't be new. Major technological revolutions have often taken years, sometimes decades, between the arrival of a technology and its full impact on productivity. Electrification is the classic example: the biggest gains showed up once companies stopped simply swapping in the new power source and started redesigning their factories around what electricity made possible. This issue asks whether we're looking at a similar process with AI, probably much faster, but still dependent on organizational change.</p>
+    <p>For companies, this produces three decisions with no obvious answer. Start small or go after the big levers of value? Use AI as a layer over existing processes, or redesign them around it? And how to govern adoption: centralized, decentralized or federated? Cases like JPMorgan, EY and Jubilant Ingrevia help illuminate the different paths, but the available evidence still doesn't point to a winning architecture.</p>
+    <p>There is, though, another decision: wait, or start learning. We don't know whether moving early guarantees a lasting advantage. We do know that, in many companies, experimentation is already happening, often in a scattered way and even outside formal structures. Individual gains are starting to show up; turning that into consistent results for the organization is a different matter.</p>
+    <p>And that decision can't be outsourced. Consultancies, vendors and platforms can help, but each naturally sees the problem through the lens of what it sells. Ultimately, it's up to the CEO and the board to decide what to use AI for, where to start, how much to transform, how to govern it, how much to invest and how to measure results. This issue doesn't offer a recipe. It maps the choices that need to be made while the recipe for success still doesn't exist.</p>
+  </div>
+
+  <div class="body-text" style="margin-top: 32px;">
+    <p>Last issue, we showed why the technology industry invests at a trillion-dollar pace: every layer of the chain, product, model and infrastructure, has its own reasons to accelerate. But investment isn't a result. In this issue, we look inside the companies that are supposed to consume all that capacity, and ask: do they actually know how to turn AI into value?</p>
+  </div>
+
+  <h2 class="headline">Who's going to consume the investment</h2>
+
+  <div class="body-text">
+    <p>Every hyperscaler has its own bet on how to use this trillion-dollar capacity.</p>
+    <p><b>Anthropic</b> is betting on the vertical harness, AI embedded in professional workflows, not generic chat.</p>
+    <p><b>OpenAI</b> is betting on "compute follows demand": investing massively on the assumption that corporate demand will pull it along.</p>
+    <p><b>Oracle</b> is betting on infrastructure: being the compute provider so other corporations can run their own AI solutions in-house.</p>
+    <p><b>Google</b> sees AI as a multiplier of what it already has: a better Search, a better Workspace, a better Cloud.</p>
+    <p><b>Meta</b> is betting on open source as a bridge: it releases the technology, then monetizes once agents run inside products that already have billions of users.</p>
+    <p>All of them, through different paths, see corporations as one of the big sources of demand capable of absorbing that capacity. Agents running processes 24/7, expanding prices and margins, freeing up people, cutting costs.</p>
+    <p>And here a gap becomes clear: between "we have the technology" and "the technology created measurable value." That's the corporate dilemma we raised in <a href="/en/editions/2026-07-25/">Issue 01</a>, and the one we explore here.</p>
+  </div>
+
+  <h2 class="headline">What is the corporate dilemma?</h2>
+
+  <div class="body-text">
+    <p>The question that remains is both the most obvious and the most uncomfortable one: when will the first major corporation manage to run its critical processes fully delegated to AI agents, 24/7, capturing the value hyperscalers bet on?</p>
+    <p>We haven't yet found evidence of major corporations operating that way at scale.</p>
+    <p>Ali Ghodsi, CEO of Databricks, with 20,000 corporate customers, was blunt during a talk on AI adoption at Stanford in May 2026<span class="footnote">1</span>. Ghodsi goes even further: in his view, AGI (artificial general intelligence, models capable of solving problems across multiple domains without task-specific training) has already arrived, more capable than most of the people we interact with. And yet, in his view, nothing works inside companies. He wasn't being cynical. He was describing what he sees every day: companies that ran AI on top of legacy processes and captured no value.</p>
+    <p>But there is historical precedent for this. As Ghodsi mentions in his talk, Paul David described in "The Dynamo and the Computer" (1990) that this same gap had already occurred a century earlier, when the electric motor was invented in 1881. American industrial productivity didn't rise measurably until 1920. Forty years. Why? Because factories simply plugged the electric motor into the same processes they had always used. Nobody redesigned anything. It took decades before anyone realized the real gain wasn't in the new machine. It was in reimagining the entire operation. Fewer sprawling plants, more flexibility, different work rhythms. A change in mindset, not a change in equipment.</p>
+    <p>This phenomenon isn't unique. It happened with computers in the 1960s and 1970s. It happened with the internet in the 1990s. Major general-purpose technologies often show this same pattern: the technology arrives first, but the human capacity to understand how to extract value from it takes much longer. The bottleneck is no longer just the technology. It's also our ability to reimagine processes, structures, and the way we work.</p>
+    <p>So the problem isn't just gaining access to the new technology. It's understanding the context. It's figuring out the paths to capturing value. Back with the electric motor, that meant building a factory from scratch, with a completely new vision for using the technology. Today, with AI, it means something similar: understanding the best way to capture value as agents and AI systems move into production.</p>
+    <p>And this is exactly where the gap shows up. We're still in the experimentation phase. There's still no proven architecture for turning AI into value consistently, with agents running in production at scale. That's what MIT and McKinsey's research reinforce.</p>
+    <p>MIT mapped the phenomenon with numbers. In "The GenAI Divide," 95 percent of corporate pilots delivered zero return on the bottom line. Only 5 percent of integrated systems created value. McKinsey diverges on the numbers (some reports point to more optimistic scenarios), but converges on the essence: the gap between adoption and converting it into results is real.</p>
+    <p>The phenomenon Paul David described in 1990 is repeating itself now, inside companies investing in AI. Between "we have the technology" (January 2026) and "we've converted that into results" (agents running 24/7 and generating value), there's a silent gap. A small number of companies seem to be starting to cross it. Most are still trying to understand how.</p>
+    <p>There's a historical pattern: major general-purpose technologies tend to face a corporate adoption process far more complex than it appears at first. Everything suggests AI won't be different. The question that remains is: what are the main challenges, the strategic decisions companies will face in building the paths to effective AI absorption and capturing the expected value?</p>
+  </div>
+
+  <h2 class="headline">Before the path: what for?</h2>
+
+  <div class="body-text">
+    <p>Before asking how to adopt AI, there's a prior question that usually stays implicit: what for?</p>
+    <p>Every company that decides to invest in AI answers that question in one of two ways, even without formalizing the choice. Do the same with less, chasing efficiency, cost cuts, headcount reduction. Or do something it can't do today, expanding its capacity for decisions, service, or scale.</p>
+    <p>That distinction changes how everything that follows should be read. A revenue-management project, or an integrated sales-and-operations-planning project, isn't "big" simply because of its scope. It's big because it's a lever through which AI expands the company's decision-making capacity: decisions nobody makes today in real time, with the granularity and speed required, not because it replaces someone who was already making them poorly.</p>
+    <p>The two intentions coexist, often within the same company, sometimes within the same project. But losing sight of that distinction turns the discussion about pilot size, or about who decides, into one that misses the real point. What separates the paths ahead isn't just project size or who sponsors it. It's the question the project is trying to answer.</p>
+    <p>With that question in mind, it's time to look at the concrete decisions the company needs to make.</p>
+  </div>
+
+  <h2 class="headline">Three challenges, no proven route</h2>
+
+  <div class="body-text">
+    <p>Every company that decides to invest in AI today faces three major strategic challenges, with no proven playbook saying which path wins.</p>
+    <p>The first: start small, testing in isolated teams, or start with the big levers that move the result?</p>
+    <p>The second: implement AI on top of existing systems and processes, or redesign the process around AI?</p>
+    <p>The third: where should the decision sit, centralized, decentralized or federated?</p>
+    <p>None of these questions has an obvious answer. That's what we'll explore next.</p>
+  </div>
+
+  <h2 class="headline">First challenge: start small or start with the big levers</h2>
+
+  <div class="body-text">
+    <p>Every company that decides to invest in AI runs into this choice right out of the gate. There are two paths, each with its own defenders and evidence.</p>
+    <p><b>Start small.</b> Moveworks documented, in recent research, a pattern that's been solidifying: AI adoption is increasingly landing in the hands of the frontline employee, not leadership. The logic is that nobody understands a job better than the person doing it every day, and solutions born bottom-up generate less resistance, because the team takes ownership of the tool instead of receiving it as an order.</p>
+    <p>The upside: less initial resistance, the organization gains familiarity with the tool, and teams become natural advocates for the technology.</p>
+    <p>There is, however, a potential limit to that logic: how much incentive, or even distance, does someone executing a process actually have to imagine an architecture that makes part of their own job unnecessary? It's a hypothesis, not a verdict, but PwC also warns of the risk of small, isolated experiments that never translate into an impact on the company's bottom line.</p>
+    <p><b>Start with the big levers.</b> Whoever defends this path points to measurable financial results. Revenue management is the most cited example: hotels using AI-driven dynamic pricing report between 10 and 15 percent increases in average daily rate, according to hospitality-industry estimates; retail chains report revenue gains between 2 and 5 percent (McKinsey, BCG).</p>
+    <p>The upside: it aims to move the needle more directly, and offers the chance to deliberately pick the right target, a more sophisticated process, less dependent on human judgment, where resistance tends to be lower.</p>
+    <p>The downside is also documented, and expensive. S&amp;P Global Market Intelligence found that 42 percent of companies abandoned most of their AI initiatives in 2025, up from 17 percent the year before. In 2024, Gartner was already projecting that at least 30 percent of generative AI projects would be abandoned after proof of concept by the end of 2025; in January 2026, Gartner itself updated that figure to at least 50 percent. A top-down mandate can push a company into a complexity it didn't anticipate: data that doesn't exist, processes that resist more than expected, scope that keeps growing every month without delivering anything visible. It's the most expensive version of failure: high investment, a schedule that drags on, frustration on both sides.</p>
+    <p>Worth noting: this tension isn't just an editorial construct. Jennifer Piepszak, Chief Operating Officer of JPMorgan Chase, publicly described the same dilemma in one of the bank's institutional remarks. JPMorgan's strategy is to try to capture both sides at once: focus on the highest-impact big levers while simultaneously allowing for what she called "a thousand points of light," small gains discovered by the people doing the work every day, all of it running on a common platform that preserves control and measurement. If JPMorgan, with the scale and budget it has, still treats this as a tension to manage rather than a binary choice already resolved, that's a sign the question is genuinely hard.</p>
+    <p>Neither path is neutral for the people involved, and that impact deserves to be addressed head-on, not as a footnote. We return to this point later, in the section on the risk of inertia.</p>
+  </div>
+
+  <h2 class="headline">Second challenge: AI as a layer or AI as a redesign</h2>
+
+  <div class="body-text">
+    <p>Every company that already has systems in production faces this second choice: make AI work as a layer on top of what already exists (the ERP, the CRM, the core system that's been running the operation for years), or redesign the process around it.</p>
+    <p><b>AI as a layer.</b> A documented case (Ramamoorthy &amp; Manivannan, 2025) illustrates the pattern well: a global software company used AI to analyze vendors and consolidate contracts, without touching the ERP itself. AI functioned as an analytical layer on top of the existing system. Result: a 23 percent reduction in software spend and the procurement cycle time cut in half. Nothing was replaced. AI read the data that was already there and suggested better decisions.</p>
+    <p>The upside: implementation speed, lower operational risk (nothing stops, nothing breaks), and visible results in weeks, not years.</p>
+    <p>The downside: the gain tends to be incremental, not transformational. It's the same logic Paul David described with the electric motor bolted onto the steam-factory's structure: it works, it saves money, but it doesn't redesign the process itself. A Deloitte study (AI Pulse Check, 2026) reinforces this limit: 48 percent of organizations introduced AI without redesigning the workflows or roles around it. In many cases, capturing the technology's full potential also requires changing the workflow around it.</p>
+    <p><b>Redesign the process.</b> The most robust case here comes from chemical manufacturing. Jubilant Ingrevia, in a case study documented by McKinsey, combined digital, operational and skills transformation simultaneously, redesigning the process from scratch instead of just inserting AI into it. Result: $13.6 million in cumulative impact over 36 months, with reductions of 10 percent in energy consumption and 6 percent in natural gas use. A field experiment run by INSEAD and Harvard in 2026 confirms the pattern at a different scale: startups that redesigned entire processes around AI generated 90 percent more revenue than equally equipped companies that used AI only to speed up individual tasks.</p>
+    <p>The upside: a much larger gain, and one closer to being structural than incremental. It's the difference between bolting the new motor onto the old factory and building a factory designed for the new motor from the ground up.</p>
+    <p>The downside: higher cost, a longer timeline, and greater exposure to the risk documented in the previous challenge. Redesigning entire processes is exactly the kind of bet that, when poorly calibrated, feeds into the 42 percent of abandoned initiatives S&amp;P Global logged in 2025.</p>
+    <p>The available cases suggest a trade-off, not a general law: using AI as a layer tends to reduce risk and implementation time; redesigning processes expands the potential for transformation, but also the complexity and the execution risk.</p>
+  </div>
+
+  <h2 class="headline">Third challenge: how to govern adoption</h2>
+
+  <div class="body-text">
+    <p>The third choice isn't between total freedom and total control. It's about where, inside the company, decision-making and control should sit. McKinsey describes three possible architectures, and all three have serious defenders.</p>
+    <p><b>Centralized.</b> Every decision about where to apply AI, how to govern data, and how to evaluate results runs through a single hub, usually tied to executive leadership or an AI center of excellence. The most robust case here is JPMorgan. The bank operates the LLM Suite, a proprietary GenAI platform used by roughly 200,000 employees daily for search, text generation and document analysis, with governance built in from the design stage. Separately, it also runs more autonomous systems in production, such as EVEE, an agent that handles call centers, and a payments optimization engine. The bank's overall AI portfolio adds up to more than 450 use cases.</p>
+    <p>The caveat is worth stating, and it matters: the most widely cited impact figures in the press (83 percent faster research cycles, 360,000 hours automated per year) have no official confirmation from the bank, they come from market analysis, not audited disclosure. And a large share of the 450-case portfolio is productivity GenAI, not autonomous agents deciding on their own. What's known with confidence is the architecture: centralized control, a proprietary platform, governance from the design stage.</p>
+    <p>The gain: real control over what AI decides on its own, full auditability, consistency across areas. The cost: as a market reference, corporate systems of this complexity can take 6 to 18 months to build and exceed $2 million, depending on complexity, an investment few companies outside the very top of the market can sustain, and one that creates dependence on a dedicated internal engineering team just to keep the platform running.</p>
+    <p><b>Decentralized.</b> Each area, each team, decides on its own where and how to use AI, with no central hub setting priorities. It's the fastest model to get started and the one that generates the least initial friction, because the team takes ownership of the tool instead of receiving it as an order. The most documented case here is Microsoft Copilot inside companies, licenses bought and distributed, usage decisions left to each employee. According to Recon Analytics (January 2026), Copilot's conversion rate among paid AI subscribers in the U.S. with workplace access is 35.8 percent.</p>
+    <p>But the most revealing data point is hidden behind that average. When Copilot is the only AI tool the company offers, 68 percent of employees adopt it as their main tool. When ChatGPT is also available, that adoption rate falls to 18 percent. This complicates the simple reading that "decentralization without structure fails": the pattern suggests something subtler. Decentralized decision-making works when the employee is genuinely choosing between real alternatives. It fails when it's just a distributed license, one that doesn't have to win anyone over against the alternatives the employee already knows and already uses.</p>
+    <p>Microsoft itself investigated the cause. The 2026 Work Trend Index, covering 20,000 workers across 10 countries, found that organizational factors (culture, direct leadership support, a structured rollout) are associated with more than double the reported impact on adoption compared with individual factors (67 percent versus 32 percent). It's not that decentralization lacks serious defenders, it's that, so far, there's a lack of documented cases of pure decentralization sustaining results over time, without any minimal layer of direction.</p>
+    <p><b>Federated.</b> This is the structural middle ground, not a lukewarm compromise between the two extremes: guardrails, the technical platform and risk management sit at the center; use-case discovery and execution sit close to the business, with the people who understand the process. EY is the clearest example: its Canvas platform processes 1.4 trillion rows of audit data per year, across more than 160,000 engagements, with federated governance covering 130,000 professionals, letting each practice decide where to apply AI within a security perimeter defined centrally.</p>
+    <p>None of the three is universally right. Centralizing gives you control, but requires investment and time few companies have. Decentralizing is fast, but the available evidence suggests that, without any structure, results rarely materialize. Federating tries to capture the middle ground, but depends on getting exactly right where the guardrail ends and local autonomy begins, and there's no ready formula for that.</p>
+    <p>An important caveat about this comparison: we actively searched for a successful decentralization case with the same documentary rigor as JPMorgan and EY, and didn't find one. That could mean the model really is more fragile, or simply that it produces fewer flashy case studies, since decentralizing, by definition, doesn't produce a single centralized story to tell. Absence of proof isn't proof of absence.</p>
+    <p>Worth remembering: data exposure is also a real risk on the decentralized side. The best-known case is Samsung, where employees pasted sensitive company source code into ChatGPT, which forced the company to restrict usage after the episode. It's the kind of shadow AI (employees using AI tools without approval or awareness from the company's IT or security teams) that the absence of any governance architecture ends up feeding.</p>
+  </div>
+
+  <h2 class="headline">The risk of inertia</h2>
+
+  <div class="body-text">
+    <p>So far, we've discussed which path to choose. But there's a more urgent question behind all these choices: what happens to whoever doesn't choose any of them, and simply waits?</p>
+    <p>The honest answer is that we can't yet measure this rigorously, at least not on the financial-results side. The cases we documented throughout this issue, JPMorgan, EY, Jubilant Ingrevia, are rare enough that they can't support a reliable statistic on how much it's worth to move first.</p>
+    <p>But there's one side where inertia carries a particularly concrete risk: security. In many companies, employees already use AI through personal subscriptions, regardless of any formal decision from leadership. A company that doesn't choose a path isn't avoiding that risk. It runs the risk of letting that exposure happen outside any deliberate governance structure. Every prompt with sensitive data pasted into a model outside the company's perimeter is exposure that's already happening, whether the company likes it or not.</p>
+    <p>And the threat landscape around this is shifting in scale too fast to stay in the background. In November 2025, Anthropic itself disclosed what it described as the first documented case of cyber espionage orchestrated largely by AI: a group the company assesses, with high confidence, to be state-sponsored by China manipulated Claude Code to attempt to infiltrate roughly 30 organizations, succeeding in a small number of cases, executing most of the tactical work without substantial human intervention, at speeds no human could match. Worth the caveat: Anthropic itself documented that the AI made mistakes throughout the attack, hallucinating findings and claiming to have stolen credentials that didn't actually work. A human still had to supervise and validate much of the work. But enough of the automation worked on its own, and it was already used against real targets.</p>
+    <p>The CrowdStrike 2026 Global Threat Report shows the speed of this shift: the average time between an attacker's initial access and their first lateral movement fell to 29 minutes in 2025, 65 percent faster than in 2024. In parallel, AI-assisted attacks grew 89 percent over the same period. In one documented breach, data exfiltration began just four minutes after initial access.</p>
+    <p>That changes the math on inertia. It's not just that waiting means not learning what works. It's that waiting doesn't suspend the risk, it keeps running, just without any of the protections a deliberate decision could create.</p>
+    <p>Some questions seem more useful than any number.</p>
+    <p>If building a corporate layer of governance and orchestration can require months of learning and meaningful investment, as market benchmarks suggest, how long will it take whoever hasn't started yet to build that same learning curve?</p>
+    <p>If there are only a handful of documented success cases today, does that mean the bet is still open to everyone, or that only those who've already started are actually learning what works, while those who wait learn nothing?</p>
+    <p>We don't have a safe answer to either question. No study so far has rigorously proven that moving early guarantees lasting advantage. But the opposite hasn't been proven either: that waiting is safe. Whoever moves makes mistakes, but has a chance to correct them while the market is still open. Whoever doesn't move avoids mistakes, but also learns nothing about what works, and remains exposed to a risk that won't wait for the company to make up its mind.</p>
+    <p>And precisely because there's no playbook, the responsibility for this choice can't be outsourced to whoever is selling a solution. Every vendor, every consultancy, every platform naturally sees the problem through the lens of what it sells.</p>
+    <p>You don't know which path is right. But you know that not moving may no longer be an option.</p>
+  </div>
+
+  <div class="callout-numbered">
+    <div class="callout-label">Before you start: six questions leadership should answer</div>
+    <p class="intro">There's still no playbook for corporate AI adoption. But the evidence in this issue suggests a few questions worth answering before choosing a path.</p>
+    <ol>
+      <li><b>What do we want AI for?</b> Are we chasing efficiency in what we already do, or trying to expand the company's capacity to do what it can't do today?</li>
+      <li><b>Where do we want to start?</b> With smaller cases that allow fast learning, or with high-value levers, even if they bring more complexity?</li>
+      <li><b>How much are we willing to redesign?</b> Are we adding AI to existing processes and systems, or are we prepared to redesign processes around it?</li>
+      <li><b>How will we govern it?</b> Which model makes the most sense for us, centralized, federated or decentralized? Who decides, who executes, and who's accountable?</li>
+      <li><b>How much are we willing to invest, and how will we know if it worked?</b> What's the budget, what result do we expect, and which metrics will be defined before the experiment, not after?</li>
+      <li><b>Who's accountable for the result?</b> Vendors, consultancies and platforms can help, but they have their own incentives. Accountability for the route, the risk and the result stays with company leadership.</li>
+    </ol>
+  </div>
+
+  <hr class="dashed">
+
+  <div class="faq-block">
+    <div class="label-mono">Questions and answers on this issue</div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">What is the corporate dilemma this issue revisits, and why does it matter?</p>
+      <p class="a">It's the question we mapped in Issue 01: who manages to turn AI into results, productivity, revenue, margin, and who ends up just spending on licenses without ever converting that into real gain. This issue asks why that gap exists and what decisions companies need to make in the face of it.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Why use the 1881 electric motor to explain 2026 AI?</p>
+      <p class="a">Because economist Paul David documented, in 1990, that American industrial productivity didn't rise measurably until around 1920, forty years after the electric motor was invented. The reason: factories plugged the new motor into the structure designed for steam, without redesigning anything. The same pattern showed up with computers and with the internet. Technology arrives fast; the human capacity to redesign the process around it takes much longer.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Before choosing a path, why does the issue insist on asking "what for"?</p>
+      <p class="a">Because the same decision, start small or big, keep or redesign, changes meaning depending on the intention behind it. Chasing efficiency (doing the same with less) and chasing expanded capacity (doing what you can't do today) are different bets, and they tend to trigger different reactions inside the company, even when the technical choice looks the same.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Is there a right answer between starting small and starting with the big levers?</p>
+      <p class="a">The evidence doesn't point to an obvious answer. Starting small generates less resistance, but there's an open question about how much incentive, or even distance, someone executing a process really has to imagine an architecture that makes part of their own job unnecessary. Starting with the big levers aims to move the result more directly, but brings greater complexity and execution risk, at a moment when 42 percent of companies say they've abandoned most of their AI initiatives before reaching production, according to S&amp;P Global.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Is it better to use AI as a layer on top of legacy systems (like the ERP), or to redesign the process?</p>
+      <p class="a">It depends on risk appetite and the size of the gain you're after. AI as a layer is faster and safer, but the gain tends to be incremental. Redesigning the process, as Jubilant Ingrevia did, produces a larger gain ($13.6 million in impact over 36 months in the documented case), but costs more, takes longer, and carries more risk of being abandoned along the way.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Which governance model works better: centralized, decentralized or federated?</p>
+      <p class="a">All three have serious defenders, and none is universally right. Centralizing, like JPMorgan, gives real control, but systems of that scale can require, as a market reference, 6 to 18 months and more than $2 million to build. Decentralizing is faster, but the Microsoft Copilot pattern suggests decentralized decision-making only works when it's a genuine choice: adoption drops when the employee has a better alternative available. Federating, like EY, tries to capture the middle ground: guardrails and platform at the center, use-case discovery close to the business.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">If nobody knows which path is right, why not wait for more evidence before acting?</p>
+      <p class="a">Because waiting probably isn't a neutral option. In many companies, employees are already, today, experimenting on their own, with personal subscriptions, without technical rigor, without security, and without evaluating results. The individual gain is already happening; what's missing is turning it into a result for the organization. Delaying the decision doesn't stop the experimentation, it just leaves it out of control.</p>
+    </div>
+
+    <div>
+      <p class="q">Who should be the one deciding which path to follow inside the company?</p>
+      <p class="a">Whoever is accountable for the business result as a whole, not the IT department in isolation, and not an outside vendor. Vendors, consultancies and model sellers each have a product to sell, and that product tends to conveniently line up with the diagnosis they present. None of them is neutral.</p>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the corporate dilemma this issue revisits, and why does it matter?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It's the question we mapped in Issue 01: who manages to turn AI into results, productivity, revenue, margin, and who ends up just spending on licenses without ever converting that into real gain. This issue asks why that gap exists and what decisions companies need to make in the face of it." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why use the 1881 electric motor to explain 2026 AI?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Because economist Paul David documented, in 1990, that American industrial productivity didn't rise measurably until around 1920, forty years after the electric motor was invented. Factories plugged the new motor into the structure designed for steam, without redesigning anything. The same pattern showed up with computers and the internet." }
+      },
+      {
+        "@type": "Question",
+        "name": "Before choosing a path, why does the issue insist on asking \"what for\"?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Because the same decision changes meaning depending on the intention behind it. Chasing efficiency (doing the same with less) and chasing expanded capacity (doing what you can't do today) are different bets, and tend to trigger different reactions inside the company." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a right answer between starting small and starting with the big levers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The evidence doesn't point to an obvious answer. Starting small generates less resistance; starting with the big levers aims to move the result more directly, but brings greater complexity and risk, at a moment when 42% of companies say they've abandoned most of their AI initiatives before reaching production, according to S&P Global." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it better to use AI as a layer on top of legacy systems (like the ERP), or to redesign the process?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on risk appetite and the size of the gain sought. AI as a layer is faster and safer, but the gain tends to be incremental. Redesigning the process produces a larger gain, but costs more, takes longer and carries more risk of abandonment." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which governance model works better: centralized, decentralized or federated?",
+        "acceptedAnswer": { "@type": "Answer", "text": "All three have serious defenders, and none is universally right. Centralizing gives real control but requires significant time and investment. Decentralizing is faster, but only works when it's a genuine choice. Federating tries to capture the middle ground between central guardrails and local autonomy." }
+      },
+      {
+        "@type": "Question",
+        "name": "If nobody knows which path is right, why not wait for more evidence before acting?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Because waiting isn't a neutral option. In many companies, employees are already experimenting on their own, with personal subscriptions, without technical rigor or result evaluation. Delaying the decision doesn't stop the experimentation, it just leaves it out of control." }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should be the one deciding which path to follow inside the company?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Whoever is accountable for the business result as a whole, not the IT department in isolation, and not an outside vendor, since vendors, consultancies and model sellers each have a product to sell." }
+      }
+    ]
+  }
+  </script>
+
+  <hr class="dashed">
+
+  <div class="sources-block">
+    <div class="label-mono">Sources for this issue</div>
+    <ol>
+      <li>MIT NANDA (Media Lab). "The GenAI Divide: State of AI in Business 2025." Challapally, Pease, Raskar &amp; Chari, July 2025. <a href="https://mlq.ai/state-of-ai-in-business-2025" target="_blank" rel="noopener">mlq.ai/state-of-ai-in-business-2025</a><span class="caveat">The report exists and the 95% figure is in it, but it's described as a preliminary finding, with a small sample relative to how widely it circulated (52 interviews, 153 survey responses, 300+ initiatives reviewed). The methodology was publicly questioned by researchers (Wharton, Futuriom).</span></li>
+      <li>Paul David. "The Dynamo and the Computer." American Economic Review, 1990. Primary source provided by the author.</li>
+      <li>S&amp;P Global Market Intelligence. "Generative AI shows rapid growth but yields mixed results." 451 Research, Voice of the Enterprise, 2025. <a href="https://www.spglobal.com" target="_blank" rel="noopener">spglobal.com</a></li>
+      <li>Gartner. "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025." Official release, July 2024. <a href="https://www.gartner.com" target="_blank" rel="noopener">gartner.com</a> · update, "Why 50% of GenAI Projects Fail." <a href="https://www.gartner.com/articles" target="_blank" rel="noopener">gartner.com/articles</a></li>
+      <li>Moveworks. "The AI Strategy Paradox." <a href="https://www.moveworks.com" target="_blank" rel="noopener">moveworks.com</a></li>
+      <li>STR Global. Dynamic-pricing data for the hospitality sector.<span class="caveat">Widely recirculated by industry aggregators, with no original STR Global report locatable. Treated as an industry estimate in the text.</span></li>
+      <li>McKinsey &amp; Company / BCG. Retail revenue gains from AI.</li>
+      <li>PwC. "2026 AI Business Predictions." <a href="https://www.pwc.com" target="_blank" rel="noopener">pwc.com</a></li>
+      <li>Ramamoorthy &amp; Manivannan (2025), cited via Supply Chain Management Review. <a href="https://www.scmr.com" target="_blank" rel="noopener">scmr.com</a><span class="caveat">The authors' original publication wasn't located; secondhand citation.</span></li>
+      <li>Deloitte. "AI Pulse Check Series: AI Transformation Predictions 2026." <a href="https://www.deloitte.com" target="_blank" rel="noopener">deloitte.com</a></li>
+      <li>McKinsey &amp; Company. "How a digital, operational, and skills transformation took Jubilant Ingrevia's business to the next level." Case study, November 2025. <a href="https://www.mckinsey.com" target="_blank" rel="noopener">mckinsey.com</a></li>
+      <li>INSEAD / Harvard. "Mapping AI into Production: A Field Experiment on Firm Performance." INSEAD Working Paper 2026/20/STR, 515 startups. <a href="https://papers.ssrn.com" target="_blank" rel="noopener">papers.ssrn.com</a><span class="caveat">Working paper located; a full read of tables and experimental design is still pending to validate the exact interpretation of the 90% result.</span></li>
+      <li>Recon Analytics. "AI Choice 2026: Why Licenses Don't Equal Adoption." <a href="https://www.reconanalytics.com" target="_blank" rel="noopener">reconanalytics.com</a></li>
+      <li>Microsoft WorkLab. "2026 Work Trend Index: Agents, Human Agency, and the Opportunity for Every Organization." <a href="https://www.microsoft.com/worklab" target="_blank" rel="noopener">microsoft.com/worklab</a></li>
+      <li>JPMorgan Chase. Jennifer Piepszak, remarks at the BofA Securities Financial Services Conference, 2025 (200,000 LLM Suite users, 450+ AI use cases, "a thousand points of light"). <a href="https://www.jpmorganchase.com" target="_blank" rel="noopener">jpmorganchase.com</a><span class="caveat">The speed figure (83%) and automated hours (360,000/year) remain without official bank confirmation; treated as a market estimate in the text.</span></li>
+      <li>EY. "EY launches enterprise-scale agentic AI to redefine the audit experience for the AI era." Official release, April 2026. <a href="https://www.ey.com" target="_blank" rel="noopener">ey.com</a></li>
+      <li>Bloomberg. "Samsung Bans ChatGPT and Other Generative AI Use by Staff After Leak." May 2, 2023. Case corroborated by CNBC, Forbes and Fortune. <a href="https://www.bloomberg.com" target="_blank" rel="noopener">bloomberg.com</a></li>
+      <li>Anthropic. "Disrupting the first reported AI-orchestrated cyber espionage campaign." Official release, November 13, 2025 (GTG-1002 case). <a href="https://www.anthropic.com" target="_blank" rel="noopener">anthropic.com</a></li>
+      <li>CrowdStrike. "2026 Global Threat Report: AI Accelerates Adversaries and Reshapes the Attack Surface." Official release, February 24, 2026. <a href="https://www.crowdstrike.com" target="_blank" rel="noopener">crowdstrike.com</a></li>
+    </ol>
+  </div>
+
+  <hr class="dashed">
+
+  <footer>
+    <p class="disclaimer"><span class="footnote">1</span> The talk in question is a presentation by Ali Ghodsi at an entrepreneurship and technology event at Stanford, May 2026. We were unable to confirm the official name of the course or a formal university publication; the citation uses the publicly available recording of the Databricks CEO's remarks.</p>
+    <p class="disclaimer">Moat Radar reads the AI market through two fixed lenses: <b>Supply</b> (who builds the infrastructure) and <b>Demand</b> (who the consumer loves). It sells nothing, recommends no buying or selling of assets, and does not replace professional financial advice. It is a personal reading of the market. <a href="/en/about/">To learn more about Moat Radar, click here.</a></p>
+    <div class="signature">Jorge Rocha</div>
+    <div class="bio">17 YEARS AT AB INBEV · BOARD MEMBER<br>ANGEL INVESTOR SINCE 2012 · AUTHOR OF MOAT RADAR</div>
+    <div class="contact">Contact: <a href="mailto:jorge@ginvest.com.br">jorge@ginvest.com.br</a> · <a href="/en/author/jorge-rocha/">About the author</a> · <a href="/en/methodology/">Methodology</a> · <a href="/en/editions/">See all editions</a></div>
+  </footer>
+
+  <a class="back" href="/en/editions/">← Back to all editions</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>A IA já chegou. O resultado, ainda não. · Moat Radar #03</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A tecnologia já está nas mãos das empresas, e dos seus colaboradores. O desafio agora é transformar capacidade e uso disperso em resultado real para o negócio.">
+<link rel="canonical" href="https://moat-radar.com/pt/edicoes/2026-08-08/">
+<link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-08/">
+<link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-08/">
+<link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-08/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A IA já chegou. O resultado, ainda não.",
+  "description": "A tecnologia já está nas mãos das empresas, e dos seus colaboradores. O desafio agora é transformar capacidade e uso disperso em resultado real para o negócio.",
+  "datePublished": "2026-08-08T08:00:00-03:00",
+  "dateModified": "2026-08-08T08:00:00-03:00",
+  "inLanguage": "pt-BR",
+  "url": "https://moat-radar.com/pt/edicoes/2026-08-08/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://moat-radar.com/pt/edicoes/2026-08-08/"
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://moat-radar.com/autor/jorge-rocha/",
+    "name": "Jorge Rocha",
+    "url": "https://moat-radar.com/autor/jorge-rocha/",
+    "jobTitle": "Conselheiro de administração, investidor anjo e autor do Moat Radar",
+    "description": "17 anos na AB InBev, conselheiro de administração, investidor anjo desde 2012 e autor do Moat Radar"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Moat Radar",
+    "url": "https://moat-radar.com/"
+  },
+  "about": [
+    { "@type": "Thing", "name": "Inteligência artificial" },
+    { "@type": "Thing", "name": "Adoção corporativa de IA" },
+    { "@type": "Thing", "name": "Agentes de IA" },
+    { "@type": "Thing", "name": "Governança de dados" }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --ink: #2B2B2E;
+    --ink-soft: #55555C;
+    --navy: #45597A;
+    --navy-deep: #34486A;
+    --navy-tint: #EEF2F7;
+    --navy-line: #C7D2E0;
+    --lacre: #A85847;
+    --lacre-deep: #8B3A2F;
+    --lacre-tint: #F8ECE8;
+    --lacre-line: #E3C7BE;
+    --brass: #B9975B;
+    --brass-line: #E3D4B4;
+    --hair: #E7E4DC;
+    --serif: 'Spectral', Georgia, serif;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+  }
+
+  .sheet{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 32px 40px;
+    background: var(--bg);
+  }
+
+  @media print{
+    .sheet{ max-width: 620px; }
+  }
+
+  .langbar{
+    text-align:center;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+  .langbar a{ color: var(--ink-soft); text-decoration:none; margin: 0 4px; }
+  .langbar a.active{ color: var(--brass); font-weight:600; }
+
+  .masthead{ text-align:center; }
+  .compass{ margin: 0 auto 18px; display:block; }
+
+  .brand-mark{
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--ink);
+    margin: 6px 0 16px;
+  }
+  .brand-mark em{ font-style: italic; font-weight: 500; color: var(--lacre-deep); }
+
+  .edition-line{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: var(--brass);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  h1.title{
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle{
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    margin: 0 0 20px;
+  }
+
+  .byline{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+
+  .dashed{
+    border: none;
+    border-top: 1px dashed var(--hair);
+    margin: 32px 0;
+  }
+
+  .label-mono{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 12px;
+  }
+
+  h2.headline{
+    font-size: 26px;
+    line-height: 1.28;
+    margin: 44px 0 18px;
+    color: var(--ink);
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .body-text p{
+    font-size: 16.5px;
+    line-height: 1.72;
+    color: var(--ink);
+    margin: 0 0 17px;
+    font-family: 'Inter', Arial, sans-serif;
+    orphans: 3;
+    widows: 3;
+  }
+  .body-text b{ font-weight: 600; color: var(--navy-deep); }
+  .body-text em{ font-style: italic; font-weight: 600; color: var(--ink); }
+  .body-text a{
+    color: var(--navy-deep);
+    text-decoration: underline;
+    text-decoration-color: var(--navy-line);
+    text-underline-offset: 2px;
+  }
+  .footnote{
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--brass);
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 1px;
+  }
+
+  .callout{
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--brass);
+    background: #FDFBF7;
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin: 24px 0 8px;
+  }
+  .callout .callout-label{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 8px;
+  }
+  .callout p{
+    font-style: italic;
+    font-size: 15.5px;
+    line-height: 1.62;
+    color: var(--ink);
+    margin: 0 0 12px;
+    font-family: var(--serif);
+  }
+  .callout p:last-child{ margin-bottom: 0; }
+
+  /* ---------- Numbered callout (seis perguntas) ---------- */
+  .callout-numbered{
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--brass);
+    background: #FDFBF7;
+    padding: 22px 22px 20px;
+    border-radius: 4px;
+    margin: 36px 0 8px;
+  }
+  .callout-numbered .callout-label{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 10px;
+  }
+  .callout-numbered .intro{
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+    font-family: var(--serif);
+  }
+  .callout-numbered ol{ list-style: none; counter-reset: qnum; margin: 0; padding: 0; }
+  .callout-numbered li{
+    counter-increment: qnum;
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  .callout-numbered li:last-child{ margin-bottom: 0; }
+  .callout-numbered li::before{
+    content: counter(qnum, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--brass);
+  }
+  .callout-numbered li b{ color: var(--navy-deep); font-weight: 600; }
+
+  /* ---------- FAQ ---------- */
+  .faq-block{
+    margin: 40px 0;
+    padding: 32px 0;
+    border-top: 1px dashed var(--hair);
+  }
+  .faq-block .q{
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--ink);
+    font-size: 16px;
+  }
+  .faq-block .a{
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0;
+    color: var(--ink-soft);
+    font-family: 'Inter', Arial, sans-serif;
+  }
+
+  /* ---------- Sources ---------- */
+  .sources-block{
+    margin: 40px 0;
+    padding: 32px 0;
+    border-top: 1px dashed var(--hair);
+  }
+  .sources-block ol{ list-style: none; counter-reset: srcnum; margin: 0; padding: 0; }
+  .sources-block li{
+    counter-increment: srcnum;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 18px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  .sources-block li:last-child{ margin-bottom: 0; }
+  .sources-block li::before{
+    content: counter(srcnum);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--brass);
+  }
+  .sources-block li a{
+    color: var(--navy-deep);
+    text-decoration: underline;
+    text-decoration-color: var(--navy-line);
+    text-underline-offset: 2px;
+  }
+  .sources-block .caveat{
+    display: block;
+    margin-top: 6px;
+    font-style: italic;
+    color: var(--lacre-deep);
+  }
+
+  footer{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .disclaimer{
+    font-style: italic;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 460px;
+    margin: 0 auto 22px;
+  }
+  .signature{
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .bio{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    line-height: 1.8;
+  }
+  .contact{
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.5px;
+    color: var(--brass);
+    margin-top: 10px;
+  }
+  .contact a{ color: var(--brass); text-decoration: none; }
+
+  .back { display: block; font-size: 14px; color: var(--brass); text-decoration: none; margin-top: 28px; font-family: var(--mono); letter-spacing: 0.5px; text-align: center; }
+  .back:hover { color: var(--lacre); text-decoration: underline; }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5XX9GQKDK0');
+</script>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="langbar">
+    <a href="/en/editions/2026-08-08/">[EN]</a>
+    <a href="/pt/edicoes/2026-08-08/" class="active">[PT]</a>
+  </div>
+
+  <div style="text-align: center; margin-bottom: 20px; font-size: 12px;"><a href="/pt/edicoes/" style="color: var(--brass); text-decoration: none; font-family: var(--mono); letter-spacing: 0.5px;">↑ Ver todas as edições</a></div>
+
+  <div class="masthead">
+    <svg class="compass" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
+      <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
+      <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
+      <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
+    </svg>
+
+    <div class="brand-mark">Weekly <em>Moat</em> Radar</div>
+    <div class="edition-line">EDIÇÃO 03 · 08 A 14 DE AGOSTO DE 2026</div>
+    <h1 class="title">A IA já chegou. O resultado, ainda não.</h1>
+    <p class="subtitle">A tecnologia já está nas mãos das empresas, e dos seus colaboradores. O desafio agora é transformar capacidade e uso disperso em resultado real para o negócio.</p>
+    <div class="byline">por Jorge Rocha</div>
+  </div>
+
+  <hr class="dashed">
+
+  <div class="callout">
+    <div class="callout-label">Resumo desta edição</div>
+    <p>A IA já chegou às empresas. Os modelos são capazes de executar tarefas cada vez mais complexas, agentes começam a operar sobre sistemas corporativos e funcionários já incorporam essas ferramentas ao trabalho. Mas existe uma distância importante entre capacidade tecnológica, adoção e resultado econômico. O grande desafio agora não é apenas ter acesso à IA. É descobrir como transformar essa capacidade em valor real para o negócio.</p>
+    <p>Esse hiato não seria novidade. Grandes revoluções tecnológicas frequentemente levaram anos, às vezes décadas, entre a chegada da tecnologia e seu impacto pleno sobre a produtividade. A eletrificação é o exemplo clássico: os maiores ganhos apareceram quando as empresas deixaram de simplesmente substituir a fonte de energia e começaram a redesenhar as fábricas em torno das possibilidades abertas pela eletricidade. A questão desta edição é se estamos diante de um processo semelhante com a IA, provavelmente muito mais rápido, mas ainda dependente de mudanças organizacionais.</p>
+    <p>Para as empresas, isso produz três decisões sem resposta óbvia. Começar pequeno ou pelas grandes alavancas de valor? Usar IA como uma camada sobre processos existentes ou redesenhá-los em torno dela? E como governar a adoção: de forma centralizada, descentralizada ou federada? Casos como JPMorgan, EY e Jubilant Ingrevia ajudam a iluminar os diferentes caminhos, mas a evidência disponível ainda não aponta uma arquitetura vencedora.</p>
+    <p>Há, porém, outra decisão: esperar ou começar a aprender. Não sabemos se mover-se cedo garante vantagem permanente. Sabemos que, em muitas empresas, a experimentação já acontece, frequentemente de maneira dispersa e até fora das estruturas formais. O ganho individual começa a aparecer; transformá-lo em resultado consistente para a organização é uma questão diferente.</p>
+    <p>E essa decisão não pode ser terceirizada. Consultorias, fornecedores e plataformas podem ajudar, mas cada um naturalmente enxerga o problema pela lente daquilo que oferece. Em última análise cabe ao CEO e ao conselho decidir para que usar IA, onde começar, quanto transformar, como governar, quanto investir e como medir resultado. Esta edição não oferece uma receita. Mapeia as escolhas que precisam ser feitas enquanto a receita de sucesso ainda não existe.</p>
+  </div>
+
+  <div class="body-text" style="margin-top: 32px;">
+    <p>Na edição passada, mostramos por que a indústria de tecnologia investe em ritmo trilionário: cada camada da cadeia, produto, modelo e infraestrutura, tem seus próprios motivos para acelerar. Mas investimento não é resultado. Nesta edição, olhamos para dentro das empresas que deveriam consumir toda essa capacidade e perguntamos: elas já sabem como transformar IA em valor?</p>
+  </div>
+
+  <h2 class="headline">Quem vai consumir o investimento</h2>
+
+  <div class="body-text">
+    <p>Cada hyperscaler tem uma aposta sobre como usar essa capacidade trilionária.</p>
+    <p><b>Anthropic</b> aposta em harness vertical, IA embutida no fluxo de trabalho profissional, não chat genérico.</p>
+    <p><b>OpenAI</b> aposta em "compute follows demand": investe massivamente pressupondo que a demanda corporativa vai puxá-la.</p>
+    <p><b>Oracle</b> aposta em infraestrutura: ser o provedor de compute para que outras corporações corram suas soluções de IA internamente.</p>
+    <p><b>Google</b> vê IA como multiplicador do que já tem: Search melhor, Workspace melhor, Cloud melhor.</p>
+    <p><b>Meta</b> aposta em open source como ponte: libera tecnologia, depois monetiza quando agentes rodarem dentro de produtos que já têm bilhões de usuários.</p>
+    <p>Todos, por caminhos diferentes, enxergam nas corporações uma das grandes fontes de demanda capazes de absorver essa capacidade. Agentes executando processos 24/7, ampliando preços e margens, liberando pessoas, reduzindo custo.</p>
+    <p>E aqui fica evidente um hiato: entre o "temos a tecnologia" e "a tecnologia criou valor mensurável". Esse é o dilema corporativo que levantamos na <a href="/pt/edicoes/2026-07-25/">Edição 01</a> e que exploraremos aqui.</p>
+  </div>
+
+  <h2 class="headline">Qual é o dilema corporativo?</h2>
+
+  <div class="body-text">
+    <p>A pergunta que fica é a mais óbvia e a mais incômoda: quando é que a primeira grande corporação consegue rodar seus processos críticos completamente delegados a agentes de IA, 24/7, capturando o valor que os hyperscalers apostaram?</p>
+    <p>Ainda não encontramos evidência de grandes corporações operando dessa forma em escala.</p>
+    <p>Ali Ghodsi, CEO da Databricks, com 20 mil clientes corporativos, foi direto em sua participação numa aula sobre o uso de IA em Stanford em maio de 2026<span class="footnote">1</span>. Ghodsi vai ainda mais longe: para ele, a AGI (inteligência artificial geral, modelos capazes de resolver problemas em múltiplos domínios sem treinamento específico para cada um) já chegou, mais capaz que boa parte das pessoas com quem interagimos. E, mesmo assim, na visão dele, nada funciona dentro das empresas. Ele não estava sendo cínico. Estava descrevendo o que vê todos os dias: empresas que rodaram IA sobre processos legados e não capturaram valor.</p>
+    <p>Mas isso tem precedente histórico. Como menciona Ali em sua aula, Paul David descreveu em "The Dynamo and the Computer" (1990) que esse hiato já ocorria há um século atrás, quando o motor elétrico foi inventado em 1881. A produtividade industrial americana não subiu de forma mensurável até 1920. Quarenta anos. Por quê? Porque as fábricas simplesmente ligaram o motor elétrico nos mesmos processos que usavam antes. Ninguém redesenhou nada. Levou décadas até que alguém percebesse que o ganho real não estava na máquina nova. Estava em reimaginar toda a operação. Menos galpões enormes, mais flexibilidade, ritmos de trabalho diferentes. Mudança de mentalidade, não mudança de equipamento.</p>
+    <p>Esse fenômeno não é único. Aconteceu com os computadores nos anos 1960 e 1970. Aconteceu com a internet nos anos 1990. Grandes tecnologias de propósito geral frequentemente exibem esse padrão: a tecnologia chega primeiro, mas a capacidade humana de entender como extrair valor dela leva muito mais tempo. O gargalo já não está apenas na tecnologia. Está, também, na nossa capacidade de reimaginar os processos, as estruturas, a forma de trabalhar.</p>
+    <p>O problema não é só ter acesso à nova tecnologia, então. É entender o contexto. É descobrir quais os caminhos para capturar valor. Naquele momento com o motor elétrico, passava por construir uma fábrica do zero, com uma visão completamente nova de uso da tecnologia. Hoje, com IA, passa por algo parecido: entender qual é a melhor forma de capturar valor à medida que agentes e sistemas de IA entram em produção.</p>
+    <p>E é exatamente aqui que o hiato se manifesta. Estamos ainda na fase de experimentação. Ainda não existe uma arquitetura comprovada para transformar IA em valor de forma consistente, com agentes rodando em produção em escala. É o que reforçam os estudos do MIT e McKinsey.</p>
+    <p>O MIT mapeou o fenômeno com números. Na pesquisa "The GenAI Divide", 95 por cento dos pilotos corporativos entregaram zero retorno na última linha. Apenas 5 por cento dos sistemas integrados criaram valor. McKinsey diverge nos números (alguns relatórios apontam cenários mais otimistas), mas converge na essência: a lacuna entre adoção e conversão em resultado é real.</p>
+    <p>O fenômeno que Paul David descreveu em 1990 está se repetindo agora, dentro das empresas que investem em IA. Entre "temos a tecnologia" (janeiro de 2026) e "convertemos isso em resultado" (agentes rodando 24/7 e gerando valor), há um hiato silencioso. Algumas poucas empresas parecem estar começando a atravessá-lo. A maioria delas ainda está tentando entender como.</p>
+    <p>Existe um padrão histórico: grandes tecnologias de propósito geral costumam enfrentar um processo de adoção corporativa muito mais complexo do que parece no início. Tudo indica que a IA não será diferente. A pergunta que fica é: quais são os principais desafios, as decisões estratégicas que as empresas vão enfrentar para construir os caminhos da absorção efetiva de IA e capturar o valor esperado?</p>
+  </div>
+
+  <h2 class="headline">Antes do caminho: para quê?</h2>
+
+  <div class="body-text">
+    <p>Antes de perguntar como adotar IA, existe uma pergunta anterior, que costuma ficar implícita: para quê?</p>
+    <p>Toda empresa que decide investir em IA responde a essa pergunta de um de dois jeitos, mesmo sem formalizar a escolha. Fazer o mesmo com menos, buscando eficiência, corte de custo, redução de headcount. Ou fazer algo que hoje não consegue fazer, expandindo capacidade de decisão, de atendimento, de escala.</p>
+    <p>Essa distinção muda a leitura de tudo que vem a seguir. Um projeto de revenue management, ou de planejamento integrado de vendas e operações, não é "grande" simplesmente por causa do escopo. É grande porque é uma alavanca em que a IA expande a capacidade decisória da empresa: decisões que hoje ninguém toma em tempo real, com a granularidade e a velocidade necessárias, não porque substitui alguém que já as tomava mal.</p>
+    <p>As duas intenções coexistem, muitas vezes dentro da mesma empresa, às vezes dentro do mesmo projeto. Mas perder essa distinção de vista faz a discussão sobre tamanho de piloto ou sobre quem decide perder o ponto real. O que separa os caminhos, adiante, não é só o tamanho do projeto ou quem o patrocina. É a pergunta que o projeto está tentando responder.</p>
+    <p>Com essa pergunta em mente, é hora de olhar para as decisões concretas que a empresa precisa tomar.</p>
+  </div>
+
+  <h2 class="headline">Três desafios, nenhuma rota comprovada</h2>
+
+  <div class="body-text">
+    <p>Toda empresa que hoje decide investir em IA enfrenta três grandes desafios estratégicos, sem um manual comprovado que diga qual caminho vence.</p>
+    <p>O primeiro: começar pequeno, testando em times isolados, ou começar pelas grandes alavancas que movem o resultado?</p>
+    <p>O segundo: implementar IA sobre os sistemas e processos que já existem, ou redesenhar o processo para a IA?</p>
+    <p>O terceiro: onde deve residir a decisão, centralizada, descentralizada ou federada?</p>
+    <p>Nenhuma dessas perguntas tem resposta óbvia. É isso que vamos explorar a seguir.</p>
+  </div>
+
+  <h2 class="headline">Primeiro desafio: começar pequeno ou começar pelas grandes alavancas</h2>
+
+  <div class="body-text">
+    <p>Toda empresa que decide investir em IA se depara com essa escolha logo na largada. Existem dois caminhos, cada um com seus próprios defensores e evidências.</p>
+    <p><b>Começar pequeno.</b> A Moveworks documentou, em pesquisa recente, um padrão que vem se consolidando: a adoção de IA está cada vez mais nas mãos do funcionário da linha de frente, não da liderança. A lógica é que ninguém entende melhor o próprio trabalho do que quem o executa todos os dias, e soluções nascidas de baixo para cima geram menos resistência, porque o time se apropria da ferramenta em vez de recebê-la como ordem.</p>
+    <p>O lado positivo: menor resistência inicial, ganho de familiaridade da organização com a ferramenta, e times que se tornam defensores naturais da tecnologia.</p>
+    <p>Existe, porém, um limite potencial nessa lógica: até que ponto quem executa um processo terá incentivo, ou mesmo distância, para imaginar uma arquitetura que torne parte do próprio trabalho desnecessária? É uma hipótese, não um veredito, mas a PwC também alerta para o risco de pequenos experimentos isolados que não se traduzem em impacto no resultado da empresa.</p>
+    <p><b>Começar pelas grandes alavancas.</b> Quem defende esse caminho aponta para resultado financeiro mensurável. Revenue management é o exemplo mais citado: hotéis com precificação dinâmica orientada por IA reportam entre 10 e 15 por cento de aumento na diária média, segundo estimativas do setor hoteleiro; redes de varejo relatam ganhos de receita entre 2 e 5 por cento (McKinsey, BCG).</p>
+    <p>O lado positivo: busca mover o resultado mais diretamente, e a possibilidade de escolher deliberadamente o alvo certo, um processo mais sofisticado, com baixa dependência de julgamento humano, onde a resistência tende a ser menor.</p>
+    <p>O lado negativo também é documentado, e caro. A S&amp;P Global Market Intelligence encontrou que 42 por cento das empresas abandonaram a maior parte de suas iniciativas de IA em 2025, contra 17 por cento no ano anterior. Em 2024, a Gartner já projetava que pelo menos 30 por cento dos projetos de IA generativa seriam abandonados após prova de conceito até o fim de 2025; em janeiro de 2026, a própria Gartner atualizou essa conta para pelo menos 50 por cento. Um mandato de cima para baixo pode empurrar a empresa para dentro de uma complexidade que ela não previu: dados que não existem, processos que resistem mais do que o esperado, escopo que cresce a cada mês sem entregar nada visível. É a versão mais cara do fracasso: investimento alto, cronograma que se arrasta, frustração dos dois lados.</p>
+    <p>Vale notar: essa tensão não é só uma construção editorial. Jennifer Piepszak, Chief Operating Officer do JPMorgan Chase, descreveu publicamente o mesmo dilema em fala institucional do banco. A estratégia do JPMorgan é tentar capturar os dois lados ao mesmo tempo: focar nas grandes alavancas de maior impacto e, simultaneamente, permitir o que ela chamou de "mil pontos de luz", pequenos ganhos descobertos por quem executa o trabalho todos os dias, tudo isso rodando sobre uma plataforma comum que preserva controle e medição. Se o JPMorgan, com a escala e o orçamento que tem, ainda trata isso como tensão a administrar, e não como escolha binária já resolvida, é sinal de que a pergunta é genuinamente difícil.</p>
+    <p>Nenhum dos dois caminhos é neutro para as pessoas envolvidas, e esse impacto merece ser tratado de frente, não como nota de rodapé. Voltamos a esse ponto adiante, na seção sobre o risco da inércia.</p>
+  </div>
+
+  <h2 class="headline">Segundo desafio: IA como camada ou IA como redesenho</h2>
+
+  <div class="body-text">
+    <p>Toda empresa que já tem sistemas em produção enfrenta essa segunda escolha: colocar IA para funcionar como camada sobre o que já existe (o ERP, o CRM, o sistema central que roda a operação há anos), ou redesenhar o processo em função dela.</p>
+    <p><b>IA como camada.</b> Um caso documentado (Ramamoorthy &amp; Manivannan, 2025) mostra bem o padrão: uma empresa global de software usou IA para analisar fornecedores e consolidar contratos, sem tocar no ERP em si. A IA funcionou como uma camada de análise por cima do sistema existente. Resultado: 23 por cento de redução em despesas com software e corte pela metade no tempo de ciclo de compras. Nada foi substituído. A IA leu os dados que já estavam lá e sugeriu decisões melhores.</p>
+    <p>O lado positivo: velocidade de implementação, menor risco operacional (nada para, nada quebra), e resultado visível em semanas, não em anos.</p>
+    <p>O lado negativo: o ganho tende a ser incremental, não transformacional. É a mesma lógica que Paul David descreveu com o motor elétrico ligado sobre a estrutura da fábrica a vapor: funciona, economiza, mas não redesenha o processo em si. Uma pesquisa da Deloitte (AI Pulse Check, 2026) reforça esse limite: 48 por cento das organizações introduziram IA sem redesenhar os workflows ou papéis ao redor dela. Em muitos casos, capturar o potencial completo da tecnologia exige mudar também o fluxo de trabalho ao redor dela.</p>
+    <p><b>Redesenhar o processo.</b> O caso mais robusto aqui vem da manufatura química. A Jubilant Ingrevia, em estudo documentado pela McKinsey, combinou transformação digital, operacional e de capacitação de forma simultânea, redesenhando o processo do zero em vez de só inserir IA nele. Resultado: US$ 13,6 milhões de impacto acumulado em 36 meses, com reduções de 10 por cento no consumo de energia e 6 por cento no uso de gás natural. Um experimento de campo conduzido por INSEAD e Harvard em 2026 confirma o padrão em outra escala: startups que redesenharam processos inteiros ao redor da IA geraram 90 por cento mais receita do que empresas igualmente equipadas que usaram IA apenas para acelerar tarefas individuais.</p>
+    <p>O lado positivo: ganho muito maior, e mais próximo de ser estrutural do que incremental. É a diferença entre parafusar o motor novo na fábrica antiga e construir uma fábrica pensada para o motor novo desde a planta baixa.</p>
+    <p>O lado negativo: custo mais alto, cronograma mais longo, e maior exposição ao risco documentado no desafio anterior. Redesenhar processos inteiros é exatamente o tipo de aposta que, quando mal calibrada, alimenta os 42 por cento de iniciativas abandonadas que a S&amp;P Global registrou em 2025.</p>
+    <p>Os casos disponíveis sugerem um trade-off, não uma lei geral: usar IA como camada tende a reduzir risco e tempo de implementação; redesenhar processos amplia o potencial de transformação, mas também a complexidade e o risco de execução.</p>
+  </div>
+
+  <h2 class="headline">Terceiro desafio: como governar a adoção</h2>
+
+  <div class="body-text">
+    <p>A terceira escolha não é entre liberdade total e controle total. É sobre onde, dentro da empresa, decisão e controle devem residir. A McKinsey descreve três arquiteturas possíveis, e as três têm defensores sérios.</p>
+    <p><b>Centralizada.</b> Toda decisão sobre onde aplicar IA, como governar dados e como avaliar resultado passa por um núcleo único, geralmente ligado à liderança executiva ou a um centro de excelência de IA. O caso mais robusto aqui é o JPMorgan. O banco opera o LLM Suite, plataforma própria de GenAI usada por cerca de 200 mil funcionários por dia para busca, geração de texto e análise de documentos, com governança embutida desde o desenho. Separadamente, também mantém sistemas mais autônomos em produção, como o EVEE, agente que atende call centers, e um motor de otimização de pagamentos. A carteira de IA do banco como um todo soma mais de 450 casos de uso.</p>
+    <p>Vale a ressalva, e ela é importante: os números de impacto mais citados na imprensa (ciclos de pesquisa 83 por cento mais rápidos, 360 mil horas automatizadas por ano) não têm confirmação oficial do banco, vêm de análise de mercado, não de divulgação auditada. E boa parte da carteira de 450 casos é GenAI de produtividade, não agentes autônomos decidindo sozinhos. O que se sabe com solidez é a arquitetura: controle centralizado, plataforma própria, governança desde o desenho.</p>
+    <p>O ganho: controle real sobre o que a IA decide sozinha, auditoria completa, consistência entre áreas. O custo: como referência de mercado, sistemas corporativos dessa complexidade podem levar de 6 a 18 meses para ficar prontos e superar 2 milhões de dólares, dependendo da complexidade, um investimento que poucas empresas fora do topo do mercado sustentam, e que cria dependência de uma equipe de engenharia interna dedicada só para manter a plataforma funcionando.</p>
+    <p><b>Descentralizada.</b> Cada área, cada time, decide por conta própria onde e como usar IA, sem um centro definindo prioridade. É o modelo mais rápido de começar e o que gera menos atrito inicial, porque o time se apropria da ferramenta em vez de recebê-la como ordem. O caso mais documentado aqui é o do Microsoft Copilot dentro das empresas, licença comprada e distribuída, decisão de uso deixada para cada funcionário. Segundo a Recon Analytics (janeiro de 2026), a taxa de conversão do Copilot entre assinantes pagos de IA nos EUA com acesso no trabalho é de 35,8 por cento.</p>
+    <p>Mas o dado mais revelador está escondido atrás dessa média. Quando o Copilot é a única ferramenta de IA que a empresa oferece, 68 por cento dos funcionários o adotam como ferramenta principal. Quando o ChatGPT também está disponível, essa adoção despenca para 18 por cento. Isso complica a leitura simples de que "descentralização sem estrutura falha": o padrão sugere algo mais sutil. Decisão descentralizada funciona quando o funcionário escolhe de verdade, entre alternativas reais. Falha quando é só uma licença distribuída, sem que a ferramenta precise convencer ninguém frente às alternativas que o funcionário já conhece e já usa.</p>
+    <p>A própria Microsoft investigou a causa. O Work Trend Index 2026, com 20 mil trabalhadores em 10 países, encontrou que fatores organizacionais (cultura, apoio direto da liderança, um rollout estruturado) estão associados a mais que o dobro do impacto reportado na adoção do que fatores individuais (67 por cento contra 32 por cento). Não é que a descentralização não tenha defensores sérios, é que faltam, até aqui, casos documentados de descentralização pura sustentando resultado no tempo, sem nenhuma camada mínima de direção.</p>
+    <p><b>Federada.</b> É o meio-termo estrutural, não um compromisso morno entre os dois extremos: guardrails, plataforma técnica e gestão de risco ficam no centro; descoberta de caso de uso e execução ficam perto do negócio, junto de quem entende o processo. A EY é o exemplo mais claro: sua plataforma Canvas processa 1,4 trilhão de linhas de dados de auditoria por ano, em mais de 160 mil engajamentos, com governança federada cobrindo 130 mil profissionais, permitindo que cada prática decida onde aplicar IA dentro de um perímetro de segurança definido centralmente.</p>
+    <p>Nenhuma das três é universalmente certa. Centralizar dá controle, mas exige investimento e tempo que poucas empresas têm. Descentralizar é rápido, mas a evidência disponível sugere que, sem nenhuma estrutura, o resultado raramente aparece. Federar tenta capturar o meio-termo, mas depende de acertar exatamente onde termina o guardrail e começa a autonomia local, e isso não tem fórmula pronta.</p>
+    <p>Uma ressalva importante sobre essa comparação: buscamos ativamente um caso de descentralização bem-sucedida com o mesmo rigor documental de JPMorgan e EY, e não encontramos. Isso pode significar que o modelo é mesmo mais frágil, ou apenas que ele produz menos estudos de caso vistosos, já que descentralizar, por definição, não gera uma história única e centralizada para contar. A ausência de prova não é prova de ausência.</p>
+    <p>Vale lembrar: a exposição de dados também é um risco real do lado descentralizado. O caso mais conhecido é o da Samsung, onde funcionários inseriram código-fonte sensível da empresa no ChatGPT, o que forçou a companhia a restringir o uso depois do episódio. É o tipo de shadow AI (uso de ferramentas de IA por funcionários sem aprovação ou conhecimento da área de TI ou segurança da empresa) que a ausência de qualquer arquitetura de governança acaba alimentando.</p>
+  </div>
+
+  <h2 class="headline">O risco da inércia</h2>
+
+  <div class="body-text">
+    <p>Até aqui, discutimos qual caminho escolher. Mas existe uma pergunta mais urgente por trás de todas essas escolhas: o que acontece com quem não escolhe nenhuma, e simplesmente espera?</p>
+    <p>A resposta direta é que não sabemos, com rigor, medir isso ainda, ao menos não no lado do resultado financeiro. Os casos que documentamos ao longo desta edição, JPMorgan, EY, Jubilant Ingrevia, são raros o suficiente para não sustentarem uma estatística confiável de quanto vale sair na frente.</p>
+    <p>Mas existe um lado em que a inércia carrega um risco particularmente concreto: segurança. Em muitas empresas, funcionários já usam IA com assinaturas pessoais, independentemente de qualquer decisão formal da liderança. A empresa que não decide um caminho não está evitando esse risco. Corre o risco de deixar essa exposição acontecer fora de uma estrutura deliberada de governança. Cada prompt com dado sensível colado num modelo fora do perímetro da empresa é exposição que já está acontecendo, goste a empresa ou não.</p>
+    <p>E o cenário ao redor está mudando de escala rápido demais para ficar em segundo plano. Em novembro de 2025, a própria Anthropic divulgou o que descreveu como o primeiro caso documentado de espionagem cibernética orquestrada majoritariamente por IA: um grupo que a empresa avalia, com alta confiança, ser patrocinado pelo Estado chinês manipulou o Claude Code para tentar infiltrar cerca de 30 organizações, com sucesso em um pequeno número de casos, executando a maior parte do trabalho tático sem intervenção humana substancial, a velocidades impossíveis para um humano igualar. Vale a ressalva: a própria Anthropic documentou que a IA cometeu erros ao longo do ataque, alucinando descobertas e alegando ter roubado credenciais que não funcionavam. Um humano ainda precisou supervisionar e validar boa parte do trabalho. Mas o suficiente da automação já funcionou sozinha, e já foi usado contra alvos reais.</p>
+    <p>O CrowdStrike 2026 Global Threat Report mostra a velocidade dessa mudança: o tempo médio entre o acesso inicial de um atacante e sua primeira movimentação lateral caiu para 29 minutos em 2025, 65 por cento mais rápido que em 2024. Em paralelo, ataques feitos com apoio de IA cresceram 89 por cento no mesmo período. Em uma invasão documentada, a exfiltração de dados começou apenas quatro minutos depois do acesso inicial.</p>
+    <p>Isso muda o cálculo da inércia. Não é só que esperar signifique não aprender o que funciona. É que esperar não suspende o risco, ele continua correndo, só que sem nenhuma das proteções que uma decisão deliberada poderia criar.</p>
+    <p>Algumas perguntas parecem mais úteis que qualquer número.</p>
+    <p>Se construir uma camada corporativa de governança e orquestração pode exigir meses de aprendizado e investimento relevante, como sugerem os benchmarks de mercado, quanto tempo levará para quem ainda não começou construir a mesma curva de aprendizado?</p>
+    <p>Se hoje existem poucos casos de sucesso documentado, isso significa que a aposta ainda é aberta para todo mundo, ou que só quem já começou está, de fato, aprendendo o que funciona, enquanto quem espera aprende nada?</p>
+    <p>Não temos resposta segura para nenhuma dessas perguntas. Nenhum estudo até aqui provou, com rigor, que mover-se cedo garante vantagem permanente. Mas o inverso também não foi provado: que esperar é seguro. Quem se move erra, mas tem chance de corrigir o erro enquanto o mercado ainda está aberto. Quem não se move não erra, mas também não aprende nada sobre o que funciona, e continua exposto a um risco que não vai esperar a empresa se decidir.</p>
+    <p>E justamente porque não existe manual, a responsabilidade por essa escolha não pode ser terceirizada para quem vende uma solução. Cada fornecedor, cada consultoria, cada plataforma enxerga naturalmente o problema pela lente daquilo que oferece.</p>
+    <p>Você não sabe qual caminho é o certo. Mas sabe que não se mover talvez já não seja uma alternativa.</p>
+  </div>
+
+  <div class="callout-numbered">
+    <div class="callout-label">Antes de começar: seis perguntas que a liderança deveria responder</div>
+    <p class="intro">Não existe ainda um manual para a adoção corporativa de IA. Mas as evidências desta edição sugerem algumas perguntas que deveriam ser respondidas antes de escolher o caminho.</p>
+    <ol>
+      <li><b>Para quê queremos IA?</b> Buscamos eficiência no que já fazemos, ou queremos ampliar a capacidade da empresa para fazer o que hoje não consegue?</li>
+      <li><b>Onde queremos começar?</b> Em casos menores, que permitam aprender rapidamente, ou em alavancas de alto valor, mesmo que tragam maior complexidade?</li>
+      <li><b>Quanto estamos dispostos a redesenhar?</b> Vamos adicionar IA aos processos e sistemas existentes, ou estamos preparados para redesenhar processos ao redor dela?</li>
+      <li><b>Como vamos governar?</b> Qual modelo faz mais sentido para nós, centralizado, federado ou descentralizado? Quem decide, quem executa e quem responde?</li>
+      <li><b>Quanto estamos dispostos a investir, e como saberemos se funcionou?</b> Qual é o orçamento, qual resultado esperamos, e quais métricas serão definidas antes do experimento, não depois?</li>
+      <li><b>Quem responde pelo resultado?</b> Fornecedores, consultorias e plataformas podem ajudar, mas têm seus próprios incentivos. A responsabilidade pela rota, pelo risco e pelo resultado permanece com a liderança da empresa.</li>
+    </ol>
+  </div>
+
+  <hr class="dashed">
+
+  <div class="faq-block">
+    <div class="label-mono">Perguntas e respostas desta edição</div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Qual é o dilema corporativo que esta edição retoma, e por que ele importa?</p>
+      <p class="a">É a pergunta que mapeamos na Edição 01: quem consegue transformar IA em resultado, produtividade, receita, margem, e quem vai só gastar em licença sem nunca converter isso em ganho real. Esta edição pergunta por que esse hiato existe e quais decisões as empresas precisam tomar diante dele.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Por que usar o motor elétrico de 1881 para explicar a IA de 2026?</p>
+      <p class="a">Porque o economista Paul David documentou, em 1990, que a produtividade industrial americana não subiu de forma mensurável até cerca de 1920, quarenta anos depois da invenção do motor elétrico. O motivo: as fábricas ligaram o motor novo sobre a estrutura desenhada para o vapor, sem redesenhar nada. O mesmo padrão apareceu com os computadores e com a internet. A tecnologia chega rápido; a capacidade humana de redesenhar o processo ao redor dela leva muito mais tempo.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Antes de escolher um caminho, por que a edição insiste em perguntar "para quê"?</p>
+      <p class="a">Porque a mesma decisão, começar pequeno ou grande, manter ou redesenhar, muda de sentido dependendo da intenção por trás dela. Buscar eficiência (fazer o mesmo com menos) e buscar expansão de capacidade (fazer o que hoje não se consegue fazer) são apostas diferentes, e costumam gerar reações diferentes dentro da empresa, mesmo quando a escolha técnica parece a mesma.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Existe um caminho certo entre começar pequeno ou começar pelas grandes alavancas?</p>
+      <p class="a">A evidência não aponta uma resposta óbvia. Começar pequeno gera menos resistência, mas há uma pergunta em aberto sobre até que ponto quem executa um processo tem incentivo, ou mesmo distância, para imaginar uma arquitetura que torne parte do próprio trabalho desnecessária. Começar pelas grandes alavancas busca mover o resultado mais diretamente, mas traz maior complexidade e risco de execução, num momento em que 42 por cento das empresas dizem ter abandonado a maioria de suas iniciativas de IA antes da produção, segundo a S&amp;P Global.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">É melhor usar IA como camada sobre sistemas antigos (como o ERP), ou redesenhar o processo?</p>
+      <p class="a">Depende do apetite por risco e do tamanho do ganho buscado. IA como camada é mais rápida e mais segura, mas o ganho tende a ser incremental. Redesenhar o processo, como fez a Jubilant Ingrevia, produz ganho maior (US$ 13,6 milhões de impacto em 36 meses no caso documentado), mas custa mais, demora mais, e carrega mais risco de abandono no meio do caminho.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Qual modelo de governança funciona melhor: centralizado, descentralizado ou federado?</p>
+      <p class="a">Os três têm defensores sérios, e nenhum é universalmente certo. Centralizar, como o JPMorgan, dá controle real, mas sistemas desse porte podem exigir, como referência de mercado, de 6 a 18 meses e mais de 2 milhões de dólares para ficar prontos. Descentralizar é mais rápido, mas o padrão do Microsoft Copilot sugere que decisão descentralizada só funciona quando é escolha de verdade: adoção despenca quando o funcionário tem alternativa melhor disponível. Federar, como a EY, tenta capturar o meio-termo: guardrails e plataforma no centro, descoberta de caso de uso perto do negócio.</p>
+    </div>
+
+    <div style="margin-bottom: 26px;">
+      <p class="q">Se ninguém sabe qual caminho é o certo, por que não esperar mais evidência antes de agir?</p>
+      <p class="a">Porque esperar não é, provavelmente, uma alternativa neutra. Em muitas empresas, funcionários já estão, hoje, experimentando por conta própria, com assinaturas pessoais, sem rigor técnico, sem segurança e sem avaliação de resultado. O ganho individual já está acontecendo; o que falta é ele virar resultado para a organização. Adiar a decisão não impede a experimentação, apenas a deixa fora de controle.</p>
+    </div>
+
+    <div>
+      <p class="q">Quem deveria tomar a decisão sobre qual caminho seguir dentro da empresa?</p>
+      <p class="a">Quem responde pelo resultado do negócio como um todo, não a área de TI isoladamente, e não um fornecedor externo. Fornecedores, consultorias e vendedores de modelo têm, cada um, um produto para vender, e o produto costuma coincidir, de forma conveniente, com o diagnóstico que apresentam. Nenhum deles é neutro.</p>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual é o dilema corporativo que esta edição retoma, e por que ele importa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "É a pergunta que mapeamos na Edição 01: quem consegue transformar IA em resultado, produtividade, receita, margem, e quem vai só gastar em licença sem nunca converter isso em ganho real. Esta edição pergunta por que esse hiato existe e quais decisões as empresas precisam tomar diante dele." }
+      },
+      {
+        "@type": "Question",
+        "name": "Por que usar o motor elétrico de 1881 para explicar a IA de 2026?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Porque o economista Paul David documentou, em 1990, que a produtividade industrial americana não subiu de forma mensurável até cerca de 1920, quarenta anos depois da invenção do motor elétrico. As fábricas ligaram o motor novo sobre a estrutura desenhada para o vapor, sem redesenhar nada. O mesmo padrão apareceu com os computadores e com a internet." }
+      },
+      {
+        "@type": "Question",
+        "name": "Antes de escolher um caminho, por que a edição insiste em perguntar \"para quê\"?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Porque a mesma decisão muda de sentido dependendo da intenção por trás dela. Buscar eficiência (fazer o mesmo com menos) e buscar expansão de capacidade (fazer o que hoje não se consegue fazer) são apostas diferentes, e costumam gerar reações diferentes dentro da empresa." }
+      },
+      {
+        "@type": "Question",
+        "name": "Existe um caminho certo entre começar pequeno ou começar pelas grandes alavancas?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A evidência não aponta uma resposta óbvia. Começar pequeno gera menos resistência; começar pelas grandes alavancas busca mover o resultado mais diretamente, mas traz maior complexidade e risco, num momento em que 42% das empresas dizem ter abandonado a maioria de suas iniciativas de IA antes da produção, segundo a S&P Global." }
+      },
+      {
+        "@type": "Question",
+        "name": "É melhor usar IA como camada sobre sistemas antigos (como o ERP), ou redesenhar o processo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende do apetite por risco e do tamanho do ganho buscado. IA como camada é mais rápida e segura, mas o ganho tende a ser incremental. Redesenhar o processo produz ganho maior, mas custa mais, demora mais e carrega mais risco de abandono." }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual modelo de governança funciona melhor: centralizado, descentralizado ou federado?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Os três têm defensores sérios, e nenhum é universalmente certo. Centralizar dá controle real, mas exige tempo e investimento relevantes. Descentralizar é mais rápido, mas só funciona quando é escolha de verdade. Federar tenta capturar o meio-termo entre guardrails centrais e autonomia local." }
+      },
+      {
+        "@type": "Question",
+        "name": "Se ninguém sabe qual caminho é o certo, por que não esperar mais evidência antes de agir?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Porque esperar não é uma alternativa neutra. Em muitas empresas, funcionários já experimentam por conta própria, com assinaturas pessoais, sem rigor técnico nem avaliação de resultado. Adiar a decisão não impede a experimentação, apenas a deixa fora de controle." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quem deveria tomar a decisão sobre qual caminho seguir dentro da empresa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Quem responde pelo resultado do negócio como um todo, não a área de TI isoladamente, e não um fornecedor externo, já que fornecedores, consultorias e vendedores de modelo têm cada um um produto para vender." }
+      }
+    ]
+  }
+  </script>
+
+  <hr class="dashed">
+
+  <div class="sources-block">
+    <div class="label-mono">Fontes desta edição</div>
+    <ol>
+      <li>MIT NANDA (Media Lab). "The GenAI Divide: State of AI in Business 2025." Challapally, Pease, Raskar &amp; Chari, julho de 2025. <a href="https://mlq.ai/state-of-ai-in-business-2025" target="_blank" rel="noopener">mlq.ai/state-of-ai-in-business-2025</a><span class="caveat">O relatório existe e o número de 95% está lá, mas é descrito como achado preliminar, com amostra pequena para a força com que circulou (52 entrevistas, 153 respostas de survey, 300+ iniciativas revisadas). A metodologia foi questionada publicamente por pesquisadores (Wharton, Futuriom).</span></li>
+      <li>Paul David. "The Dynamo and the Computer." American Economic Review, 1990. Fonte primária fornecida pelo autor.</li>
+      <li>S&amp;P Global Market Intelligence. "Generative AI shows rapid growth but yields mixed results." 451 Research, Voice of the Enterprise, 2025. <a href="https://www.spglobal.com" target="_blank" rel="noopener">spglobal.com</a></li>
+      <li>Gartner. "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025." Comunicado oficial, julho de 2024. <a href="https://www.gartner.com" target="_blank" rel="noopener">gartner.com</a> · atualização, "Why 50% of GenAI Projects Fail." <a href="https://www.gartner.com/articles" target="_blank" rel="noopener">gartner.com/articles</a></li>
+      <li>Moveworks. "The AI Strategy Paradox." <a href="https://www.moveworks.com" target="_blank" rel="noopener">moveworks.com</a></li>
+      <li>STR Global. Dados de precificação dinâmica no setor hoteleiro.<span class="caveat">Número amplamente recirculado por agregadores do setor, sem relatório original localizável da STR Global. Tratado como estimativa do setor no texto.</span></li>
+      <li>McKinsey &amp; Company / BCG. Ganhos de receita em varejo com IA.</li>
+      <li>PwC. "2026 AI Business Predictions." <a href="https://www.pwc.com" target="_blank" rel="noopener">pwc.com</a></li>
+      <li>Ramamoorthy &amp; Manivannan (2025), citado via Supply Chain Management Review. <a href="https://www.scmr.com" target="_blank" rel="noopener">scmr.com</a><span class="caveat">Publicação original dos autores não localizada; citação de segunda mão.</span></li>
+      <li>Deloitte. "AI Pulse Check Series: AI Transformation Predictions 2026." <a href="https://www.deloitte.com" target="_blank" rel="noopener">deloitte.com</a></li>
+      <li>McKinsey &amp; Company. "How a digital, operational, and skills transformation took Jubilant Ingrevia's business to the next level." Case study, novembro de 2025. <a href="https://www.mckinsey.com" target="_blank" rel="noopener">mckinsey.com</a></li>
+      <li>INSEAD / Harvard. "Mapping AI into Production: A Field Experiment on Firm Performance." INSEAD Working Paper 2026/20/STR, 515 startups. <a href="https://papers.ssrn.com" target="_blank" rel="noopener">papers.ssrn.com</a><span class="caveat">Working paper localizado; leitura completa de tabelas e desenho experimental ainda pendente para validar a interpretação exata do resultado de 90%.</span></li>
+      <li>Recon Analytics. "AI Choice 2026: Why Licenses Don't Equal Adoption." <a href="https://www.reconanalytics.com" target="_blank" rel="noopener">reconanalytics.com</a></li>
+      <li>Microsoft WorkLab. "2026 Work Trend Index: Agents, Human Agency, and the Opportunity for Every Organization." <a href="https://www.microsoft.com/worklab" target="_blank" rel="noopener">microsoft.com/worklab</a></li>
+      <li>JPMorgan Chase. Jennifer Piepszak, apresentação na BofA Securities Financial Services Conference, 2025 (200 mil usuários no LLM Suite, 450+ casos de IA, "mil pontos de luz"). <a href="https://www.jpmorganchase.com" target="_blank" rel="noopener">jpmorganchase.com</a><span class="caveat">Números de velocidade (83%) e horas automatizadas (360 mil/ano) continuam sem confirmação oficial do banco; tratados como estimativa de mercado no texto.</span></li>
+      <li>EY. "EY launches enterprise-scale agentic AI to redefine the audit experience for the AI era." Comunicado oficial, abril de 2026. <a href="https://www.ey.com" target="_blank" rel="noopener">ey.com</a></li>
+      <li>Bloomberg. "Samsung Bans ChatGPT and Other Generative AI Use by Staff After Leak." 2 de maio de 2023. Caso corroborado por CNBC, Forbes e Fortune. <a href="https://www.bloomberg.com" target="_blank" rel="noopener">bloomberg.com</a></li>
+      <li>Anthropic. "Disrupting the first reported AI-orchestrated cyber espionage campaign." Comunicado oficial, 13 de novembro de 2025 (caso GTG-1002). <a href="https://www.anthropic.com" target="_blank" rel="noopener">anthropic.com</a></li>
+      <li>CrowdStrike. "2026 Global Threat Report: AI Accelerates Adversaries and Reshapes the Attack Surface." Comunicado oficial, 24 de fevereiro de 2026. <a href="https://www.crowdstrike.com" target="_blank" rel="noopener">crowdstrike.com</a></li>
+    </ol>
+  </div>
+
+  <hr class="dashed">
+
+  <footer>
+    <p class="disclaimer"><span class="footnote">1</span> A aula em questão é uma palestra de Ali Ghodsi em evento voltado a empreendedorismo e tecnologia em Stanford, maio de 2026. Não localizamos confirmação do nome oficial do curso nem publicação formal da universidade; a citação usa a gravação disponibilizada publicamente da fala do CEO da Databricks.</p>
+    <p class="disclaimer">Moat Radar lê o mercado de IA em duas lentes fixas: <b>Supply</b> (quem constrói a infraestrutura) e <b>Demanda</b> (quem o consumidor ama). Não vende nada, não recomenda compra ou venda de ativos, e não substitui aconselhamento financeiro profissional. É uma leitura pessoal de mercado. <a href="/pt/sobre/">Para saber mais sobre o Moat Radar, clique aqui.</a></p>
+    <div class="signature">Jorge Rocha</div>
+    <div class="bio">17 ANOS NA AB INBEV · CONSELHEIRO DE ADMINISTRAÇÃO<br>INVESTIDOR ANJO DESDE 2012 · AUTOR DO MOAT RADAR</div>
+    <div class="contact">Contato: <a href="mailto:jorge@ginvest.com.br">jorge@ginvest.com.br</a> · <a href="/autor/jorge-rocha/">Sobre o autor</a> · <a href="/pt/metodologia/">Metodologia</a> · <a href="/pt/edicoes/">Ver todas as edições</a></div>
+  </footer>
+
+  <a class="back" href="/pt/edicoes/">← Voltar para todas as edições</a>
+
+</div>
+</body>
+</html>
