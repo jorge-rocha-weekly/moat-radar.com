@@ -2,51 +2,15 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>O Moat Radar</title>
+<title>Sobre · Moat Radar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="O Moat Radar é uma newsletter semanal sobre o mercado de inteligência artificial, organizada em seis dilemas centrais entre supply e demanda.">
+<meta name="description" content="O Moat Radar é uma publicação independente sobre o mercado de IA, lida por executivos, investidores e conselheiros que precisam decidir com o que está acontecendo.">
 <link rel="canonical" href="https://moat-radar.com/pt/sobre/">
 <link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/sobre/">
 <link rel="alternate" hreflang="en" href="https://moat-radar.com/en/about/">
 <link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/about/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "O Moat Radar",
-  "url": "https://moat-radar.com/pt/sobre/",
-  "description": "O Moat Radar é uma newsletter semanal sobre o mercado de inteligência artificial, organizada em seis dilemas centrais entre supply e demanda.",
-  "inLanguage": "pt-BR",
-  "isPartOf": { "@type": "WebSite", "url": "https://moat-radar.com/" },
-  "mainEntity": {
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "O que é o Moat Radar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Uma newsletter semanal que analisa o mercado de inteligência artificial através de duas lentes fixas: Supply (quem constrói, financia e vende a infraestrutura) e Demanda (quem o consumidor final escolhe, usa e ama)." }
-      },
-      {
-        "@type": "Question",
-        "name": "O que significam Supply e Demanda no Moat Radar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Supply cobre quem constrói, financia e vende a infraestrutura de IA: hyperscalers, semicondutores, capex. Demanda cobre quem o consumidor final escolhe, usa e ama: os modelos e produtos que viram hábito." }
-      },
-      {
-        "@type": "Question",
-        "name": "Quem escreve o Moat Radar?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Jorge Rocha, com 17 anos de carreira executiva na AB InBev, conselheiro de administração e investidor anjo desde 2012." }
-      },
-      {
-        "@type": "Question",
-        "name": "O conteúdo do Moat Radar é recomendação de investimento?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Não. O Moat Radar não vende nada, não recomenda compra ou venda de ativos, e não substitui aconselhamento financeiro profissional. É uma leitura pessoal de mercado." }
-      }
-    ]
-  }
-}
-</script>
 <style>
   :root{
     --bg: #FFFFFF; --ink: #2B2B2E; --ink-soft: #55555C;
@@ -64,7 +28,7 @@
   }
   .brand{ display: flex; align-items: center; gap: 10px; text-decoration: none; }
   .brand .wordmark{ font-family: var(--serif); font-size: 19px; font-weight: 700; color: var(--ink); }
-  .brand .wordmark em{ font-style: italic; font-weight: 500; color: var(--lacre-deep); }
+  .brand .wordmark em{ font-style: italic; font-weight: 500; color: var(--lacre); }
   .topbar-actions{ display: flex; align-items: center; gap: 18px; }
   .icon-btn{
     width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--hair);
@@ -90,14 +54,17 @@
   .body-text{ font-size: 16.5px; line-height: 1.75; color: var(--ink); }
   .body-text p{ margin: 0 0 20px; }
   .body-text b{ color: var(--navy-deep); font-weight: 600; }
+  .body-text a{ color: var(--lacre); text-decoration: none; }
   h2{ font-size: 19px; font-weight: 700; margin: 36px 0 14px; color: var(--ink); }
-  .faq-item{ margin-bottom: 22px; }
-  .faq-item p.q{ font-weight: 600; margin-bottom: 6px; color: var(--ink); font-size: 15.5px; }
-  .faq-item p.a{ font-size: 14.5px; line-height: 1.6; margin: 0; color: var(--ink-soft); }
+  .nav-cards{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
+  .nav-card{ border: 1px solid var(--hair); border-left: 3px solid var(--brass); padding: 18px 20px; text-decoration: none; display: block; }
+  .nav-card .nav-card-label{ font-family: var(--mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 6px; }
+  .nav-card .nav-card-title{ font-family: var(--serif); font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .nav-card .nav-card-desc{ font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
   footer{ text-align: center; padding: 30px 24px 50px; border-top: 1px solid var(--hair); }
   footer a{ font-family: var(--mono); font-size: 12px; color: var(--navy-deep); text-decoration: none; }
+  @media(max-width: 520px){ .nav-cards{ grid-template-columns: 1fr; } }
 </style>
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -117,74 +84,67 @@
         <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
         <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
       </svg>
-      <div class="wordmark">Weekly <em>Moat</em> Radar</div>
+      <div class="wordmark"><em>Moat</em> Radar</div>
     </a>
     <div class="topbar-actions">
       <div class="langbar"><a href="/en/about/">EN</a> · <a href="/pt/sobre/" class="active">PT</a></div>
-      <button class="icon-btn" title="Buscar" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
       <button class="icon-btn" id="shareBtn" title="Compartilhar" aria-label="Compartilhar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg></button>
     </div>
   </div>
 
   <div class="subnav">
-    <a href="/pt/">Início</a>
-    <a href="/pt/edicoes/">Edições</a>
-    <a href="/pt/sobre/" class="active">O Moat Radar</a>
-    <a href="/pt/metodologia/">Metodologia</a>
+    <a href="/pt/sobre/" class="active">Sobre</a>
+    <a href="/pt/weekly/">Weekly</a>
+    <a href="/pt/artigos/">Artigos</a>
+    <a href="/pt/dilemas/">Dilemas</a>
     <a href="/autor/jorge-rocha/">Autor</a>
   </div>
 
   <div class="page">
 
-    <div class="edition-line">O MOAT RADAR</div>
-    <h1>O que é o Moat Radar</h1>
-    <p class="subtitle">Identidade, escopo e os seis dilemas que guiam a leitura</p>
+    <div class="edition-line">Sobre o Moat Radar</div>
+    <h1>Um farol, não um noticiário.</h1>
+    <p class="subtitle">Para quem precisa decidir com o que está acontecendo, não apenas acompanhar.</p>
 
     <hr class="dashed">
 
     <div class="body-text">
-      <p>Toda semana, o Moat Radar traz o que foi mais relevante para o mercado de inteligência artificial nos últimos dias, com duas lentes fixas. <b>Supply</b> cobre quem constrói, financia e vende a infraestrutura: hyperscalers, semicondutores, capex. <b>Demanda</b> cobre quem o consumidor final escolhe, usa e ama: os modelos e produtos que viram hábito.</p>
+      <p>A indústria de IA produz mais informação por semana do que qualquer executivo consegue processar, e quase toda ela chega sem hierarquia: o anúncio irrelevante ocupa o mesmo espaço da mudança estrutural.</p>
 
-      <p>Além dos insights próprios captados pelo cruzamento de diversas fontes (o que chamamos de "abaixo do radar"), cobrimos negociações off-market, movimentos de institucionais, transações de executivos de empresas, ruídos de negócio e inovações ainda por surgir ou em estágio inicial, antes de virarem manchete.</p>
+      <p>O Moat Radar existe para dar direção nesse ruído. O critério é sempre o mesmo: <b>separar o que altera a estrutura do setor do que apenas ocupa manchete.</b></p>
 
-      <p>Escrito por <a href="/autor/jorge-rocha/">Jorge Rocha</a>, sem venda, sem recomendação de investimento: uma leitura pessoal de mercado, compartilhada abertamente. Os critérios de apuração e as fontes que sustentam cada edição estão na página de <a href="/pt/metodologia/">metodologia</a>.</p>
-    </div>
+      <p>É para quem toma decisão, não para quem quer só se manter informado. Investidores, executivos, conselheiros — quem precisa formar opinião com consequência prática, não só ter uma opinião a mais.</p>
 
-    <h2>Os seis dilemas</h2>
-    <div class="body-text">
-      <p>O framework central do Moat Radar organiza o mercado de IA em seis dilemas, três do lado da demanda e três do lado supply:</p>
-      <p><b>Do lado da demanda:</b> modelo vs. canal (quem vencerá o consumidor final); o dilema corporativo (quem converte IA em resultado); e a corrida dos humanoides (quando essa tecnologia entra no cotidiano).</p>
-      <p><b>Do lado supply:</b> capex vs. bolha (se o ritmo de investimento é sustentável); economia de gargalos (quem lucra com a escassez de chip, memória e componentes de rede, e como essa dependência de poucos fornecedores empurra hyperscalers a verticalizar construindo o próprio silício); e até quando teremos controle (a pergunta mais básica de todas, sobre segurança e governança de sistemas de IA).</p>
+      <p>Toda a cobertura é lida pela mesma lente: os seis dilemas estruturais do mercado de IA, ainda sem resposta definitiva. <a href="/pt/dilemas/">Conheça os seis dilemas →</a></p>
     </div>
 
     <hr class="dashed">
 
-    <h2>Perguntas frequentes</h2>
+    <h2>Como o conteúdo está organizado</h2>
 
-    <div class="faq-item">
-      <p class="q">O que é o Moat Radar?</p>
-      <p class="a">Uma newsletter semanal que analisa o mercado de inteligência artificial através de duas lentes fixas: Supply (quem constrói, financia e vende a infraestrutura) e Demanda (quem o consumidor final escolhe, usa e ama).</p>
+    <div class="nav-cards">
+      <a class="nav-card" href="/pt/weekly/">
+        <div class="nav-card-label">Semanal</div>
+        <div class="nav-card-title">Weekly</div>
+        <div class="nav-card-desc">Resumo do que aconteceu na indústria na semana, com destaque para o que de fato mudou. Serve para ter clareza de movimento sem precisar ler cinquenta fontes.</div>
+      </a>
+      <a class="nav-card" href="/pt/artigos/">
+        <div class="nav-card-label">Sem data fixa</div>
+        <div class="nav-card-title">Artigos</div>
+        <div class="nav-card-desc">Quando o acúmulo de sinal vira tese, ela ganha texto longo e apuração própria. Sai quando fecha, não quando o calendário manda.</div>
+      </a>
     </div>
 
-    <div class="faq-item">
-      <p class="q">O que significam Supply e Demanda no Moat Radar?</p>
-      <p class="a">Supply cobre quem constrói, financia e vende a infraestrutura de IA: hyperscalers, semicondutores, capex. Demanda cobre quem o consumidor final escolhe, usa e ama: os modelos e produtos que viram hábito.</p>
-    </div>
+    <p class="body-text" style="font-size:15px; color: var(--ink-soft);">Os dois formatos são lidos pela mesma lente: os <a href="/pt/dilemas/">seis dilemas</a> que estruturam a cobertura do Moat Radar.</p>
 
-    <div class="faq-item">
-      <p class="q">Quem escreve o Moat Radar?</p>
-      <p class="a">Jorge Rocha, com 17 anos de carreira executiva na AB InBev, conselheiro de administração e investidor anjo desde 2012. <a href="/autor/jorge-rocha/">Veja a página completa do autor</a>.</p>
-    </div>
+    <hr class="dashed">
 
-    <div class="faq-item">
-      <p class="q">O conteúdo do Moat Radar é recomendação de investimento?</p>
-      <p class="a">Não. O Moat Radar não vende nada, não recomenda compra ou venda de ativos, e não substitui aconselhamento financeiro profissional. É uma leitura pessoal de mercado.</p>
-    </div>
+    <p class="body-text">Escrito por <a href="/autor/jorge-rocha/">Jorge Rocha</a>. Mais de trinta anos em conselhos, CEO e C-level em consumo, serviços e varejo. Leitura agnóstica do mercado de IA, compartilhada abertamente, sem recomendação, sem defesa de tese específica.</p>
 
   </div>
 
   <footer>
-    <a href="/pt/metodologia/">Ver a metodologia →</a>
+    <a href="/pt/dilemas/">Ver os seis dilemas →</a>
   </footer>
 
 </div>

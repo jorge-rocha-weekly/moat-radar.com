@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://moat-radar.com/pt/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/"/>
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://moat-radar.com/en/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/"/>
@@ -118,7 +118,7 @@
 
   <url>
     <loc>https://moat-radar.com/pt/sobre/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/sobre/"/>
@@ -127,7 +127,7 @@
 
   <url>
     <loc>https://moat-radar.com/en/about/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/sobre/"/>
@@ -168,6 +168,60 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/autor/jorge-rocha/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/author/jorge-rocha/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/pt/weekly/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/weekly/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/weekly/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/en/weekly/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/weekly/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/weekly/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/pt/artigos/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/articles/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/en/articles/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/articles/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/pt/dilemas/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/dilemas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/dilemmas/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/en/dilemmas/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/dilemas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/dilemmas/"/>
   </url>
 
 </urlset>

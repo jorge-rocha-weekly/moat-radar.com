@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The six dilemmas · Moat Radar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The six structural dilemmas in the AI market that guide all Moat Radar coverage. Not topics — mapped tensions, still open.">
+<link rel="canonical" href="https://moat-radar.com/en/dilemmas/">
+<link rel="alternate" hreflang="en" href="https://moat-radar.com/en/dilemmas/">
+<link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/dilemas/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FFFFFF; --ink: #2B2B2E; --ink-soft: #55555C;
+    --navy: #45597A; --navy-deep: #34486A; --navy-tint: #EEF2F7; --navy-line: #C7D2E0;
+    --lacre: #A85847; --lacre-deep: #8B3A2F;
+    --brass: #B9975B; --hair: #E7E4DC;
+    --serif: 'Spectral', Georgia, serif; --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+  * { box-sizing: border-box; }
+  body{ margin:0; background: var(--bg); color: var(--ink); font-family: var(--serif); }
+  .sheet{ max-width: 760px; margin: 0 auto; }
+  .topbar{ display: flex; align-items: center; justify-content: space-between; padding: 18px 24px 14px; border-bottom: 1px solid var(--hair); }
+  .brand{ display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand .wordmark{ font-family: var(--serif); font-size: 19px; font-weight: 700; color: var(--ink); }
+  .brand .wordmark em{ font-style: italic; font-weight: 500; color: var(--lacre); }
+  .topbar-actions{ display: flex; align-items: center; gap: 18px; }
+  .icon-btn{ width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--hair); display: flex; align-items: center; justify-content: center; color: var(--ink-soft); background: none; cursor: pointer; padding: 0; }
+  .icon-btn svg{ width: 15px; height: 15px; }
+  .langbar{ font-family: var(--mono); font-size: 10px; letter-spacing: 1px; color: var(--ink-soft); }
+  .langbar a{ color: var(--ink-soft); text-decoration:none; margin: 0 3px; }
+  .langbar a.active{ color: var(--brass); font-weight:600; }
+  .subnav{ display: flex; gap: 28px; padding: 0 24px; border-bottom: 1px solid var(--hair); font-family: var(--mono); font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase; overflow-x: auto; }
+  .subnav a{ color: var(--ink-soft); text-decoration: none; padding: 14px 0; display: inline-block; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .subnav a.active{ color: var(--ink); border-bottom-color: var(--brass); font-weight: 600; }
+  .page{ padding: 36px 24px 60px; }
+  .edition-line{ font-family: var(--mono); font-size: 11px; letter-spacing: 2.5px; color: var(--brass); text-transform: uppercase; margin-bottom: 14px; }
+  h1{ font-size: 32px; font-weight: 700; margin: 0 0 10px; color: var(--ink); letter-spacing: -0.5px; }
+  .subtitle{ font-style: italic; font-weight: 400; color: var(--ink-soft); font-size: 15.5px; margin: 0 0 30px; }
+  hr.dashed{ border: none; border-top: 1px dashed var(--hair); margin: 30px 0; }
+  .intro{ font-size: 16.5px; line-height: 1.75; color: var(--ink); margin-bottom: 36px; }
+  .intro p{ margin: 0 0 18px; }
+  .lado-label{ font-family: var(--mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-soft); margin: 40px 0 16px; display: flex; align-items: center; gap: 12px; }
+  .lado-label::after{ content: ''; flex: 1; height: 1px; background: var(--hair); }
+  .lado-label.demand{ color: var(--lacre-deep); }
+  .lado-label.supply{ color: var(--navy-deep); }
+  .dilema-item{ display: flex; gap: 18px; padding: 20px 0; border-top: 1px solid var(--hair); break-inside: avoid; }
+  .dilema-item:last-child{ border-bottom: 1px solid var(--hair); }
+  .dilema-num{ font-family: var(--mono); font-size: 20px; font-weight: 600; color: var(--brass); min-width: 28px; padding-top: 2px; }
+  .dilema-title{ font-size: 17px; font-weight: 700; color: var(--ink); margin: 0 0 8px; }
+  .dilema-desc{ font-size: 15px; line-height: 1.7; color: var(--ink-soft); margin: 0; }
+  footer{ text-align: center; padding: 30px 24px 50px; border-top: 1px solid var(--hair); }
+  footer a{ font-family: var(--mono); font-size: 12px; color: var(--navy-deep); text-decoration: none; }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5XX9GQKDK0');
+</script>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="topbar">
+    <a class="brand" href="/en/">
+      <svg width="30" height="30" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
+        <circle cx="23" cy="23" r="15" stroke="#B9975B" stroke-width="0.8"/>
+        <path d="M23 8 L27 23 L23 38 L19 23 Z" fill="#A85847" opacity="0.85"/>
+        <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
+      </svg>
+      <div class="wordmark"><em>Moat</em> Radar</div>
+    </a>
+    <div class="topbar-actions">
+      <div class="langbar"><a href="/en/dilemmas/" class="active">EN</a> · <a href="/pt/dilemas/">PT</a></div>
+      <button class="icon-btn" id="shareBtn" title="Share" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg></button>
+    </div>
+  </div>
+
+  <div class="subnav">
+    <a href="/en/about/">About</a>
+    <a href="/en/weekly/">Weekly</a>
+    <a href="/en/articles/">Articles</a>
+    <a href="/en/dilemmas/" class="active">Dilemmas</a>
+    <a href="/autor/jorge-rocha/">Author</a>
+  </div>
+
+  <div class="page">
+
+    <div class="edition-line">Moat Radar's lens</div>
+    <h1>The six dilemmas</h1>
+    <p class="subtitle">Not topics — mapped tensions, still open. That is why they deserve close attention: they are likely to move considerably in the time ahead.</p>
+
+    <div class="intro">
+      <p>Moat Radar does not cover the AI industry by subject. It covers by tension. Every piece of news, every announcement, every earnings report is read through one of these six structural questions — still without a definitive answer. They are not categories that resolve over time. They are the axes around which the entire sector is organising itself right now.</p>
+      <p>The six split across two sides of the same equation: what drives <strong>Demand</strong> (who will pay, and why) and what sustains <strong>Supply</strong> (who is building, and at what cost).</p>
+    </div>
+
+    <div class="lado-label demand">Demand</div>
+
+    <div class="dilema-item">
+      <div class="dilema-num">01</div>
+      <div>
+        <p class="dilema-title">Model vs. Channel</p>
+        <p class="dilema-desc">Who captures the value of AI: the one who builds the most capable model, or the one who controls distribution — the channel through which the end user reaches it? Models are becoming commodities faster than many expected. Distribution may be worth more than intelligence.</p>
+      </div>
+    </div>
+
+    <div class="dilema-item">
+      <div class="dilema-num">02</div>
+      <div>
+        <p class="dilema-title">The Corporate Dilemma</p>
+        <p class="dilema-desc">Who manages to turn AI into results — productivity, revenue, margin — and who will only spend on licences without ever converting that into real gains. The technology matured before companies developed the capacity to absorb it. That gap is where the money is decided.</p>
+      </div>
+    </div>
+
+    <div class="dilema-item">
+      <div class="dilema-num">03</div>
+      <div>
+        <p class="dilema-title">The Humanoid Race</p>
+        <p class="dilema-desc">Not only about robots with human faces. It is about any physical device that proposes to replace a function currently performed by a human — from industrial robots to self-driving cars. The question is never purely technical: it is when the cost drops far enough, and who is first to trust a machine with the function.</p>
+      </div>
+    </div>
+
+    <div class="lado-label supply">Supply</div>
+
+    <div class="dilema-item">
+      <div class="dilema-num">04</div>
+      <div>
+        <p class="dilema-title">Capex vs. Bubble</p>
+        <p class="dilema-desc">The industry is investing at a trillion-dollar pace. The question is whether that investment reflects already-validated real demand, or whether it is an arms race where no one wants to be the first to slow down — even without certainty of returns.</p>
+      </div>
+    </div>
+
+    <div class="dilema-item">
+      <div class="dilema-num">05</div>
+      <div>
+        <p class="dilema-title">Bottleneck Economics</p>
+        <p class="dilema-desc">Energy, chips, water, land. The capacity to train and run ever-larger models runs into finite physical resources. Whoever controls the bottleneck controls the pace of the entire sector — regardless of who has the best model.</p>
+      </div>
+    </div>
+
+    <div class="dilema-item">
+      <div class="dilema-num">06</div>
+      <div>
+        <p class="dilema-title">How Long Will We Stay in Control</p>
+        <p class="dilema-desc">The frontier of model capability advances faster than the human capacity to audit, understand and contain what they do. This is not a question about science fiction — it is about practical governance, today.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="/en/articles/">See the articles →</a>
+  </footer>
+
+</div>
+<script>
+  document.getElementById('shareBtn').addEventListener('click', async function(){
+    var shareData = { title: document.title, url: window.location.href };
+    if (navigator.share) {
+      try { await navigator.share(shareData); } catch(e) {}
+    } else {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        var btn = document.getElementById('shareBtn');
+        var original = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>';
+        setTimeout(function(){ btn.innerHTML = original; }, 1500);
+      } catch(e) {}
+    }
+  });
+</script>
+</body>
+</html>
