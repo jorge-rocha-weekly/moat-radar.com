@@ -38,6 +38,44 @@
   .langbar { text-align: center; font-family: var(--mono); font-size: 10px; letter-spacing: 1px; color: var(--ink-soft); margin-bottom: 22px; }
   .langbar a { color: var(--ink-soft); text-decoration: none; margin: 0 4px; }
   .langbar a.active { color: var(--brass); font-weight: 600; }
+
+  .mini-nav{
+    text-align:center;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--hair);
+  }
+  .mini-nav a{ color: var(--ink-soft); text-decoration:none; margin: 0 6px; }
+  .mini-nav a:hover{ color: var(--brass); }
+  .mini-nav span{ color: var(--hair); }
+  .brand-mark{ display:block; text-decoration:none; color:inherit; cursor:pointer; }
+
+  .end-nav{
+    text-align: center;
+    margin-top: 8px;
+  }
+  .end-next{
+    display: block;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--lacre-deep);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .end-next:hover{ text-decoration: underline; }
+  .end-back{
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--navy-deep);
+    text-decoration: none;
+  }
+
   .edition-line { font-family: var(--mono); font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 14px; margin-top: 14px; text-align: center; }
   .breaking-news { background: var(--lacre-deep); color: white; padding: 20px 24px; margin: 0 -32px 32px -32px; text-align: center; }
   .breaking-news-label { font-family: var(--mono); font-size: 18px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; margin: 0; }
@@ -91,8 +129,9 @@
   </div>
 
 
-  <div style="text-align: center; margin-bottom: 20px; font-size: 12px;"><a href="/en/editions/" style="color: var(--brass); text-decoration: none; font-family: var(--mono); letter-spacing: 0.5px;">↑ See all editions</a></div>
-  <!-- MASTHEAD -->
+  <div class="mini-nav">
+    <a href="/en/">Home</a><span>·</span><a href="/en/about/">About</a><span>·</span><a href="/en/weekly/">Weekly</a><span>·</span><a href="/en/articles/">Articles</a><span>·</span><a href="/en/dilemmas/">Dilemmas</a><span>·</span><a href="/en/methodology/">Methodology</a><span>·</span><a href="/en/author/jorge-rocha/">Author</a>
+  </div>
   <div class="masthead">
     <svg class="compass" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="23" cy="23" r="21" stroke="#B9975B" stroke-width="1.4"/>
@@ -101,7 +140,7 @@
       <circle cx="23" cy="23" r="2.4" fill="#34486A"/>
     </svg>
 
-    <div class="brand-mark">Weekly <em>Moat</em><span class="footnote">1</span> Radar</div>
+    <a class="brand-mark" href="/en/"><em>Moat</em><span class="footnote">1</span> Radar</a>
     <div class="edition-line">EXTRAORDINARY EDITION · JULY 28, 2026</div>
   </div>
 
@@ -224,7 +263,10 @@
     <b>Next update:</b> Full analysis in Edition 2 of Moat Radar.
   </div>
 
-  <a class="back" href="/en/editions/">← Back to all editions</a>
+    <div class="end-nav">
+    <a class="end-next" href="/en/editions/2026-08-01/">Next edition: The trillion-dollar race in AI: why no one can slow down →</a>
+    <a class="end-back" href="/en/articles/">← See all articles</a>
+  </div>
 
 </div>
 </body>
