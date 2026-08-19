@@ -23,6 +23,26 @@
   </url>
 
   <url>
+    <loc>https://moat-radar.com/pt/edicoes/2026-08-10/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-10/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-10/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-10/"/>
+  </url>
+
+  <url>
+    <loc>https://moat-radar.com/en/editions/2026-08-10/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-10/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-10/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-10/"/>
+  </url>
+
+  <url>
     <loc>https://moat-radar.com/pt/edicoes/2026-08-08/</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>

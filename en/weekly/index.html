@@ -35,6 +35,16 @@
   .page{ padding: 30px 24px 60px; }
   h1{ font-size: 28px; font-weight: 700; margin: 0 0 8px; color: var(--ink); letter-spacing: -0.5px; }
   .page-desc{ font-size: 15px; color: var(--ink-soft); font-style: italic; margin: 0 0 30px; }
+  .feed-label{ font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--brass); margin-bottom: 12px; }
+  .featured{ position: relative; border: 1px solid var(--hair); border-radius: 10px; padding: 28px 26px; background: #FDFBF7; margin-bottom: 40px; }
+  .featured .cover{ height: 140px; border-radius: 6px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; }
+  .featured .cover svg{ width: 108px; height: 108px; }
+  .featured .edition-line{ font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 10px; }
+  .featured h2{ font-size: 26px; line-height: 1.28; margin: 0 0 10px; color: var(--ink); }
+  .featured h2 a{ color: inherit; text-decoration: none; }
+  .featured h2 a::after{ content: ""; position: absolute; inset: 0; }
+  .featured p.sub{ font-size: 15px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 18px; }
+  .featured .read-more{ position: relative; font-family: var(--mono); font-size: 12px; color: var(--lacre-deep); text-decoration: none; font-weight: 600; }
   .entry{ position: relative; display: flex; gap: 16px; padding: 20px 0; border-top: 1px solid var(--hair); align-items: flex-start; cursor: pointer; }
   .entry:last-child{ border-bottom: 1px solid var(--hair); }
   .entry .thumb{ width: 58px; height: 58px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
@@ -87,6 +97,32 @@
   <div class="page">
     <h1>Weekly <em style="font-style: italic; font-weight: 500; color: var(--lacre);">Moat</em> Radar</h1>
     <p class="page-desc">What happened in the AI industry this week, focused on what actually moved.</p>
+
+    <div class="feed-label">Latest weekly</div>
+
+    <div class="featured">
+      <div class="cover">
+        <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
+          <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
+          <path d="M44,44 L44,15 A29,29 0 0,1 70.3,31.7 Z" fill="#B9975B" opacity="0.22"/>
+          <line x1="44" y1="44" x2="70.3" y2="31.7" stroke="#8B3A2F" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="44" cy="24" r="2.4" fill="#34486A"/>
+          <circle cx="61.3" cy="34" r="2.4" fill="#A85847"/>
+          <circle cx="61.3" cy="54" r="2.4" fill="#34486A"/>
+          <circle cx="44" cy="64" r="2.4" fill="#A85847"/>
+          <circle cx="26.7" cy="54" r="2.4" fill="#34486A"/>
+          <circle cx="26.7" cy="34" r="2.4" fill="#A85847"/>
+          <circle cx="44" cy="44" r="2.6" fill="#34486A"/>
+        </svg>
+      </div>
+      <div class="edition-line">Weekly · August 10-16, 2026</div>
+      <h2><a href="/en/editions/2026-08-10/">The Facts That Moved the Dilemmas</a></h2>
+      <p class="sub">The facts from this week that moved the Moat Radar's six dilemmas: model vs. channel, the corporate dilemma, the physical autonomy race, capex vs. bubble, bottleneck economics, and how long do we keep control.</p>
+      <a class="read-more" href="/en/editions/2026-08-10/">Read the full issue →</a>
+    </div>
+
+    <div class="feed-label">Previous weeklies</div>
 
     <div class="entry">
       <div class="thumb">
