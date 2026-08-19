@@ -34,6 +34,16 @@
   .page{ padding: 30px 24px 60px; }
   h1{ font-size: 28px; font-weight: 700; margin: 0 0 8px; color: var(--ink); letter-spacing: -0.5px; }
   .page-desc{ font-size: 15px; color: var(--ink-soft); font-style: italic; margin: 0 0 30px; }
+  .feed-label{ font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--brass); margin-bottom: 12px; }
+  .featured{ position: relative; border: 1px solid var(--hair); border-radius: 10px; padding: 28px 26px; background: #FDFBF7; margin-bottom: 40px; }
+  .featured .cover{ height: 140px; border-radius: 6px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; }
+  .featured .cover svg{ width: 108px; height: 108px; }
+  .featured .edition-line{ font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 10px; }
+  .featured h2{ font-size: 26px; line-height: 1.28; margin: 0 0 10px; color: var(--ink); }
+  .featured h2 a{ color: inherit; text-decoration: none; }
+  .featured h2 a::after{ content: ""; position: absolute; inset: 0; }
+  .featured p.sub{ font-size: 15px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 18px; }
+  .featured .read-more{ position: relative; font-family: var(--mono); font-size: 12px; color: var(--lacre-deep); text-decoration: none; font-weight: 600; }
   .entry{ position: relative; display: flex; gap: 16px; padding: 20px 0; border-top: 1px solid var(--hair); align-items: flex-start; cursor: pointer; }
   .entry:last-child{ border-bottom: 1px solid var(--hair); }
   .entry .thumb{ width: 58px; height: 58px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
@@ -87,8 +97,10 @@
     <h1>Articles</h1>
     <p class="page-desc">Original texts on the AI market. Deeper analysis and research on the dilemmas of AI — their contours, their challenges. Published when they are ready, not when the calendar demands.</p>
 
-    <div class="entry">
-      <div class="thumb">
+    <div class="feed-label">Latest article</div>
+
+    <div class="featured">
+      <div class="cover">
         <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
           <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
           <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
@@ -103,12 +115,13 @@
           <rect x="61" y="36" width="3" height="10" rx="1.2" fill="#FDFBF7"/>
         </svg>
       </div>
-      <div>
-        <div class="date">Article 03 · August 8, 2026</div>
-        <h2><a href="/en/editions/2026-08-08/">AI is already here. The results are not.</a></h2>
-        <p>The technology is already in the hands of companies and their employees. The challenge now is turning dispersed capacity and usage into real results for the business.</p>
-      </div>
+      <div class="edition-line">Article 03 · August 8, 2026</div>
+      <h2><a href="/en/editions/2026-08-08/">AI Has Already Arrived. The Results Haven't Yet.</a></h2>
+      <p class="sub">The technology is already in the hands of companies and their employees. The challenge now is turning dispersed capacity and usage into real results for the business.</p>
+      <a class="read-more" href="/en/editions/2026-08-08/">Read the full issue →</a>
     </div>
+
+    <div class="feed-label">Previous articles</div>
 
     <div class="entry">
       <div class="thumb">

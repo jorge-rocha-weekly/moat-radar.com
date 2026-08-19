@@ -64,25 +64,39 @@
 
   .feed{ padding: 0 24px 60px; }
   .feed-label{ font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--brass); margin-bottom: 12px; }
-  .featured{ position: relative; border: 1px solid var(--hair); border-radius: 10px; padding: 28px 26px; background: #FDFBF7; margin-bottom: 40px; }
-  .featured .cover{ height: 140px; border-radius: 6px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; }
-  .featured .cover svg{ width: 108px; height: 108px; }
-  .featured .edition-line{ font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--brass); margin-bottom: 10px; }
-  .featured h2{ font-size: 26px; line-height: 1.28; margin: 0 0 10px; color: var(--ink); }
+  .feed-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px; }
+  .featured{ position: relative; border: 1px solid var(--hair); border-radius: 10px; padding: 20px 18px; background: #FDFBF7; }
+  .featured .top-row{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .type-tag{ font-family: var(--mono); font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; color: #fff; padding: 3px 8px; border-radius: 3px; }
+  .type-tag.artigo{ background: var(--navy-deep); }
+  .type-tag.weekly{ background: var(--lacre-deep); }
+  .type-tag.flash{ background: var(--brass); }
+  .tag-date{ font-family: var(--mono); font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--brass); }
+  .featured .cover{ height: 88px; border-radius: 6px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; }
+  .featured .cover svg{ width: 68px; height: 68px; }
+  .featured h2{ font-size: 19px; line-height: 1.28; margin: 0 0 8px; color: var(--ink); }
   .featured h2 a{ color: inherit; text-decoration: none; }
   .featured h2 a::after{ content: ""; position: absolute; inset: 0; }
-  .featured p.sub{ font-size: 15px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 18px; }
+  .featured p.sub{ font-size: 13.5px; line-height: 1.55; color: var(--ink-soft); margin: 0 0 14px; }
   .featured .read-more{ position: relative; font-family: var(--mono); font-size: 12px; color: var(--lacre-deep); text-decoration: none; font-weight: 600; }
 
   .entry{ position: relative; display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid var(--hair); align-items: flex-start; cursor: pointer; }
   .entry .thumb{ width: 58px; height: 58px; border-radius: 6px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
   .entry .thumb svg{ width: 52px; height: 52px; }
-  .entry .date{ font-family: var(--mono); font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--brass); margin-bottom: 4px; }
+  .entry .tag-row{ display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .entry .type-tag-outline{ font-family: var(--mono); font-size: 9px; letter-spacing: 1px; text-transform: uppercase; padding: 1px 6px; border-radius: 3px; border: 1px solid currentColor; }
+  .entry .type-tag-outline.artigo{ color: var(--navy-deep); }
+  .entry .type-tag-outline.weekly{ color: var(--lacre-deep); }
+  .entry .type-tag-outline.flash{ color: var(--brass); }
+  .entry .tag-row .date{ font-family: var(--mono); font-size: 10px; color: var(--brass); }
   .entry h3{ font-size: 17px; margin: 0 0 6px; color: var(--ink); line-height: 1.3; }
   .entry h3 a{ color: inherit; text-decoration: none; }
   .entry h3 a::after{ content: ""; position: absolute; inset: 0; }
   .entry p{ font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); margin: 0; }
   .see-all{ display: block; text-align: center; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--navy-deep); text-decoration: none; }
+  @media (max-width: 560px){
+    .feed-grid{ grid-template-columns: 1fr; }
+  }
 
   footer{ text-align: center; padding: 30px 24px 50px; border-top: 1px solid var(--hair); }
   footer p{ font-size: 12px; color: var(--ink-soft); font-style: italic; max-width: 420px; margin: 0 auto; }
@@ -128,55 +142,62 @@
   <hr class="dashed">
 
   <div class="feed">
-    <div class="feed-label">Artigo mais recente</div>
 
-    <div class="featured">
-      <div class="cover">
-        <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
-          <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
-          <rect x="20" y="34" width="16" height="20" rx="3" fill="#34486A"/>
-          <rect x="35" y="38" width="9" height="4" rx="1.2" fill="#34486A"/>
-          <rect x="35" y="46" width="9" height="4" rx="1.2" fill="#34486A"/>
-          <circle cx="45" cy="41" r="1.6" fill="#B9975B"/>
-          <circle cx="47.5" cy="44" r="1.6" fill="#B9975B"/>
-          <circle cx="45" cy="47" r="1.6" fill="#B9975B"/>
-          <rect x="52" y="32" width="16" height="24" rx="3" fill="#A85847"/>
-          <rect x="56" y="36" width="3" height="10" rx="1.2" fill="#FDFBF7"/>
-          <rect x="61" y="36" width="3" height="10" rx="1.2" fill="#FDFBF7"/>
-        </svg>
+    <div class="feed-grid">
+
+      <div class="featured">
+        <div class="top-row">
+          <span class="type-tag artigo">Artigo</span>
+          <span class="tag-date">08 de agosto</span>
+        </div>
+        <div class="cover">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
+            <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
+            <rect x="20" y="34" width="16" height="20" rx="3" fill="#34486A"/>
+            <rect x="35" y="38" width="9" height="4" rx="1.2" fill="#34486A"/>
+            <rect x="35" y="46" width="9" height="4" rx="1.2" fill="#34486A"/>
+            <circle cx="45" cy="41" r="1.6" fill="#B9975B"/>
+            <circle cx="47.5" cy="44" r="1.6" fill="#B9975B"/>
+            <circle cx="45" cy="47" r="1.6" fill="#B9975B"/>
+            <rect x="52" y="32" width="16" height="24" rx="3" fill="#A85847"/>
+            <rect x="56" y="36" width="3" height="10" rx="1.2" fill="#FDFBF7"/>
+            <rect x="61" y="36" width="3" height="10" rx="1.2" fill="#FDFBF7"/>
+          </svg>
+        </div>
+        <h2><a href="/pt/edicoes/2026-08-08/">A IA já chegou. O resultado, ainda não.</a></h2>
+        <p class="sub">A tecnologia já está nas mãos das empresas. O desafio agora é transformar capacidade e uso disperso em resultado real para o negócio.</p>
+        <a class="read-more" href="/pt/edicoes/2026-08-08/">Ler edição completa →</a>
       </div>
-      <div class="edition-line">Artigo 03 · 08 de agosto de 2026</div>
-      <h2><a href="/pt/edicoes/2026-08-08/">A IA já chegou. O resultado, ainda não.</a></h2>
-      <p class="sub">A tecnologia já está nas mãos das empresas, e dos seus colaboradores. O desafio agora é transformar capacidade e uso disperso em resultado real para o negócio.</p>
-      <a class="read-more" href="/pt/edicoes/2026-08-08/">Ler edição completa →</a>
+
+      <div class="featured">
+        <div class="top-row">
+          <span class="type-tag weekly">Weekly</span>
+          <span class="tag-date">10 a 16 de agosto</span>
+        </div>
+        <div class="cover">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
+            <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
+            <path d="M44,44 L44,15 A29,29 0 0,1 70.3,31.7 Z" fill="#B9975B" opacity="0.22"/>
+            <line x1="44" y1="44" x2="70.3" y2="31.7" stroke="#8B3A2F" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="44" cy="24" r="2.4" fill="#34486A"/>
+            <circle cx="61.3" cy="34" r="2.4" fill="#A85847"/>
+            <circle cx="61.3" cy="54" r="2.4" fill="#34486A"/>
+            <circle cx="44" cy="64" r="2.4" fill="#A85847"/>
+            <circle cx="26.7" cy="54" r="2.4" fill="#34486A"/>
+            <circle cx="26.7" cy="34" r="2.4" fill="#A85847"/>
+            <circle cx="44" cy="44" r="2.6" fill="#34486A"/>
+          </svg>
+        </div>
+        <h2><a href="/pt/edicoes/2026-08-10/">Os fatos que moveram os dilemas</a></h2>
+        <p class="sub">Os fatos da semana que moveram os seis dilemas do Moat Radar.</p>
+        <a class="read-more" href="/pt/edicoes/2026-08-10/">Ler edição completa →</a>
+      </div>
+
     </div>
 
-    <div class="feed-label">Weekly mais recente</div>
-
-    <div class="featured">
-      <div class="cover">
-        <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="44" cy="44" r="40" stroke="#B9975B" stroke-width="1.6" fill="none"/>
-          <circle cx="44" cy="44" r="29" stroke="#B9975B" stroke-width="0.8" fill="none"/>
-          <path d="M44,44 L44,15 A29,29 0 0,1 70.3,31.7 Z" fill="#B9975B" opacity="0.22"/>
-          <line x1="44" y1="44" x2="70.3" y2="31.7" stroke="#8B3A2F" stroke-width="1.8" stroke-linecap="round"/>
-          <circle cx="44" cy="24" r="2.4" fill="#34486A"/>
-          <circle cx="61.3" cy="34" r="2.4" fill="#A85847"/>
-          <circle cx="61.3" cy="54" r="2.4" fill="#34486A"/>
-          <circle cx="44" cy="64" r="2.4" fill="#A85847"/>
-          <circle cx="26.7" cy="54" r="2.4" fill="#34486A"/>
-          <circle cx="26.7" cy="34" r="2.4" fill="#A85847"/>
-          <circle cx="44" cy="44" r="2.6" fill="#34486A"/>
-        </svg>
-      </div>
-      <div class="edition-line">Weekly · 10 a 16 de agosto de 2026</div>
-      <h2><a href="/pt/edicoes/2026-08-10/">Os fatos que moveram os dilemas</a></h2>
-      <p class="sub">Os fatos da semana que moveram os seis dilemas do Moat Radar: modelo vs. canal, o dilema corporativo, a corrida da autonomia física, capex vs. bolha, economia de gargalos e até quando teremos controle.</p>
-      <a class="read-more" href="/pt/edicoes/2026-08-10/">Ler edição completa →</a>
-    </div>
-
-    <div class="feed-label">Artigos anteriores</div>
+    <div class="feed-label">Todos os conteúdos</div>
 
     <div class="entry">
       <div class="thumb">
@@ -196,7 +217,7 @@
         </svg>
       </div>
       <div>
-        <div class="date">Artigo 02 · 01 de agosto de 2026</div>
+        <div class="tag-row"><span class="type-tag-outline artigo">Artigo</span><span class="date">01 de agosto de 2026</span></div>
         <h3><a href="/pt/edicoes/2026-08-01/">A corrida trilionária da IA: por que ninguém pode desacelerar?</a></h3>
         <p>O que leva essa indústria de IA a avançar numa velocidade assustadora, em busca de modelos cada vez mais inteligentes, investindo loucamente em tão pouco tempo?</p>
       </div>
@@ -211,7 +232,7 @@
         </svg>
       </div>
       <div>
-        <div class="date">Flash · 28 de julho de 2026</div>
+        <div class="tag-row"><span class="type-tag-outline flash">Flash</span><span class="date">28 de julho de 2026</span></div>
         <h3><a href="/pt/edicoes/2026-07-28/">Bolha de IA estoura na bolsa coreana na véspera da super quarta</a></h3>
         <p>Breaking news: Kospi -10,8%, Samsung -13,4%, SK Hynix -14,7%. Uma bolha de varejo coreano explode na véspera de 4 catalisadores que podem repricing global.</p>
       </div>
@@ -236,7 +257,7 @@
         </svg>
       </div>
       <div>
-        <div class="date">Artigo 01 · 25 de julho de 2026</div>
+        <div class="tag-row"><span class="type-tag-outline artigo">Artigo</span><span class="date">25 de julho de 2026</span></div>
         <h3><a href="/pt/edicoes/2026-07-25/">Os seis dilemas da revolução de IA</a></h3>
         <p>Entenda a indústria de IA por dentro, e como ela está transformando não apenas o seu dia a dia, mas toda a economia.</p>
       </div>
