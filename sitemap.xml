@@ -19,6 +19,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/"/>
   </url>
   <url>
+    <loc>https://moat-radar.com/pt/edicoes/2026-08-25/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-25/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-25/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-25/"/>
+  </url>
+  <url>
     <loc>https://moat-radar.com/pt/edicoes/2026-08-17/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -26,6 +35,15 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-17/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-17/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-17/"/>
+  </url>
+  <url>
+    <loc>https://moat-radar.com/en/editions/2026-08-25/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-08-25/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moat-radar.com/en/editions/2026-08-25/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moat-radar.com/en/editions/2026-08-25/"/>
   </url>
   <url>
     <loc>https://moat-radar.com/en/editions/2026-08-17/</loc>
