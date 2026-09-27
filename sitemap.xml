@@ -288,4 +288,14 @@
 <xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="en" rel="alternate"/>
 <xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="x-default" rel="alternate"/>
 </url>
+  <url>
+    <loc>https://moat-radar.com/pt/edicoes/2026-09-16/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>never</changefreq>
+  </url>
+  <url>
+    <loc>https://moat-radar.com/en/editions/2026-09-16/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>never</changefreq>
+  </url>
 </urlset>
