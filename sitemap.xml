@@ -1,301 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<url>
-<loc>https://moat-radar.com/pt/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/" hreflang="x-default" rel="alternate"/>
-</url><url><loc>https://moat-radar.com/pt/edicoes/2026-09-11/</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>1.0</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-11/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="x-default" rel="alternate"/></url><url><loc>https://moat-radar.com/en/editions/2026-09-11/</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>1.0</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-11/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="x-default" rel="alternate"/></url><url><loc>https://moat-radar.com/pt/edicoes/2026-09-09/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-09/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="x-default" rel="alternate"/></url><url><loc>https://moat-radar.com/en/editions/2026-09-09/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-09/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="x-default" rel="alternate"/></url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-09-02/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-02/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-08-25/</loc>
-<lastmod>2026-09-02</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-25/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-08-17/</loc>
-<lastmod>2026-08-25</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-17/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-09-02/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-02/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-08-25/</loc>
-<lastmod>2026-09-02</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-25/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-08-17/</loc>
-<lastmod>2026-08-25</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-17/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-08-10/</loc>
-<lastmod>2026-08-17</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-10/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-08-10/</loc>
-<lastmod>2026-08-17</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-10/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-08-08/</loc>
-<lastmod>2026-08-08</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-08/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-08-08/</loc>
-<lastmod>2026-08-08</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-08/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-08-01/</loc>
-<lastmod>2026-08-03</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-01/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-08-01/</loc>
-<lastmod>2026-08-03</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-01/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-07-28/</loc>
-<lastmod>2026-07-28</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-28/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-07-28/</loc>
-<lastmod>2026-07-28</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-28/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/2026-07-25/</loc>
-<lastmod>2026-08-01</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-25/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/2026-07-25/</loc>
-<lastmod>2026-08-01</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-25/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/edicoes/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.7</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/editions/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.7</priority>
-<xhtml:link href="https://moat-radar.com/pt/edicoes/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/editions/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/sobre/</loc>
-<lastmod>2026-08-18</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-<xhtml:link href="https://moat-radar.com/pt/sobre/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/about/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/about/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/about/</loc>
-<lastmod>2026-08-18</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-<xhtml:link href="https://moat-radar.com/pt/sobre/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/about/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/about/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/metodologia/</loc>
-<lastmod>2026-08-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-<xhtml:link href="https://moat-radar.com/pt/metodologia/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/methodology/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/methodology/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/methodology/</loc>
-<lastmod>2026-08-06</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-<xhtml:link href="https://moat-radar.com/pt/metodologia/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/methodology/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/methodology/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/autor/jorge-rocha/</loc>
-<lastmod>2026-08-08</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-<xhtml:link href="https://moat-radar.com/autor/jorge-rocha/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/author/jorge-rocha/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/author/jorge-rocha/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/author/jorge-rocha/</loc>
-<lastmod>2026-08-08</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-<xhtml:link href="https://moat-radar.com/autor/jorge-rocha/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/author/jorge-rocha/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/author/jorge-rocha/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/weekly/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.7</priority>
-<xhtml:link href="https://moat-radar.com/pt/weekly/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/weekly/</loc>
-<lastmod>2026-09-16</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.7</priority>
-<xhtml:link href="https://moat-radar.com/pt/weekly/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/artigos/</loc>
-<lastmod>2026-08-18</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.7</priority>
-<xhtml:link href="https://moat-radar.com/pt/artigos/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/articles/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/articles/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/articles/</loc>
-<lastmod>2026-08-18</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.7</priority>
-<xhtml:link href="https://moat-radar.com/pt/artigos/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/articles/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/articles/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/pt/dilemas/</loc>
-<lastmod>2026-08-18</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/dilemas/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="x-default" rel="alternate"/>
-</url>
-<url>
-<loc>https://moat-radar.com/en/dilemmas/</loc>
-<lastmod>2026-08-18</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-<xhtml:link href="https://moat-radar.com/pt/dilemas/" hreflang="pt-BR" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="en" rel="alternate"/>
-<xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="x-default" rel="alternate"/>
-</url>
-  <url>
-    <loc>https://moat-radar.com/pt/edicoes/2026-09-16/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>never</changefreq>
-  </url>
-  <url>
-    <loc>https://moat-radar.com/en/editions/2026-09-16/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>never</changefreq>
-  </url>
-<url><loc>https://moat-radar.com/pt/edicoes/2026-09-23/</loc><lastmod>2026-10-07</lastmod><changefreq>never</changefreq><priority>1.0</priority></url><url><loc>https://moat-radar.com/en/editions/2026-09-23/</loc><lastmod>2026-10-07</lastmod><changefreq>never</changefreq><priority>1.0</priority></url></urlset>
+<url><loc>https://moat-radar.com/pt/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>1.0</priority><xhtml:link href="https://moat-radar.com/pt/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>1.0</priority><xhtml:link href="https://moat-radar.com/pt/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/weekly/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/weekly/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/weekly/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/weekly/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/weekly/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/artigos/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/artigos/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/articles/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/articles/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/articles/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/artigos/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/articles/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/articles/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/dilemas/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/dilemas/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/dilemmas/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/dilemas/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/dilemmas/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/sobre/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/sobre/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/about/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/about/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/about/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/sobre/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/about/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/about/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-09-30/</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-30/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-30/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-30/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-09-30/</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-30/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-30/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-30/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-09-23/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-23/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-23/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-23/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-09-23/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-23/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-23/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-23/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-09-16/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-16/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-16/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-16/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-09-16/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-16/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-16/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-16/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-09-11/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-11/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-09-11/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-11/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-11/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-09-09/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-09/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-09-09/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-09/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-09/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-09-02/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-02/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-09-02/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-09-02/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-09-02/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-08-25/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-25/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-08-25/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-25/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-25/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-08-17/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-17/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-08-17/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-17/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-17/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-08-10/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-10/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-08-10/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-10/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-10/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-08-08/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-08/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-08-08/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-08/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-08/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-08-01/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-01/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-08-01/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-08-01/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-08-01/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-07-28/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-28/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-07-28/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-28/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-28/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/pt/edicoes/2026-07-25/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-25/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="x-default" rel="alternate"/></url>
+<url><loc>https://moat-radar.com/en/editions/2026-07-25/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link href="https://moat-radar.com/pt/edicoes/2026-07-25/" hreflang="pt-BR" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="en" rel="alternate"/><xhtml:link href="https://moat-radar.com/en/editions/2026-07-25/" hreflang="x-default" rel="alternate"/></url>
+</urlset>
