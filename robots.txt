@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://moat-radar.com/sitemap.xml
+Sitemap: https://moat-radar.com/sitemap-article05.xml
