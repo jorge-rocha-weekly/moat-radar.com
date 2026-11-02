@@ -1,41 +1,314 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
 <title>Entendendo a IA por dentro: stack e infraestrutura da inteligência artificial | Moat Radar</title>
-<meta name="description" content="O que existe por trás dos modelos de IA? Um mapa da cadeia que liga aplicações, modelos, nuvem, chips, memória, redes, fabricação, energia e refrigeração."/>
-<link rel="canonical" href="https://moat-radar.com/pt/edicoes/2026-11-02/"/><link rel="alternate" hreflang="pt-BR" href="https://moat-radar.com/pt/edicoes/2026-11-02/"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/><link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="O que existe por trás dos modelos de IA? Um mapa da cadeia que liga aplicações, modelos, nuvem, chips, memória, redes, fabricação, energia e refrigeração." name="description"/>
+<link href="https://moat-radar.com/pt/edicoes/2026-11-02/" rel="canonical"/>
+<link href="https://moat-radar.com/pt/edicoes/2026-11-02/" hreflang="pt-BR" rel="alternate"/><link href="https://moat-radar.com/en/editions/2026-11-02/" hreflang="en" rel="alternate"/><link href="https://moat-radar.com/en/editions/2026-11-02/" hreflang="x-default" rel="alternate"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#fff;--ink:#2B2B2E;--soft:#55555C;--navy:#45597A;--navyd:#34486A;--navyt:#EEF2F7;--navyl:#C7D2E0;--lacre:#A85847;--lacred:#8B3A2F;--brass:#B9975B;--brassl:#E3D4B4;--hair:#E7E4DC;--warm:#FDFBF7;--serif:'Spectral',Georgia,serif;--mono:'IBM Plex Mono','Courier New',monospace}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif)}.sheet{max-width:760px;margin:0 auto;padding:48px 32px 40px}.langbar{text-align:center;font:10px var(--mono);letter-spacing:1px;color:var(--soft);margin-bottom:18px}.langbar a{color:var(--soft);text-decoration:none;margin:0 4px}.langbar a.active{color:var(--brass);font-weight:600}.mini-nav{text-align:center;font:10.5px var(--mono);text-transform:uppercase;color:var(--soft);margin:0 0 24px;padding-bottom:16px;border-bottom:1px solid var(--hair)}.mini-nav a{color:var(--soft);text-decoration:none;margin:0 6px}.mini-nav span{color:var(--hair)}.masthead{text-align:center}.edition-emblem{width:76px;height:76px;margin:54px auto 24px;display:block}.brand-mark{display:block;text-decoration:none;font-size:29px;line-height:1;font-weight:700;color:var(--ink);margin-bottom:30px}.brand-mark em{font-style:italic;font-weight:500;color:var(--lacred)}.edition-line{font:11px var(--mono);letter-spacing:3.1px;color:var(--brass);text-transform:uppercase;margin-bottom:30px}h1{font-size:46px;line-height:1.12;margin:0 0 24px;letter-spacing:-.7px}.subtitle{font-style:italic;color:var(--soft);font-size:17px;line-height:1.62;margin:0 auto 26px}.byline{font:11px var(--mono);letter-spacing:2px;text-transform:uppercase;color:var(--soft);margin-bottom:14px}.dashed{border:0;border-top:1px dashed var(--hair);margin:32px 0}.label{font:11px var(--mono);letter-spacing:2px;text-transform:uppercase;color:var(--brass);margin-bottom:12px}.summary{border:1px solid var(--hair);border-left:3px solid var(--brass);background:var(--warm);padding:18px 22px 8px;margin:32px 0 42px;border-radius:4px}.summary p{font-style:italic;font-size:16.2px;line-height:1.68;margin:0 0 15px}.body p{font-family:Inter,Arial,sans-serif;font-size:16.5px;line-height:1.72;margin:0 0 17px}.body em{font-weight:600}.body a{color:var(--navyd);text-decoration-color:var(--navyl);text-underline-offset:2px}.footnote{font:11px var(--mono);color:var(--brass)!important;vertical-align:super;line-height:0;text-decoration:none!important}.headline{font-size:26px;line-height:1.28;margin:44px 0 8px}.question{font-family:var(--serif)!important;font-size:20px!important;line-height:1.5!important;font-weight:600!important;color:var(--navyd)!important;margin:22px 0!important}.emphasis{font-family:var(--serif)!important;font-size:18px!important;line-height:1.55!important;font-weight:600!important}.map-wrap{margin:30px -72px 38px;overflow-x:auto;-webkit-overflow-scrolling:touch}.stack-map{min-width:980px;border:1px solid var(--navyl);border-radius:7px;overflow:hidden;background:#fff;font-family:Inter,Arial,sans-serif}.map-title{padding:22px 24px 16px;background:var(--warm);border-bottom:1px solid var(--hair)}.map-title h3{font:700 26px var(--serif);margin:0 0 4px;color:var(--navyd)}.map-title p{font:13.5px Inter,Arial,sans-serif!important;color:var(--soft);margin:0!important}.map-head,.map-row{display:grid;grid-template-columns:1.28fr 1.38fr .95fr 2.15fr;align-items:stretch}.map-head{background:var(--navyd);color:#fff;font:600 10px var(--mono);letter-spacing:.8px;text-transform:uppercase}.map-head>div,.map-row>div{padding:10px 12px;border-right:1px solid var(--hair)}.map-head>div:last-child,.map-row>div:last-child{border-right:0}.map-row{border-top:1px solid var(--hair);font-size:12px;line-height:1.35}.map-row:nth-child(even){background:#FBFCFD}.layer{font-weight:700;color:var(--navyd)}.players{color:var(--ink)}.understand{color:var(--soft)}.pill{display:inline-block;border-radius:999px;padding:3px 8px;font:600 10px var(--mono);white-space:nowrap}.high{background:#E5EBF2;color:var(--navyd)}.medium{background:#F1ECE2;color:#745E38}.low{background:#F1F2F3;color:#61656B}.metric{background:#EEF2F7;color:var(--navyd)}.map-legend{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:12px 16px;border-top:1px solid var(--hair);background:var(--warm);font-size:10.5px;color:var(--soft)}.map-caption{font:10.5px/1.55 var(--mono);color:var(--soft);text-align:center;margin:10px auto 0;max-width:760px}.faq{margin:42px 0 36px;padding:24px 24px 8px;border:1px solid var(--hair);border-left:3px solid var(--brass);background:var(--warm);border-radius:4px}.faq-item{margin:0 0 22px;padding-bottom:20px;border-bottom:1px solid var(--hair)}.faq-item:last-child{border:0}.faq .q{font:600 17px/1.45 var(--serif);margin:0 0 8px}.faq .a{font:15px/1.65 Inter,Arial,sans-serif;color:var(--soft);margin:0}.notes,.sources{margin:34px 0 0;padding-top:30px;border-top:1px dashed var(--hair)}.notes p{font-size:13.5px!important;line-height:1.58!important;color:var(--soft)!important;margin-bottom:10px!important}.sources ol{list-style:none;counter-reset:s;margin:0;padding:0}.sources li{counter-increment:s;position:relative;padding-left:34px;margin-bottom:18px;font:13.5px/1.55 Inter,Arial,sans-serif;color:var(--soft)}.sources li:before{content:counter(s);position:absolute;left:0;font:11px var(--mono);color:var(--brass)}.private{margin:44px 0 0;padding:24px;border:1px solid var(--hair);border-left:3px solid var(--brass);background:var(--warm);border-radius:4px}.private .copy{font-style:italic;color:var(--soft);line-height:1.65}.field{margin-bottom:15px}.private label{display:block;font:10.5px var(--mono);letter-spacing:1.2px;text-transform:uppercase;color:var(--soft);margin-bottom:6px}.private input,.private textarea{width:100%;border:1px solid var(--hair);background:#fff;font:14.5px/1.5 Inter,Arial,sans-serif;padding:11px 12px;border-radius:3px}.private textarea{min-height:150px}.private button{border:1px solid var(--navyd);background:var(--navyd);color:#fff;font:10.5px var(--mono);letter-spacing:1.2px;text-transform:uppercase;padding:11px 16px;border-radius:3px}.form-note{font:11.5px/1.5 Inter,Arial,sans-serif!important;color:var(--soft)!important}.footer{text-align:center;margin-top:40px}.disclaimer{font-size:12.5px;color:var(--soft);font-style:italic;line-height:1.6}.signature{font-size:19px;font-weight:600}.bio,.contact{font:10.5px/1.8 var(--mono);color:var(--soft)}.contact a{color:var(--brass);text-decoration:none}.back{display:block;text-align:center;margin-top:28px;color:var(--brass);font:14px var(--mono);text-decoration:none}@media(max-width:920px){.map-wrap{margin-left:0;margin-right:0}}@media(max-width:640px){.sheet{padding:28px 20px 34px}.edition-emblem{width:62px;height:62px;margin-top:46px}h1{font-size:41px}.subtitle{font-size:16px}.map-wrap{margin:26px 0 34px}.stack-map{min-width:900px}}
+:root{--bg:#FFFFFF;--ink:#2B2B2E;--ink-soft:#55555C;--navy:#45597A;--navy-deep:#34486A;--navy-tint:#EEF2F7;--navy-line:#C7D2E0;--lacre:#A85847;--lacre-deep:#8B3A2F;--lacre-tint:#F8ECE8;--lacre-line:#E3C7BE;--brass:#B9975B;--brass-line:#E3D4B4;--hair:#E7E4DC;--serif:'Spectral',Georgia,serif;--mono:'IBM Plex Mono','Courier New',monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif)}.sheet{max-width:760px;margin:0 auto;padding:48px 32px 40px;background:var(--bg)}
+.langbar{text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:1px;color:var(--ink-soft);margin-bottom:18px}.langbar a{color:var(--ink-soft);text-decoration:none;margin:0 4px}.langbar a.active{color:var(--brass);font-weight:600}.mini-nav{text-align:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink-soft);margin:0 0 24px;padding-bottom:16px;border-bottom:1px solid var(--hair)}.mini-nav a{color:var(--ink-soft);text-decoration:none;margin:0 6px}.mini-nav a:hover{color:var(--brass)}.mini-nav span{color:var(--hair)}
+.masthead{text-align:center}.edition-emblem{width:76px;height:76px;margin:54px auto 24px;display:block}.brand-mark{display:block;text-decoration:none;cursor:pointer;font-family:var(--serif);font-size:29px;line-height:1;font-weight:700;letter-spacing:.2px;color:var(--ink);margin:0 0 30px}.brand-mark em{font-style:italic;font-weight:500;color:var(--lacre-deep)}.edition-line{font-family:var(--mono);font-size:11px;letter-spacing:3.1px;color:var(--brass);text-transform:uppercase;margin:0 0 30px}h1.title{font-size:46px;line-height:1.12;font-weight:700;margin:0 0 24px;color:var(--ink);letter-spacing:-.7px}.subtitle{font-style:italic;font-weight:400;color:var(--ink-soft);font-size:17px;line-height:1.62;margin:0 auto 26px;max-width:650px}.byline{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-soft);margin:0 0 14px}.dashed{border:none;border-top:1px dashed var(--hair);margin:32px 0}.label-mono{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--brass);margin-bottom:12px}
+h2.headline{font-size:26px;line-height:1.28;margin:44px 0 8px;color:var(--ink);break-after:avoid;page-break-after:avoid}.body-text p{font-size:16.5px;line-height:1.72;color:var(--ink);margin:0 0 17px;font-family:'Inter',Arial,sans-serif;orphans:3;widows:3}.body-text b{font-weight:600;color:var(--ink)}.body-text em{font-style:italic;font-weight:600;color:var(--ink)}.body-text a{color:var(--navy-deep);text-decoration:underline;text-decoration-color:var(--navy-line);text-underline-offset:2px}.footnote{font-family:var(--mono);font-size:11px;color:var(--brass)!important;vertical-align:super;line-height:0;margin-left:1px;text-decoration:none!important}.leadline{font-family:var(--serif)!important;font-size:22px!important;line-height:1.45!important;font-weight:600;color:var(--ink)!important;margin:0 0 20px!important}.standalone-question{font-family:var(--serif)!important;font-size:20px!important;line-height:1.5!important;font-weight:600!important;color:var(--navy-deep)!important;margin:22px 0!important}.short-emphasis{font-family:var(--serif)!important;font-size:18px!important;line-height:1.55!important;font-weight:600!important;color:var(--ink)!important}.smallnote{font-size:13px!important;line-height:1.6!important;color:var(--ink-soft)!important;font-style:italic}
+.summary{border:1px solid var(--hair);border-left:3px solid var(--brass);background:#FDFBF7;padding:18px 22px 8px;margin:32px 0 42px;border-radius:4px}.summary .label-mono{margin-bottom:14px}.summary p{font-style:italic;font-size:16.2px;line-height:1.68;color:var(--ink);margin:0 0 15px;font-family:var(--serif)}.summary p:last-child{margin-bottom:4px}.summary b{font-weight:600;color:var(--ink)}.pullquote{border:1px solid var(--hair);background:#FDFBF7;padding:16px 18px;border-radius:4px;margin:24px 0}.pullquote p{font-style:italic;font-size:16px;line-height:1.62;color:var(--ink);margin:0;font-family:var(--serif)}
+.article-figure{margin:30px -72px 38px;text-align:center;overflow:visible}.article-figure img{display:block;width:100%;height:auto;border:1px solid var(--hair);border-radius:6px;background:#fff}.article-figure figcaption{font-family:var(--mono);font-size:10.5px;line-height:1.55;color:var(--ink-soft);margin:10px auto 0;max-width:760px}.figure-placeholder{display:none;border:1px dashed var(--brass-line);background:#FDFBF7;padding:50px 24px;border-radius:6px;font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--ink-soft)}
+.faq-block{margin:42px 0 36px;padding:24px 24px 8px;border:1px solid var(--hair);border-left:3px solid var(--brass);background:#FDFBF7;border-radius:4px}.faq-block .label-mono{margin-bottom:20px}.faq-item{margin:0 0 22px;padding:0 0 20px;border-bottom:1px solid var(--hair)}.faq-item:last-child{margin-bottom:0;padding-bottom:8px;border-bottom:none}.faq-block .q{font-family:var(--serif);font-weight:600;margin:0 0 8px;color:var(--ink);font-size:17px;line-height:1.45}.faq-block .a{font-size:15px;line-height:1.65;margin:0;color:var(--ink-soft);font-family:'Inter',Arial,sans-serif}.notes-block{margin:34px 0 0;padding:30px 0 0;border-top:1px dashed var(--hair)}.notes-block .label-mono{margin-bottom:16px}.notes-block p{font-size:13.5px!important;line-height:1.58!important;color:var(--ink-soft)!important;margin-bottom:10px!important}.sources-block{margin:32px 0 40px;padding:30px 0 0;border-top:1px dashed var(--hair)}.sources-block ol{list-style:none;counter-reset:srcnum;margin:0;padding:0}.sources-block li{counter-increment:srcnum;position:relative;padding-left:34px;margin-bottom:18px;font-size:13.5px;line-height:1.55;color:var(--ink-soft);font-family:'Inter',Arial,sans-serif}.sources-block li:last-child{margin-bottom:0}.sources-block li::before{content:counter(srcnum);position:absolute;left:0;top:1px;font-family:var(--mono);font-size:11px;color:var(--brass)}.sources-block li a{color:var(--navy-deep);text-decoration:underline;text-decoration-color:var(--navy-line);text-underline-offset:2px}
+.notes-block{margin:34px 0 0;padding:30px 0 0;border:none;border-top:1px dashed var(--hair);background:transparent;border-radius:0}.notes-block p{font-size:13.5px;line-height:1.58;color:var(--ink-soft);margin:0 0 10px}.notes-block em{color:var(--ink);font-weight:600}
+.private-comments{margin:44px 0 0;padding:24px;border:1px solid var(--hair);border-left:3px solid var(--brass);background:#FDFBF7;border-radius:4px}.private-comments .label-mono{margin-bottom:10px}.private-comments .comments-copy{font-family:var(--serif);font-size:16px;line-height:1.65;font-style:italic;color:var(--ink-soft);margin:0 0 22px}.private-comments label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink-soft);margin:0 0 6px}.private-comments input,.private-comments textarea{width:100%;border:1px solid var(--hair);background:#fff;color:var(--ink);font-family:'Inter',Arial,sans-serif;font-size:14.5px;line-height:1.5;padding:11px 12px;border-radius:3px;outline:none}.private-comments input:focus,.private-comments textarea:focus{border-color:var(--brass);box-shadow:0 0 0 1px var(--brass-line)}.private-comments .field{margin-bottom:15px}.private-comments textarea{min-height:150px;resize:vertical}.private-comments .form-note{font-family:'Inter',Arial,sans-serif;font-size:11.5px;line-height:1.5;color:var(--ink-soft);margin:3px 0 16px}.private-comments button{appearance:none;border:1px solid var(--navy-deep);background:var(--navy-deep);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;padding:11px 16px;border-radius:3px;cursor:pointer}
+footer{text-align:center;margin-top:40px}.disclaimer{font-style:italic;font-size:12.5px;color:var(--ink-soft);line-height:1.6;max-width:460px;margin:0 auto 22px}.signature{font-size:19px;font-weight:600;color:var(--ink);margin-bottom:6px}.bio{font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-soft);line-height:1.8}.contact{font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;color:var(--brass);margin-top:10px}.contact a{color:var(--brass);text-decoration:none}.end-nav{text-align:center}.end-back{display:block;font-size:14px;color:var(--brass);text-decoration:none;margin-top:28px;font-family:var(--mono);letter-spacing:.5px;text-align:center}
+@media(max-width:920px){.article-figure{margin-left:0;margin-right:0}}@media(max-width:640px){.sheet{padding:28px 20px 34px}.edition-emblem{width:62px;height:62px;margin:46px auto 24px}.brand-mark{font-size:28px;margin-bottom:30px}.edition-line{font-size:10.5px;letter-spacing:2.8px;margin-bottom:30px}h1.title{font-size:41px;line-height:1.15;margin-bottom:24px}.subtitle{font-size:16px;line-height:1.65;margin-bottom:28px}.mini-nav a{margin:0 4px}.article-figure{margin:26px 0 34px;overflow-x:auto;-webkit-overflow-scrolling:touch}.article-figure img{width:920px;max-width:none}.article-figure figcaption{width:100%;max-width:100%}}
+@media print{.sheet{max-width:620px}.mini-nav,.langbar,.end-nav{display:none}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Entendendo a IA por dentro","description":"O que existe por trás dos modelos de IA? Um mapa da cadeia que liga aplicações, modelos, nuvem, chips, memória, redes, fabricação, energia e refrigeração.","datePublished":"2026-11-02T18:00:00-03:00","dateModified":"2026-11-02T18:00:00-03:00","inLanguage":"pt-BR","url":"https://moat-radar.com/pt/edicoes/2026-11-02/","mainEntityOfPage":{"@type":"WebPage","@id":"https://moat-radar.com/pt/edicoes/2026-11-02/"},"author":{"@type":"Person","name":"Jorge Rocha","url":"https://moat-radar.com/autor/jorge-rocha/"},"publisher":{"@type":"Organization","name":"Moat Radar","url":"https://moat-radar.com/"}}</script>
-<meta property="og:type" content="article"/><meta property="og:locale" content="pt_BR"/><meta property="og:site_name" content="Moat Radar"/><meta property="og:title" content="Entendendo a IA por dentro"/><meta property="og:description" content="O que existe por trás dos modelos de IA? Um mapa da cadeia que sustenta a inteligência artificial."/><meta property="og:url" content="https://moat-radar.com/pt/edicoes/2026-11-02/"/><meta name="twitter:card" content="summary"/>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-5XX9GQKDK0');</script>
-</head><body data-moat-template="article-original-v1"><div class="sheet">
-<div class="langbar"><a href="/en/">[EN]</a> <a class="active" href="/pt/edicoes/2026-11-02/">[PT]</a></div><div class="mini-nav"><a href="/pt/">Início</a><span>·</span><a href="/pt/sobre/">Sobre</a><span>·</span><a href="/pt/weekly/">Weekly</a><span>·</span><a href="/pt/artigos/">Artigos</a><span>·</span><a href="/pt/dilemas/">Dilemas</a><span>·</span><a href="/autor/jorge-rocha/">Autor</a></div>
-<header class="masthead"><svg class="edition-emblem" viewBox="0 0 88 88" role="img" aria-label="Símbolo da Edição 05: camadas da infraestrutura de IA"><circle cx="44" cy="44" r="40" fill="none" stroke="#B9975B" stroke-width="1.6"/><rect x="24" y="25" width="40" height="10" rx="2" fill="none" stroke="#34486A" stroke-width="2"/><rect x="20" y="39" width="48" height="10" rx="2" fill="none" stroke="#A85847" stroke-width="2"/><rect x="16" y="53" width="56" height="10" rx="2" fill="none" stroke="#B9975B" stroke-width="2"/><circle cx="44" cy="44" r="3" fill="#34486A"/></svg><a class="brand-mark" href="/pt/"><em>Moat</em> Radar</a><div class="edition-line">Artigo 05 · 2 de novembro de 2026</div><h1>Entendendo a IA por dentro</h1><p class="subtitle">O que existe entre o prompt que digitamos e a resposta que recebemos?</p><p class="byline">POR JORGE ROCHA</p></header><hr class="dashed"/>
-<section class="summary"><div class="label">Resumo</div><p>Por trás dos modelos de inteligência artificial existe uma cadeia complexa de soluções e fornecedores que, em alguns níveis, se parece mais com uma cadeia produtiva industrial do que com a tecnologia digital que vemos na superfície. Ela passa por aplicações, modelos, nuvem, data centers, software, chips, memória, redes, encapsulamento, fabricação, equipamentos, energia e refrigeração.</p><p>Ao olhar essa cadeia completa, duas características chamam atenção. A primeira é a forte concentração em vários pontos: os três maiores provedores de nuvem concentram cerca de 61% do mercado, três fabricantes praticamente toda a memória HBM, a TSMC mais de 70% do mercado mundial de fabricação de chips sob encomenda e a ASML praticamente 100% da litografia EUV usada nos chips mais avançados. A segunda é a dependência entre as camadas: não basta ter o melhor modelo ou a GPU mais poderosa se faltarem memória, conectividade, energia ou capacidade de refrigeração.</p><p>Isso ajuda a explicar por que os gargalos mudam à medida que a infraestrutura cresce. Uma restrição pode começar nos chips, passar para memória, encapsulamento ou redes e, no limite, chegar à disponibilidade de energia. Ao mesmo tempo, os maiores participantes tentam reduzir essas dependências: provedores de nuvem desenvolvem chips próprios, empresas de modelos avançam para aplicações e agentes, e fabricantes de infraestrutura procuram ocupar outras partes da cadeia.</p><p>O mapa também ajuda a recolocar três perguntas centrais para o Moat Radar: <b>o volume de Capex está construindo capacidade necessária ou pode gerar excesso de oferta? Onde estará o próximo gargalo? E, numa camada de aplicações ainda em formação, quem ficará com a relação com o cliente?</b></p></section>
-<main class="body"><p>Nos últimos dias, uma forte correção nas ações de tecnologia aumentou a preocupação com o volume de investimentos em inteligência artificial e seus efeitos sobre caixa e retorno do capital das empresas do setor.<a class="footnote" href="#r1">[1]</a></p><p>A preocupação faz sentido. Mas ela convive com outra realidade igualmente importante: os modelos de IA estão ficando melhores, mais presentes e mais úteis.</p><p>Empresas já os utilizam para escrever código, atender clientes, criar conteúdo, pesquisar, analisar informações e automatizar tarefas. Ao mesmo tempo, uma nova geração de produtos, agentes e serviços começa a ser construída sobre esses modelos.</p><p>É justamente por isso que vale fazer uma pergunta simples antes de discutir se estamos diante de <em>capex</em> necessário ou excesso de investimento:</p><p class="question">O que existe por trás desses modelos que estamos usando cada vez mais?</p>
-<h2 class="headline">Da tela para a infraestrutura</h2><p>Para o usuário, inteligência artificial é ChatGPT, Claude, Gemini, Copilot, Cursor ou alguma outra aplicação que incorpora IA.</p><p><b>Essas aplicações e agentes são a camada mais visível de uma cadeia muito maior.</b></p><p>Abaixo delas estão os modelos fundamentais, como os <em>LLMs</em> (<em>Large Language Models</em>, grandes modelos de linguagem), capazes de gerar texto e código e que, em arquiteturas multimodais, também trabalham com imagens, áudio e outros formatos.</p><p>Depois vêm os grandes provedores de nuvem, ou <em>hyperscalers</em>, empresas que operam infraestrutura computacional em grande escala e a disponibilizam como serviço.</p><p>A partir daí, a cadeia fica muito mais física.</p><p>Data centers abrigam milhares de servidores. Entre a infraestrutura e o hardware existe ainda uma camada importante de software, com plataformas como CUDA e PyTorch, que ajudam os desenvolvedores a usar e coordenar esses recursos computacionais.</p><p>Em seguida vêm GPUs (<em>Graphics Processing Units</em>, processadores originalmente desenvolvidos para gráficos e hoje fundamentais para IA), TPUs (<em>Tensor Processing Units</em>, aceleradores especializados desenvolvidos pelo Google) e outros chips que executam os cálculos.</p><p>Memórias HBM (<em>High Bandwidth Memory</em>, memória de altíssima largura de banda) precisam fornecer dados a esses processadores em enorme velocidade. Redes conectam milhares desses aceleradores para que consigam trabalhar como um único sistema.</p><p>Mais abaixo aparecem o encapsulamento avançado, que integra chips e memória em alta densidade; as <em>foundries</em>, fábricas especializadas na produção de chips sob encomenda; os equipamentos necessários para fabricar esses chips; e as ferramentas de EDA (<em>Electronic Design Automation</em>, softwares usados para projetar e validar circuitos).</p><p>Tudo isso precisa de energia e refrigeração.</p><p><b>A IA parece software na superfície. Por baixo, é também uma enorme cadeia industrial.</b></p>
-<h2 class="headline">O mapa completo</h2><p>O infográfico abaixo organiza essa cadeia do usuário ao silício.</p><p>Além de mostrar exemplos das principais empresas presentes em cada camada, ele procura responder duas perguntas simples: <b>o que cada camada faz</b> e <b>quão concentrado é aquele mercado ou submercado</b>.</p><p>A coluna “Entendendo a camada” resume a função de cada elo. Já a coluna de concentração ajuda a visualizar algo que nem sempre aparece quando olhamos apenas para os nomes mais conhecidos da IA: em várias partes importantes do sistema, poucas empresas concentram grande parte da capacidade disponível.</p><p>O mapa também mostra alguns movimentos de integração entre as camadas, à medida que empresas tentam reduzir dependências, controlar custos ou se aproximar do cliente.</p>
-<div class="map-wrap" id="infografico-stack-ia"><div class="stack-map"><div class="map-title"><h3>O stack da IA: da aplicação à infraestrutura física</h3><p>A cadeia que sustenta os modelos de IA é ampla, interdependente e concentrada em vários pontos.</p></div><div class="map-head"><div>Camada</div><div>Principais players (exemplos)</div><div>Concentração / referência</div><div>Entendendo a camada</div></div>
-<div class="map-row"><div class="layer">Aplicações e agentes</div><div class="players">&nbsp;</div><div><span class="pill low">Baixa</span></div><div class="understand">Interfaces, produtos e agentes que transformam os modelos em utilidade para usuários e empresas.</div></div>
-<div class="map-row"><div class="layer">Modelos fundacionais e especializados</div><div class="players">OpenAI · Google · Anthropic · Meta</div><div><span class="pill high">Alta</span></div><div class="understand">Modelos que geram texto, código, imagens, áudio e outras saídas a partir de grandes volumes de dados e computação.</div></div>
-<div class="map-row"><div class="layer">Hyperscalers / Cloud</div><div class="players">AWS · Microsoft Azure · Google Cloud</div><div><span class="pill metric">Top 3: 61% (3T26)</span></div><div class="understand">Disponibilizam capacidade computacional, serviços e infraestrutura em grande escala.</div></div>
-<div class="map-row"><div class="layer">Data centers e software de infraestrutura</div><div class="players">Equinix · Digital Realty · NVIDIA / CUDA · PyTorch</div><div><span class="pill medium">Média</span></div><div class="understand">Abriga servidores e fornece o software que permite usar, coordenar e operar os recursos computacionais.</div></div>
-<div class="map-row"><div class="layer">Chips de compute</div><div class="players">NVIDIA · AMD · Intel · aceleradores próprios</div><div><span class="pill high">Alta</span></div><div class="understand">Executam os cálculos de treinamento e inferência dos modelos.</div></div>
-<div class="map-row"><div class="layer">Memória HBM e DRAM</div><div class="players">SK hynix · Samsung · Micron</div><div><span class="pill metric">Top 3: ≈100% HBM</span></div><div class="understand">Entrega dados aos processadores em altíssima velocidade.</div></div>
-<div class="map-row"><div class="layer">Redes e conectividade</div><div class="players">Arista · Broadcom · NVIDIA</div><div><span class="pill high">Alta</span></div><div class="understand">Conecta milhares de aceleradores para que trabalhem como um único sistema.</div></div>
-<div class="map-row"><div class="layer">Encapsulamento e integração</div><div class="players">ASE · Amkor · JCET · TSMC</div><div><span class="pill high">Alta</span></div><div class="understand">Integra chips e memória em alta densidade e permite sistemas avançados de computação.</div></div>
-<div class="map-row"><div class="layer">Fabricação de chips (foundry)</div><div class="players">TSMC · Samsung · SMIC · GlobalFoundries</div><div><span class="pill metric">Líder: 72,5% TSMC (2T26)</span></div><div class="understand">Fabrica fisicamente os semicondutores projetados por outras empresas.</div></div>
-<div class="map-row"><div class="layer">Equipamentos de fabricação</div><div class="players">ASML · Applied Materials · Lam Research · TEL · KLA</div><div><span class="pill metric">EUV: ≈100% ASML</span></div><div class="understand">Fornece as máquinas críticas usadas para produzir chips cada vez menores e mais complexos.</div></div>
-<div class="map-row"><div class="layer">Ferramentas de design (EDA) e IP</div><div class="players">Synopsys · Cadence · Siemens · Arm</div><div><span class="pill metric">Top 3: ≈80% EDA</span></div><div class="understand">Software e propriedade intelectual usados para projetar, simular e validar circuitos.</div></div>
-<div class="map-row"><div class="layer">Energia &amp; Refrigeração</div><div class="players"><b>Distribuição:</b> Eaton · Schneider · ABB<br/><b>Power management:</b> MPS (MPWR)<br/><b>Refrigeração:</b> Vertiv · Schneider</div><div><span class="pill medium">Média</span></div><div class="understand">Leva energia até racks e chips, faz a gestão de potência e remove o calor dos sistemas.</div></div><div class="map-legend"><b>Nível de concentração:</b><span class="pill high">Alta</span> poucas alternativas relevantes <span class="pill medium">Média</span> concentração relevante <span class="pill low">Baixa</span> mercado mais fragmentado</div></div><div class="map-caption">Framework didático da cadeia de dependências da IA. Os percentuais usam métricas diferentes conforme a natureza de cada mercado; a nota metodológica ao final explica essas simplificações.</div></div>
-<h2 class="headline">Uma cadeia com poucas alternativas</h2><p>Quando olhamos o <em>stack</em> completo, isto é, o conjunto de camadas tecnológicas que formam o sistema, a concentração chama atenção.</p><p>Em HBM, três fabricantes concentram praticamente todo o mercado.<a class="footnote" href="#r2">[2]</a> Na fabricação de chips sob encomenda, ou <em>foundry</em>, uma única empresa responde por mais de 70% do mercado mundial.<a class="footnote" href="#r3">[3]</a> Em litografia EUV (<em>Extreme Ultraviolet</em>, tecnologia usada para produzir os chips mais avançados), existe essencialmente um único fornecedor.<a class="footnote" href="#r4">[4]</a></p><p>Essa concentração não surgiu por acaso.</p><p>Capital, propriedade intelectual, escala, conhecimento acumulado, ciclos longos de desenvolvimento e altos custos de troca criaram barreiras que levam anos, e em alguns casos décadas, para serem reproduzidas.</p><p>Por isso, em vários pontos da cadeia, existem poucas alternativas reais.</p>
-<h2 class="headline">O sistema inteiro importa</h2><p>Durante boa parte da atual corrida de IA, a atenção esteve concentrada nas GPUs.</p><p>Mas uma GPU mais poderosa não resolve o problema sozinha.</p><p>Ela precisa de memória rápida, conectividade, encapsulamento, software, energia e refrigeração. À medida que os <em>clusters</em>, grupos de milhares de computadores trabalhando de forma coordenada, aumentam de tamanho, a eficiência de todo o sistema passa a ser tão importante quanto o desempenho de qualquer componente individual.</p><p class="emphasis">A unidade relevante deixa de ser apenas o chip. Passa a ser o sistema.</p><p>E isso ajuda a explicar outro fenômeno: os gargalos mudam.</p><p>Em determinado momento, a restrição pode estar nos aceleradores. Depois, na memória ou no encapsulamento. Com <em>clusters</em> maiores, rede e interconexão ganham importância. Com data centers mais densos, transformadores, infraestrutura elétrica, disponibilidade de energia e refrigeração passam a limitar a expansão.</p><p>Resolver uma restrição muitas vezes apenas revela a seguinte.</p><p>No limite, uma cadeia que começa em algoritmos extremamente sofisticados acaba dependendo de algo muito básico:</p><p class="question">eletricidade.</p>
-<h2 class="headline">A competição também atravessa as camadas</h2><p>Há ainda outro movimento acontecendo dentro desse <em>stack</em>.</p><p>Os maiores participantes estão tentando reduzir suas dependências e ocupar partes diferentes da cadeia.</p><p><em>Hyperscalers</em> desenvolvem chips próprios. Empresas de modelos avançam para aplicações e agentes. Fabricantes de infraestrutura avançam para sistemas, software e serviços.</p><p>A competição, portanto, não acontece apenas entre empresas que ocupam a mesma camada.</p><p class="emphasis">Ela acontece também entre as próprias camadas.</p><p>E talvez a mais aberta de todas seja justamente a mais próxima do usuário.</p><p>A camada de aplicações e agentes ainda está em construção.</p><p>Foi algo parecido que vimos depois da internet e do smartphone: infraestrutura e plataformas foram fundamentais, mas uma enorme quantidade de valor foi criada depois, nas aplicações que conquistaram a relação com o cliente.</p><p>Ainda é cedo para saber se a IA seguirá exatamente o mesmo caminho.</p><p>Mas a pergunta já começa a aparecer.</p>
-<h2 class="headline">Três dilemas por trás do mapa</h2><p>Esse mapa ajuda a recolocar três perguntas que já fazem parte da lente original do Moat Radar em seu texto fundador, <a href="/pt/edicoes/2026-07-25/"><b>Os seis dilemas da revolução de IA — Moat Radar #01</b></a>.</p><p>A primeira é <b>Capex vs. bolha</b>: quanto dessa infraestrutura será necessária para atender à demanda futura e quanto está sendo construído antes de existir retorno econômico suficiente?</p><p>A segunda é a <b>economia dos gargalos</b>: onde estará a restrição do sistema à medida que cada camada aumenta sua capacidade?</p><p>E a terceira se aproxima do dilema <b>modelo vs. canal</b>:</p><p class="question">quem ficará com o cliente?</p><p>O dono do modelo? O <em>hyperscaler</em>? Uma grande plataforma já existente? Ou uma nova geração de aplicações e agentes construída acima deles?</p><p>Por enquanto, o ponto é mais simples:</p><p><b>Antes de discutir se estamos investindo demais em inteligência artificial, vale entender no que exatamente estamos investindo.</b></p><p>E por trás dos modelos extraordinários que já nos ajudam a produzir mais, aprender mais rápido e criar uma nova geração de produtos e serviços existe uma cadeia tecnológica, industrial e de capital muito maior do que a interface deixa perceber.</p>
-<section class="faq" id="perguntas-respostas"><div class="label">Perguntas e respostas</div><div class="faq-item"><p class="q">O que existe por trás de um modelo de inteligência artificial?</p><p class="a">Por trás das aplicações e dos modelos existe uma cadeia que inclui provedores de nuvem, data centers, software, aceleradores como GPUs, memória de alta velocidade, redes, encapsulamento avançado, fábricas de semicondutores, equipamentos especializados, ferramentas de projeto, energia e refrigeração.</p></div><div class="faq-item"><p class="q">Por que a cadeia de inteligência artificial é tão concentrada?</p><p class="a">Porque várias de suas tecnologias exigem muito capital, propriedade intelectual acumulada, escala, conhecimento técnico, longos ciclos de desenvolvimento e processos de qualificação difíceis de reproduzir. Em algumas camadas, poucas empresas concentram praticamente toda a oferta relevante.</p></div><div class="faq-item"><p class="q">O Capex dos hyperscalers é exagerado? Existe uma bolha potencial?</p><p class="a">Ainda é cedo para saber. Os investimentos são de ordem trilionária e as projeções indicam que devem continuar crescendo. A questão é se a demanda por capacidade computacional crescerá na mesma velocidade. O mercado parece menos preocupado com a utilidade da IA e mais atento ao volume de caixa comprometido para construir essa infraestrutura. Depois de uma fase em que aumentar o investimento era visto quase sempre como positivo, cresce a pressão para que esse Capex se traduza em crescimento de receita, geração de caixa e retorno sobre o capital. Isso não significa que exista necessariamente excesso de capacidade. Significa que o mercado começa a exigir evidências de que os investimentos feitos hoje serão remunerados pela demanda futura.<a class="footnote" href="#r5">[5]</a></p></div><div class="faq-item"><p class="q">Por que GPUs não são suficientes para aumentar a capacidade de IA?</p><p class="a">Porque o desempenho depende do sistema inteiro. GPUs precisam de memória rápida, conectividade, software, encapsulamento, energia e refrigeração. Se qualquer uma dessas partes se torna insuficiente, ela pode limitar a capacidade de todo o sistema.</p></div><div class="faq-item"><p class="q">Qual pode ser o principal gargalo da inteligência artificial?</p><p class="a">O gargalo pode mudar ao longo do tempo. Já esteve em aceleradores, memória e encapsulamento e pode migrar para redes, transformadores, refrigeração ou disponibilidade de eletricidade. No limite, energia pode se tornar uma das restrições fundamentais para a expansão da infraestrutura de IA.</p></div><div class="faq-item"><p class="q">Quem pode capturar a relação com o cliente na era da IA?</p><p class="a">Ainda não está definido. A disputa envolve empresas de modelos, <em>hyperscalers</em>, plataformas existentes e uma nova geração de aplicações e agentes. Essa camada de aplicações ainda está em construção e pode se tornar uma das principais áreas de criação de valor nos próximos anos.</p></div></section>
-<section class="notes"><div class="label">Notas de linguagem e metodologia</div><p><em>Capex</em>: abreviação de <em>capital expenditure</em>, investimento em ativos físicos e infraestrutura.</p><p><em>Hyperscaler</em>: empresa que opera infraestrutura computacional e data centers em escala muito elevada.</p><p><em>Stack</em>: conjunto de camadas tecnológicas que, combinadas, formam um sistema.</p><p><em>Framework</em>: estrutura conceitual utilizada para organizar e interpretar um problema.</p><p><em>Foundry</em>: fábrica especializada na produção de semicondutores projetados por outras empresas.</p><p><em>Cluster</em>: conjunto de servidores ou processadores interligados que trabalham de forma coordenada.</p><p>O <em>framework</em> simplifica uma cadeia complexa para fins didáticos. Os percentuais de concentração utilizam métricas distintas conforme a natureza de cada mercado, como participação do líder, dos três maiores participantes ou de um subsegmento específico. As camadas representam dependências econômicas e tecnológicas e não uma sequência industrial estritamente linear.</p></section>
-<section class="sources" id="referencias"><div class="label">Referências</div><ol><li id="r1"><a href="https://www.reuters.com/business/media-telecom/nasdaq-faces-2-trillion-wipeout-october-ai-spending-fears-deepen-2026-10-30/" target="_blank" rel="noopener">Reuters, 30 out. 2026 — Nasdaq faces $2 trillion wipeout in October as AI spending fears deepen.</a></li><li id="r2"><a href="https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share" target="_blank" rel="noopener">Counterpoint Research, set. 2026 — Global DRAM and HBM Market Share: Quarterly.</a></li><li id="r3"><a href="https://www.trendforce.com/presscenter/news/20260909-13225.html" target="_blank" rel="noopener">TrendForce, 9 set. 2026 — Global Foundry Revenue Approaches US$53.49 Billion in 2Q26.</a></li><li id="r4"><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026SC0504" target="_blank" rel="noopener">Comissão Europeia, 2026 — análise da cadeia de semicondutores, incluindo a concentração em litografia EUV.</a></li><li id="r5"><a href="https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/" target="_blank" rel="noopener">Reuters, 19 out. 2026 — S&amp;P Global estima mais de US$ 7 trilhões em investimentos ligados a IA e data centers por seis hyperscalers entre 2025 e 2030.</a></li></ol></section>
-<section class="private" id="mensagem-autor"><div class="label">Mensagem privada ao autor</div><p class="copy">Quer comentar, discordar ou aprofundar algum ponto? Sua mensagem vai diretamente para o autor.</p><form action="https://formspree.io/f/xbgjevaj" method="POST" id="private-message-form"><div class="field"><label for="nome">Nome</label><input id="nome" name="nome" required/></div><div class="field"><label for="email">E-mail</label><input id="email" type="email" name="email" required/></div><div class="field"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" required></textarea></div><p class="form-note">Mensagem privada. Seus dados não serão publicados.</p><button type="submit">Enviar mensagem</button></form></section></main><hr class="dashed"/><footer class="footer"><p class="disclaimer">O Moat Radar é um projeto editorial independente sobre inteligência artificial, estratégia, tecnologia e vantagem competitiva. Não constitui recomendação de investimento.</p><div class="signature">Jorge Rocha</div><div class="bio">Conselheiro de administração · Investidor anjo · Autor do Moat Radar</div><div class="contact"><a href="mailto:jorge@ginvest.com.br">jorge@ginvest.com.br</a></div></footer><a class="back" href="/pt/artigos/">← Voltar para Artigos</a></div>
-<script>(function(){function ev(n,p){if(typeof gtag==='function')gtag('event',n,p||{})}var f={};function once(n,p){if(!f[n]){f[n]=1;ev(n,p)}}function prog(){var d=document.documentElement,m=Math.max(d.scrollHeight-innerHeight,1),p=(scrollY/m)*100;if(p>=50)once('article_50_percent',{article_title:'Entendendo a IA por dentro',article_edition:'05',language:'pt-BR'})}addEventListener('scroll',prog,{passive:true});prog();if('IntersectionObserver'in window){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;if(e.target.id==='infografico-stack-ia')once('infographic_view',{article_title:'Entendendo a IA por dentro'});if(e.target.id==='perguntas-respostas')once('faq_view',{article_title:'Entendendo a IA por dentro'})})},{threshold:.35});['infografico-stack-ia','perguntas-respostas'].forEach(function(i){var e=document.getElementById(i);if(e)o.observe(e)})}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(a){try{var u=new URL(a.href,location.href);if(u.hostname&&u.hostname!==location.hostname)ev('reference_click',{article_title:'Entendendo a IA por dentro',link_url:u.href,link_text:(a.textContent||'').trim().slice(0,120)})}catch(x){}}});var form=document.getElementById('private-message-form');if(form)form.addEventListener('submit',function(){ev('private_message_submit',{article_title:'Entendendo a IA por dentro',article_edition:'05'})})})();</script></body></html>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Entendendo a IA por dentro",
+  "description": "O que existe por trás dos modelos de IA? Um mapa da cadeia que liga aplicações, modelos, nuvem, chips, memória, redes, fabricação, energia e refrigeração.",
+  "datePublished": "2026-11-02T16:00:00-03:00",
+  "dateModified": "2026-11-02T16:00:00-03:00",
+  "inLanguage": "pt-BR",
+  "url": "https://moat-radar.com/pt/edicoes/2026-11-02/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://moat-radar.com/pt/edicoes/2026-11-02/"
+  },
+  "image": [
+    "https://moat-radar.com/assets/edicoes/2026-11-02/entendendo-ia-por-dentro-social.jpg",
+    "https://moat-radar.com/assets/edicoes/2026-11-02/stack-ia-infraestrutura.webp"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Jorge Rocha",
+    "url": "https://moat-radar.com/autor/jorge-rocha/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Moat Radar",
+    "url": "https://moat-radar.com/"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Infraestrutura de inteligência artificial"
+    },
+    {
+      "@type": "Thing",
+      "name": "Capex vs. Bolha"
+    },
+    {
+      "@type": "Thing",
+      "name": "Economia de Gargalos"
+    },
+    {
+      "@type": "Thing",
+      "name": "Modelo vs. Canal"
+    }
+  ]
+}
+</script>
+<meta content="article" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="Moat Radar" property="og:site_name"/>
+<meta content="Entendendo a IA por dentro" property="og:title"/>
+<meta content="O que existe por trás dos modelos de IA? Um mapa da cadeia que sustenta a inteligência artificial." property="og:description"/>
+<meta content="https://moat-radar.com/pt/edicoes/2026-11-02/" property="og:url"/>
+<meta content="https://moat-radar.com/assets/edicoes/2026-11-02/entendendo-ia-por-dentro-social.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Infográfico do Moat Radar sobre o stack e a infraestrutura física da inteligência artificial." property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Entendendo a IA por dentro" name="twitter:title"/>
+<meta content="O que existe por trás dos modelos de IA? Um mapa da cadeia que sustenta a inteligência artificial." name="twitter:description"/>
+<meta content="https://moat-radar.com/assets/edicoes/2026-11-02/entendendo-ia-por-dentro-social.jpg" name="twitter:image"/>
+<meta content="Infográfico do Moat Radar sobre o stack e a infraestrutura física da inteligência artificial." name="twitter:image:alt"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-5XX9GQKDK0');</script>
+
+<style id="infographic-mobile-fix">
+.article-figure{margin:30px 0 38px}
+.infographic-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:6px}
+.infographic-final{display:block;width:100%;height:auto;max-width:none}
+.article-figure figcaption{font:10.5px/1.55 var(--mono);color:var(--soft);text-align:center;margin:10px auto 0;max-width:760px}
+@media(max-width:640px){
+  .article-figure{margin:26px 0 34px}
+  .infographic-final{width:1100px;max-width:none}
+}
+</style>
+
+</head>
+<body data-moat-template="article-original-v1"><div class="sheet">
+<div class="langbar"><a href="/en/editions/2026-11-02/">[EN]</a> <a class="active" href="/pt/edicoes/2026-11-02/">[PT]</a></div>
+<div class="mini-nav"><a href="/pt/">Início</a><span>·</span><a href="/pt/sobre/">Sobre</a><span>·</span><a href="/pt/weekly/">Weekly</a><span>·</span><a href="/pt/artigos/">Artigos</a><span>·</span><a href="/pt/dilemas/">Dilemas</a><span>·</span><a href="/autor/jorge-rocha/">Autor</a></div>
+<header class="masthead">
+<svg aria-label="Símbolo da Edição 05: camadas da infraestrutura de IA" class="edition-emblem" role="img" viewbox="0 0 88 88" xmlns="http://www.w3.org/2000/svg"><circle cx="44" cy="44" fill="none" r="40" stroke="#B9975B" stroke-width="1.6"></circle><rect fill="none" height="10" rx="2" stroke="#34486A" stroke-width="2" width="40" x="24" y="25"></rect><rect fill="none" height="10" rx="2" stroke="#A85847" stroke-width="2" width="48" x="20" y="39"></rect><rect fill="none" height="10" rx="2" stroke="#B9975B" stroke-width="2" width="56" x="16" y="53"></rect><circle cx="44" cy="44" fill="#34486A" r="3"></circle></svg>
+<a class="brand-mark" href="/pt/"><em>Moat</em> Radar</a>
+<div class="edition-line">Artigo 05 · 2 de novembro de 2026</div>
+<h1 class="title">Entendendo a IA por dentro</h1>
+<p class="subtitle">O que existe entre o prompt que digitamos e a resposta que recebemos?</p>
+<p class="byline">POR JORGE ROCHA</p>
+</header>
+<hr class="dashed"/>
+<section class="summary">
+<div class="label-mono">Resumo</div>
+<p>Por trás dos modelos de inteligência artificial existe uma cadeia complexa de soluções e fornecedores que, em alguns níveis, se parece mais com uma cadeia produtiva industrial do que com a tecnologia digital que vemos na superfície. Ela passa por aplicações, modelos, nuvem, data centers, software, chips, memória, redes, encapsulamento, fabricação, equipamentos, energia e refrigeração.</p>
+<p>Ao olhar essa cadeia completa, duas características chamam atenção. A primeira é a forte concentração em vários pontos: os três maiores provedores de nuvem concentram cerca de 61% do mercado, três fabricantes praticamente toda a memória HBM, a TSMC mais de 70% do mercado mundial de fabricação de chips sob encomenda e a ASML praticamente 100% da litografia EUV usada nos chips mais avançados. A segunda é a dependência entre as camadas: não basta ter o melhor modelo ou a GPU mais poderosa se faltarem memória, conectividade, energia ou capacidade de refrigeração.</p>
+<p>Isso ajuda a explicar por que os gargalos mudam à medida que a infraestrutura cresce. Uma restrição pode começar nos chips, passar para memória, encapsulamento ou redes e, no limite, chegar à disponibilidade de energia. Ao mesmo tempo, os maiores participantes tentam reduzir essas dependências: provedores de nuvem desenvolvem chips próprios, empresas de modelos avançam para aplicações e agentes, e fabricantes de infraestrutura procuram ocupar outras partes da cadeia.</p>
+<p>O mapa também ajuda a recolocar três perguntas centrais para o Moat Radar: <b>o volume de Capex está construindo capacidade necessária ou pode gerar excesso de oferta? Onde estará o próximo gargalo? E, numa camada de aplicações ainda em formação, quem ficará com a relação com o cliente?</b></p>
+</section>
+<main class="body-text">
+<p>Nos últimos dias, uma forte correção nas ações de tecnologia aumentou a preocupação com o volume de investimentos em inteligência artificial e seus efeitos sobre caixa e retorno do capital das empresas do setor.<a class="footnote" href="#ref-1">[1]</a></p>
+<p>A preocupação faz sentido. Mas ela convive com outra realidade igualmente importante: os modelos de IA estão ficando melhores, mais presentes e mais úteis.</p>
+<p>Empresas já os utilizam para escrever código, atender clientes, criar conteúdo, pesquisar, analisar informações e automatizar tarefas. Ao mesmo tempo, uma nova geração de produtos, agentes e serviços começa a ser construída sobre esses modelos.</p>
+<p>É justamente por isso que vale fazer uma pergunta simples antes de discutir se estamos diante de <em>capex</em> necessário ou excesso de investimento:</p>
+<p class="standalone-question"><b>O que existe por trás desses modelos que estamos usando cada vez mais?</b></p>
+
+<h2 class="headline">Da tela para a infraestrutura</h2>
+<p>Para o usuário, inteligência artificial é ChatGPT, Claude, Gemini, Copilot, Cursor ou alguma outra aplicação que incorpora IA.</p>
+<p><b>Essas aplicações e agentes são a camada mais visível de uma cadeia muito maior.</b></p>
+<p>Abaixo delas estão os modelos fundamentais, como os <em>LLMs</em> (<em>Large Language Models</em>, grandes modelos de linguagem), capazes de gerar texto e código e que, em arquiteturas multimodais, também trabalham com imagens, áudio e outros formatos.</p>
+<p>Depois vêm os grandes provedores de nuvem, ou <em>hyperscalers</em>, empresas que operam infraestrutura computacional em grande escala e a disponibilizam como serviço.</p>
+<p>A partir daí, a cadeia fica muito mais física.</p>
+<p>Data centers abrigam milhares de servidores. Entre a infraestrutura e o hardware existe ainda uma camada importante de software, com plataformas como CUDA e PyTorch, que ajudam os desenvolvedores a usar e coordenar esses recursos computacionais.</p>
+<p>Em seguida vêm GPUs (<em>Graphics Processing Units</em>, processadores originalmente desenvolvidos para gráficos e hoje fundamentais para IA), TPUs (<em>Tensor Processing Units</em>, aceleradores especializados desenvolvidos pelo Google) e outros chips que executam os cálculos.</p>
+<p>Memórias HBM (<em>High Bandwidth Memory</em>, memória de altíssima largura de banda) precisam fornecer dados a esses processadores em enorme velocidade. Redes conectam milhares desses aceleradores para que consigam trabalhar como um único sistema.</p>
+<p>Mais abaixo aparecem o encapsulamento avançado, que integra chips e memória em alta densidade; as <em>foundries</em>, fábricas especializadas na produção de chips sob encomenda; os equipamentos necessários para fabricar esses chips; e as ferramentas de EDA (<em>Electronic Design Automation</em>, softwares usados para projetar e validar circuitos).</p>
+<p>Tudo isso precisa de energia e refrigeração.</p>
+<p><b>A IA parece software na superfície. Por baixo, é também uma enorme cadeia industrial.</b></p>
+
+<h2 class="headline">O mapa completo</h2>
+<p>O infográfico abaixo organiza essa cadeia do usuário ao silício.</p>
+<p>Além de mostrar exemplos das principais empresas presentes em cada camada, ele procura responder duas perguntas simples: <b>o que cada camada faz</b> e <b>quão concentrado é aquele mercado ou submercado</b>.</p>
+<p>A coluna “Entendendo a camada” resume a função de cada elo. Já a coluna de concentração ajuda a visualizar algo que nem sempre aparece quando olhamos apenas para os nomes mais conhecidos da IA: em várias partes importantes do sistema, poucas empresas concentram grande parte da capacidade disponível.</p>
+<p>O mapa também mostra alguns movimentos de integração entre as camadas, à medida que empresas tentam reduzir dependências, controlar custos ou se aproximar do cliente.</p>
+<figure class="article-figure" id="infografico-stack-ia">
+  <div class="infographic-scroll">
+    <img class="infographic-final" src="/assets/edicoes/2026-11-02/stack-ia-infraestrutura-pt.webp" width="1586" height="992"
+      alt="O stack da IA: da aplicação à infraestrutura física, com as camadas da cadeia de inteligência artificial, principais players, concentração e explicação de cada camada"/>
+  </div>
+  <figcaption>Framework didático da cadeia de dependências da IA. Os percentuais usam métricas diferentes conforme a natureza de cada mercado; a nota metodológica ao final explica essas simplificações.</figcaption>
+</figure>
+
+<h2 class="headline">Uma cadeia com poucas alternativas</h2>
+<p>Quando olhamos o <em>stack</em> completo, isto é, o conjunto de camadas tecnológicas que formam o sistema, a concentração chama atenção.</p>
+<p>Em HBM, três fabricantes concentram praticamente todo o mercado.<a class="footnote" href="#ref-2">[2]</a> Na fabricação de chips sob encomenda, ou <em>foundry</em>, uma única empresa responde por mais de 70% do mercado mundial.<a class="footnote" href="#ref-3">[3]</a> Em litografia EUV (<em>Extreme Ultraviolet</em>, tecnologia usada para produzir os chips mais avançados), existe essencialmente um único fornecedor.<a class="footnote" href="#ref-4">[4]</a></p>
+<p>Essa concentração não surgiu por acaso.</p>
+<p>Capital, propriedade intelectual, escala, conhecimento acumulado, ciclos longos de desenvolvimento e altos custos de troca criaram barreiras que levam anos, e em alguns casos décadas, para serem reproduzidas.</p>
+<p>Por isso, em vários pontos da cadeia, existem poucas alternativas reais.</p>
+
+<h2 class="headline">O sistema inteiro importa</h2>
+<p>Durante boa parte da atual corrida de IA, a atenção esteve concentrada nas GPUs.</p>
+<p>Mas uma GPU mais poderosa não resolve o problema sozinha.</p>
+<p>Ela precisa de memória rápida, conectividade, encapsulamento, software, energia e refrigeração. À medida que os <em>clusters</em>, grupos de milhares de computadores trabalhando de forma coordenada, aumentam de tamanho, a eficiência de todo o sistema passa a ser tão importante quanto o desempenho de qualquer componente individual.</p>
+<p class="short-emphasis"><b>A unidade relevante deixa de ser apenas o chip. Passa a ser o sistema.</b></p>
+<p>E isso ajuda a explicar outro fenômeno: os gargalos mudam.</p>
+<p>Em determinado momento, a restrição pode estar nos aceleradores. Depois, na memória ou no encapsulamento. Com <em>clusters</em> maiores, rede e interconexão ganham importância. Com data centers mais densos, transformadores, infraestrutura elétrica, disponibilidade de energia e refrigeração passam a limitar a expansão.</p>
+<p>Resolver uma restrição muitas vezes apenas revela a seguinte.</p>
+<p>No limite, uma cadeia que começa em algoritmos extremamente sofisticados acaba dependendo de algo muito básico:</p>
+<p class="standalone-question"><b>eletricidade.</b></p>
+
+<h2 class="headline">A competição também atravessa as camadas</h2>
+<p>Há ainda outro movimento acontecendo dentro desse <em>stack</em>.</p>
+<p>Os maiores participantes estão tentando reduzir suas dependências e ocupar partes diferentes da cadeia.</p>
+<p><em>Hyperscalers</em> desenvolvem chips próprios. Empresas de modelos avançam para aplicações e agentes. Fabricantes de infraestrutura avançam para sistemas, software e serviços.</p>
+<p>A competição, portanto, não acontece apenas entre empresas que ocupam a mesma camada.</p>
+<p class="short-emphasis"><b>Ela acontece também entre as próprias camadas.</b></p>
+<p>E talvez a mais aberta de todas seja justamente a mais próxima do usuário.</p>
+<p>A camada de aplicações e agentes ainda está em construção.</p>
+<p>Foi algo parecido que vimos depois da internet e do smartphone: infraestrutura e plataformas foram fundamentais, mas uma enorme quantidade de valor foi criada depois, nas aplicações que conquistaram a relação com o cliente.</p>
+<p>Ainda é cedo para saber se a IA seguirá exatamente o mesmo caminho.</p>
+<p>Mas a pergunta já começa a aparecer.</p>
+
+<h2 class="headline">Três dilemas por trás do mapa</h2>
+<p>Esse mapa ajuda a recolocar três perguntas que já fazem parte da lente original do Moat Radar em seu texto fundador, <a href="https://moat-radar.com/pt/edicoes/2026-07-25/"><b>Os seis dilemas da revolução de IA — Moat Radar #01</b></a>.</p>
+<p>A primeira é <b>Capex vs. bolha</b>: quanto dessa infraestrutura será necessária para atender à demanda futura e quanto está sendo construído antes de existir retorno econômico suficiente?</p>
+<p>A segunda é a <b>economia dos gargalos</b>: onde estará a restrição do sistema à medida que cada camada aumenta sua capacidade?</p>
+<p>E a terceira se aproxima do dilema <b>modelo vs. canal</b>:</p>
+<p class="standalone-question"><b>quem ficará com o cliente?</b></p>
+<p>O dono do modelo? O <em>hyperscaler</em>? Uma grande plataforma já existente? Ou uma nova geração de aplicações e agentes construída acima deles?</p>
+<p>Por enquanto, o ponto é mais simples:</p>
+<p><b>Antes de discutir se estamos investindo demais em inteligência artificial, vale entender no que exatamente estamos investindo.</b></p>
+<p>E por trás dos modelos extraordinários que já nos ajudam a produzir mais, aprender mais rápido e criar uma nova geração de produtos e serviços existe uma cadeia tecnológica, industrial e de capital muito maior do que a interface deixa perceber.</p>
+
+<section class="faq-block" id="perguntas-respostas">
+<div class="label-mono">Perguntas e respostas</div>
+<div class="faq-item"><p class="q">O que existe por trás de um modelo de inteligência artificial?</p><p class="a">Por trás das aplicações e dos modelos existe uma cadeia que inclui provedores de nuvem, data centers, software, aceleradores como GPUs, memória de alta velocidade, redes, encapsulamento avançado, fábricas de semicondutores, equipamentos especializados, ferramentas de projeto, energia e refrigeração.</p></div>
+<div class="faq-item"><p class="q">Por que a cadeia de inteligência artificial é tão concentrada?</p><p class="a">Porque várias de suas tecnologias exigem muito capital, propriedade intelectual acumulada, escala, conhecimento técnico, longos ciclos de desenvolvimento e processos de qualificação difíceis de reproduzir. Em algumas camadas, poucas empresas concentram praticamente toda a oferta relevante.</p></div>
+<div class="faq-item"><p class="q">O Capex dos hyperscalers é exagerado? Existe uma bolha potencial?</p><p class="a">Ainda é cedo para saber. Os investimentos são de ordem trilionária e as projeções indicam que devem continuar crescendo. A questão é se a demanda por capacidade computacional crescerá na mesma velocidade. O mercado parece menos preocupado com a utilidade da IA e mais atento ao volume de caixa comprometido para construir essa infraestrutura. Depois de uma fase em que aumentar o investimento era visto quase sempre como positivo, cresce a pressão para que esse Capex se traduza em crescimento de receita, geração de caixa e retorno sobre o capital. Isso não significa que exista necessariamente excesso de capacidade. Significa que o mercado começa a exigir evidências de que os investimentos feitos hoje serão remunerados pela demanda futura.<a class="footnote" href="#ref-5">[5]</a></p></div>
+<div class="faq-item"><p class="q">Por que GPUs não são suficientes para aumentar a capacidade de IA?</p><p class="a">Porque o desempenho depende do sistema inteiro. GPUs precisam de memória rápida, conectividade, software, encapsulamento, energia e refrigeração. Se qualquer uma dessas partes se torna insuficiente, ela pode limitar a capacidade de todo o sistema.</p></div>
+<div class="faq-item"><p class="q">Qual pode ser o principal gargalo da inteligência artificial?</p><p class="a">O gargalo pode mudar ao longo do tempo. Já esteve em aceleradores, memória e encapsulamento e pode migrar para redes, transformadores, refrigeração ou disponibilidade de eletricidade. No limite, energia pode se tornar uma das restrições fundamentais para a expansão da infraestrutura de IA.</p></div>
+<div class="faq-item"><p class="q">Quem pode capturar a relação com o cliente na era da IA?</p><p class="a">Ainda não está definido. A disputa envolve empresas de modelos, <em>hyperscalers</em>, plataformas existentes e uma nova geração de aplicações e agentes. Essa camada de aplicações ainda está em construção e pode se tornar uma das principais áreas de criação de valor nos próximos anos.</p></div>
+</section>
+
+<section class="notes-block body-text">
+<div class="label-mono">Notas de linguagem e metodologia</div>
+<p><em>Capex</em>: abreviação de <em>capital expenditure</em>, investimento em ativos físicos e infraestrutura.</p>
+<p><em>Hyperscaler</em>: empresa que opera infraestrutura computacional e data centers em escala muito elevada.</p>
+<p><em>Stack</em>: conjunto de camadas tecnológicas que, combinadas, formam um sistema.</p>
+<p><em>Framework</em>: estrutura conceitual utilizada para organizar e interpretar um problema.</p>
+<p><em>Foundry</em>: fábrica especializada na produção de semicondutores projetados por outras empresas.</p>
+<p><em>Cluster</em>: conjunto de servidores ou processadores interligados que trabalham de forma coordenada.</p>
+<p>O <em>framework</em> simplifica uma cadeia complexa para fins didáticos. Os percentuais de concentração utilizam métricas distintas conforme a natureza de cada mercado, como participação do líder, dos três maiores participantes ou de um subsegmento específico. As camadas representam dependências econômicas e tecnológicas e não uma sequência industrial estritamente linear.</p>
+</section>
+
+<section class="sources-block" id="referencias"><div class="label-mono">Referências</div><ol>
+<li id="ref-1"><a href="https://www.reuters.com/business/media-telecom/nasdaq-faces-2-trillion-wipeout-october-ai-spending-fears-deepen-2026-10-30/" rel="noopener" target="_blank">Reuters, 30 out. 2026 — Nasdaq faces $2 trillion wipeout in October as AI spending fears deepen.</a></li>
+<li id="ref-2"><a href="https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share" rel="noopener" target="_blank">Counterpoint Research, set. 2026 — Global DRAM and HBM Market Share: Quarterly.</a></li>
+<li id="ref-3"><a href="https://www.trendforce.com/presscenter/news/20260909-13225.html" rel="noopener" target="_blank">TrendForce, 9 set. 2026 — Global Foundry Revenue Approaches US$53.49 Billion in 2Q26.</a></li>
+<li id="ref-4"><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026SC0504" rel="noopener" target="_blank">Comissão Europeia, 2026 — análise da cadeia de semicondutores, incluindo a concentração em litografia EUV.</a></li>
+<li id="ref-5"><a href="https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/" rel="noopener" target="_blank">Reuters, 19 out. 2026 — S&P Global estima mais de US$ 7 trilhões em investimentos ligados a IA e data centers por seis hyperscalers entre 2025 e 2030.</a></li>
+</ol></section>
+
+<section class="private-comments" id="mensagem-autor"><div class="label-mono">Mensagem privada ao autor</div><p class="comments-copy">Quer comentar, discordar ou aprofundar algum ponto? Sua mensagem vai diretamente para o autor.</p><form action="https://formspree.io/f/xbgjevaj" method="POST" id="private-message-form"><div class="field"><label for="nome">Nome</label><input id="nome" name="nome" required type="text"/></div><div class="field"><label for="email">E-mail</label><input id="email" name="email" required type="email"/></div><div class="field"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" required></textarea></div><p class="form-note">Mensagem privada. Seus dados não serão publicados.</p><button type="submit">Enviar mensagem</button></form></section>
+</main>
+<hr class="dashed"/>
+<footer><p class="disclaimer">O Moat Radar é um projeto editorial independente sobre inteligência artificial, estratégia, tecnologia e vantagem competitiva. Não constitui recomendação de investimento.</p><div class="signature">Jorge Rocha</div><div class="bio">Conselheiro de administração · Investidor anjo · Autor do Moat Radar</div><div class="contact"><a href="mailto:jorge@ginvest.com.br">jorge@ginvest.com.br</a></div></footer>
+<div class="end-nav"><a class="end-back" href="/pt/artigos/">← Voltar para Artigos</a></div>
+</div>
+<script>
+(function(){
+  function moatEvent(name, params){
+    params = params || {};
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, params);
+    } else if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push(Object.assign({event:name}, params));
+    }
+  }
+
+  var fired = {};
+  function once(name, params){
+    if (fired[name]) return;
+    fired[name] = true;
+    moatEvent(name, params);
+  }
+
+  function articleProgress(){
+    var doc = document.documentElement;
+    var max = Math.max(doc.scrollHeight - window.innerHeight, 1);
+    var pct = ((window.scrollY || doc.scrollTop) / max) * 100;
+    if (pct >= 50) once('article_50_percent', {
+      article_title: 'Entendendo a IA por dentro',
+      article_edition: '05',
+      language: 'pt-BR'
+    });
+  }
+  window.addEventListener('scroll', articleProgress, {passive:true});
+  articleProgress();
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        if (entry.target.id === 'infografico-stack-ia') {
+          once('infographic_view', {
+            article_title: 'Entendendo a IA por dentro',
+            infographic: 'stack_ia_infraestrutura'
+          });
+        }
+        if (entry.target.id === 'perguntas-respostas') {
+          once('faq_view', {
+            article_title: 'Entendendo a IA por dentro'
+          });
+        }
+      });
+    }, {threshold:0.35});
+    var infographic = document.getElementById('infografico-stack-ia');
+    var faq = document.getElementById('perguntas-respostas');
+    if (infographic) observer.observe(infographic);
+    if (faq) observer.observe(faq);
+  }
+
+  document.addEventListener('click', function(e){
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    try {
+      var u = new URL(link.href, location.href);
+      if (u.hostname && u.hostname !== location.hostname) {
+        moatEvent('reference_click', {
+          article_title: 'Entendendo a IA por dentro',
+          link_url: u.href,
+          link_text: (link.textContent || '').trim().slice(0,120)
+        });
+      }
+    } catch(err){}
+  });
+
+  var form = document.getElementById('private-message-form');
+  if (form) {
+    form.addEventListener('submit', function(){
+      moatEvent('private_message_submit', {
+        article_title: 'Entendendo a IA por dentro',
+        article_edition: '05'
+      });
+    });
+  }
+})();
+</script>
+
+</body></html>
