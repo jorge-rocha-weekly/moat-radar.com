@@ -1,0 +1,140 @@
+ linking applications, models, cloud, chips, memory, networks, manufacturing, power and cooling.",
+  "datePublished": "2026-11-02T16:00:00-03:00",
+  "dateModified": "2026-11-02T16:00:00-03:00",
+  "inLanguage": "en",
+  "url": "https://moat-radar.com/en/editions/2026-11-02/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://moat-radar.com/en/editions/2026-11-02/"
+  },
+  "image": [
+    "https://moat-radar.com/assets/edicoes/2026-11-02/entendendo-ia-por-dentro-social.jpg",
+    "https://moat-radar.com/assets/edicoes/2026-11-02/stack-ia-infraestrutura.webp"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Jorge Rocha",
+    "url": "https://moat-radar.com/autor/jorge-rocha/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Moat Radar",
+    "url": "https://moat-radar.com/"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Infraestrutura de inteligência artificial"
+    },
+    {
+      "@type": "Thing",
+      "name": "Capex vs. Bolha"
+    },
+    {
+      "@type": "Thing",
+      "name": "Economia de Gargalos"
+    },
+    {
+      "@type": "Thing",
+      "name": "Modelo vs. Canal"
+    }
+  ]
+}
+</script>
+<meta content="article" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Moat Radar" property="og:site_name"/>
+<meta content="Understanding AI from the Inside" property="og:title"/>
+<meta content="What lies behind AI models? A map of the chain that powers artificial intelligence." property="og:description"/>
+<meta content="https://moat-radar.com/en/editions/2026-11-02/" property="og:url"/>
+<meta content="https://moat-radar.com/assets/edicoes/2026-11-02/entendendo-ia-por-dentro-social.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Infográfico do Moat Radar sobre o stack e a infraestrutura física da inteligência artificial." property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Understanding AI from the Inside" name="twitter:title"/>
+<meta content="What lies behind AI models? A map of the chain that powers artificial intelligence." name="twitter:description"/>
+<meta content="https://moat-radar.com/assets/edicoes/2026-11-02/entendendo-ia-por-dentro-social.jpg" name="twitter:image"/>
+<meta content="Infográfico do Moat Radar sobre o stack e a infraestrutura física da inteligência artificial." name="twitter:image:alt"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5XX9GQKDK0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-5XX9GQKDK0');</script>
+<style id="infographic-mobile-fix">
+.article-figure{margin:30px 0 38px}
+.infographic-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding-bottom:6px}
+.infographic-final{display:block;width:100%;height:auto;max-width:none}
+.article-figure figcaption{font:10.5px/1.55 var(--mono);color:var(--soft);text-align:center;margin:10px auto 0;max-width:760px}
+@media(max-width:640px){
+  .article-figure{margin:26px 0 34px}
+  .infographic-final{width:1100px;max-width:none}
+}
+</style>
+
+<style id="stack-html-infographic">
+.stack-html-wrap{margin:30px -150px 38px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.stack-html{min-width:1120px;border:1px solid var(--navy-line);border-radius:8px;overflow:hidden;background:#fff;font-family:Inter,Arial,sans-serif}
+.stack-html .stack-title{padding:22px 24px 18px;background:#fff}
+.stack-html .stack-title h3{font:700 30px/1.15 var(--serif);margin:0;color:#10233d}
+.stack-html .stack-title p{font:16px/1.45 Inter,Arial,sans-serif!important;margin:5px 0 0!important;color:#27384d}
+.stack-grid{display:grid;grid-template-columns:1.55fr 1.75fr .95fr 2.15fr}
+.stack-grid>div{padding:9px 12px;border-right:1px solid #d9e0e7;border-top:1px solid #d9e0e7;display:flex;align-items:center}
+.stack-grid>div:nth-child(4n){border-right:0}
+.stack-head>div{background:#0c2744;color:white;border-top:0;font-weight:700;font-size:13px;justify-content:center;text-align:center}
+.stack-layer{background:#edf2f6;font-weight:700;color:#13233a;font-size:14px;line-height:1.15}
+.stack-layer small{font-weight:500;display:block;font-size:11px;margin-top:2px}
+.stack-players{justify-content:center;gap:15px;flex-wrap:wrap;font-weight:700;font-size:13px;color:#1f2933;text-align:center}
+.stack-players span{white-space:nowrap}
+.stack-conc{justify-content:center}
+.stack-pill{display:inline-block;min-width:120px;text-align:center;border-radius:10px;padding:7px 10px;font-weight:700;line-height:1.1}
+.stack-high,.stack-metric{background:#153a5b;color:#fff}
+.stack-medium{background:#cddbe6;color:#17314c}
+.stack-low{background:#ead7bd;color:#17212c}
+.stack-understand{font-size:12.6px;line-height:1.28;color:#151b22}
+.stack-power{background:#0c2744;color:#fff!important}
+.stack-subplayers{font-size:11px;line-height:1.35}
+.stack-legend{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:0;border-top:1px solid #d9e0e7;background:#f8fafc}
+.stack-legend>div{padding:14px 16px;display:flex;align-items:center;gap:10px;border-right:1px solid #d9e0e7;font-size:11.5px;line-height:1.25}
+.stack-legend>div:last-child{border-right:0}
+.stack-legend strong{font-size:15px;color:#13233a}
+.stack-html-caption{font:10.5px/1.55 var(--mono);color:var(--ink-soft);text-align:center;margin:10px auto 0;max-width:760px}
+@media(max-width:1100px){.stack-html-wrap{margin-left:0;margin-right:0}}
+@media(max-width:640px){.stack-html-wrap{margin:26px 0 34px}.stack-html{min-width:1080px}}
+</style>
+
+</head>
+<body data-moat-template="article-original-v1"><div class="sheet">
+<div class="langbar"><a href="/pt/edicoes/2026-11-02/">[PT]</a> <a class="active" href="/en/editions/2026-11-02/">[EN]</a></div>
+<div class="mini-nav"><a href="/en/">Home</a><span>·</span><a href="/en/about/">About</a><span>·</span><a href="/en/weekly/">Weekly</a><span>·</span><a href="/en/articles/">Articles</a><span>·</span><a href="/en/dilemmas/">Dilemmas</a><span>·</span><a href="/en/author/jorge-rocha/">Author</a></div>
+<header class="masthead">
+<svg aria-label="Símbolo da Edição 05: camadas da infraestrutura de IA" class="edition-emblem" role="img" viewbox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+<circle cx="44" cy="44" fill="none" r="40" stroke="#B9975B" stroke-width="1.6"></circle>
+<rect fill="none" height="10" rx="2" stroke="#34486A" stroke-width="2" width="40" x="24" y="25"></rect>
+<rect fill="none" height="10" rx="2" stroke="#A85847" stroke-width="2" width="48" x="20" y="39"></rect>
+<rect fill="none" height="10" rx="2" stroke="#B9975B" stroke-width="2" width="56" x="16" y="53"></rect>
+<circle cx="44" cy="44" fill="#34486A" r="3"></circle>
+</svg>
+<a class="brand-mark" href="/pt/"><em>Moat</em> Radar</a>
+<div class="edition-line">ARTICLE 05 · NOVEMBER 2, 2026</div>
+<h1 class="title">Understanding AI from the Inside</h1>
+<p class="subtitle">What lies between the prompt we type and the answer we receive?</p>
+<p class="byline">BY JORGE ROCHA</p>
+</header>
+<section class="summary body-text">
+<div class="label-mono">Summary</div>
+<p>Behind artificial intelligence models lies a complex chain of solutions and suppliers that, at some levels, looks more like an industrial production chain than the digital technology we see on the surface. It spans applications, models, cloud, data centers, software, chips, memory, networks, packaging, manufacturing, equipment, power and cooling.</p>
+<p>Looking at the full chain, two characteristics stand out. The first is strong concentration at several points: the three largest cloud providers account for about 61% of the market, three manufacturers for virtually all HBM memory, TSMC for more than 70% of the global foundry market, and ASML for virtually 100% of the EUV lithography used in the most advanced chips. The second is interdependence across layers: having the best model or the most powerful GPU is not enough if memory, connectivity, power or cooling capacity are missing.</p>
+<p>This helps explain why bottlenecks shift as infrastructure grows. A constraint may start in chips, move to memory, packaging or networks and, ultimately, reach power availability. At the same time, the largest players are trying to reduce these dependencies: cloud providers are developing their own chips, model companies are moving into applications and agents, and infrastructure manufacturers are expanding into other parts of the chain.</p>
+<p>The map also brings back three central questions for Moat Radar: is the current level of Capex building necessary capacity or creating potential oversupply? Where will the next bottleneck be? And, in an application layer that is still taking shape, who will own the customer relationship?</p>
+</section>
+<main class="body-text">
+<p>In recent days, a sharp correction in technology stocks has increased concern about the scale of investment in artificial intelligence and its effects on cash flow and returns on capital across the sector.<a class="footnote" href="#ref-1">[1]</a></p>
+<p>That concern makes sense. But it coexists with another equally important reality: AI models are getting better, more widely used and more useful.</p>
+<p>Companies already use them to write code, serve customers, create content, research, analyze information and automate tasks. At the same time, a new generation of products, agents and services is being built on top of these models.</p>
+<p>That is precisely why it is worth asking a simple question before debating whether we are looking at necessary capex or excessive investment:</p>
+<p class="standalone-question">What lies behind the models we are using more and more?</p>
+<h2 class="headline">From the screen to the infrastructure</h2>
+<p>For users, artificial intelligence is ChatGPT, Claude, Gemini, Copilot, Cursor or another application that incorporates AI.</p>
+<p>These applications and agents are the most visible layer of a much larger chain.</p>
+<p>Below them are foundation models, such as LLMs (Large Language Models), capable of generating text and code and, in multimodal architectures, also working with images, audio and other formats.</p>
+<p>Then come the large cloud providers, or hyperscalers, companies that operate computing infrastructure at enormous scale and provide it as a service.</p>
+<p>From that point on, the chain becomes much more physical.</p>
+<p>Data centers
