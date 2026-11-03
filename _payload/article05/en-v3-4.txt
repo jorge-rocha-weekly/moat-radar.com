@@ -1,0 +1,124 @@
+<p>But the question is already beginning to emerge.</p>
+<h2 class="headline">Three dilemmas behind the map</h2>
+<p>This map helps bring back three questions that have been part of Moat Radar’s original lens since its founding text, The six dilemmas of the AI revolution — Moat Radar #01.</p>
+<p>The first is Capex vs. bubble: how much of this infrastructure will be required to meet future demand, and how much is being built before sufficient economic returns exist?</p>
+<p>The second is bottleneck economics: where will the system constraint sit as each layer expands its capacity?</p>
+<p>And the third approaches the model vs. channel dilemma:</p>
+<p class="standalone-question">who will own the customer?</p>
+<p>The model owner? The hyperscaler? A large incumbent platform? Or a new generation of applications and agents built above them?</p>
+<p>For now, the point is simpler:</p>
+<p>Before debating whether we are investing too much in artificial intelligence, it is worth understanding what exactly we are investing in.</p>
+<p>Behind the extraordinary models that already help us produce more, learn faster and create a new generation of products and services lies a technological, industrial and capital chain far larger than the interface makes visible.</p>
+<section class="faq-block" id="perguntas-respostas">
+<div class="label-mono">Questions and answers</div>
+<div class="faq-item"><p class="q">What lies behind an artificial intelligence model?</p><p class="a">Behind applications and models lies a chain that includes cloud providers, data centers, software, accelerators such as GPUs, high-speed memory, networks, advanced packaging, semiconductor foundries, specialized equipment, design tools, power and cooling.</p></div>
+<div class="faq-item"><p class="q">Why is the AI value chain so concentrated?</p><p class="a">Because many of these technologies require enormous capital, accumulated intellectual property, scale, technical know-how, long development cycles and qualification processes that are difficult to replicate. In some layers, a handful of companies control almost all relevant supply.</p></div>
+<div class="faq-item"><p class="q">Is hyperscaler Capex excessive? Is there a potential bubble?</p><p class="a">It is still too early to know. Investments are measured in trillions of dollars and projections suggest they will continue to grow. The key question is whether demand for computing capacity will grow at the same pace. The market appears less concerned about the usefulness of AI than about the amount of cash being committed to build this infrastructure. After a period in which higher investment was almost always rewarded, pressure is growing for that Capex to translate into revenue growth, cash generation and returns on capital. This does not necessarily mean there is excess capacity. It means the market is beginning to demand evidence that today’s investment will be paid for by future demand.</p></div>
+<div class="faq-item"><p class="q">Why are GPUs not enough to expand AI capacity?</p><p class="a">Because performance depends on the entire system. GPUs need fast memory, connectivity, software, packaging, power and cooling. If any one of those components becomes insufficient, it can limit the capacity of the whole system.</p></div>
+<div class="faq-item"><p class="q">What could become the main bottleneck in artificial intelligence?</p><p class="a">The bottleneck can move over time. It has already appeared in accelerators, memory and packaging, and it can migrate to networks, transformers, cooling or electricity availability. In the end, power may become one of the fundamental constraints on the expansion of AI infrastructure.</p></div>
+<div class="faq-item"><p class="q">Who can capture the customer relationship in the AI era?</p><p class="a">It is still undefined. The contest involves model companies, hyperscalers, existing platforms and a new generation of applications and agents. This application layer is still being built and may become one of the main areas of value creation in the years ahead.</p></div>
+</section>
+<section class="notes-block body-text">
+<div class="label-mono">Language and methodology notes</div>
+<p>Capex: short for capital expenditure, investment in physical assets and infrastructure.</p>
+<p>Hyperscaler: a company that operates computing infrastructure and data centers at very large scale.</p>
+<p>Stack: the set of technology layers that, combined, form a system.</p>
+<p>Framework: a conceptual structure used to organize and interpret a problem.</p>
+<p>Foundry: a factory specialized in manufacturing semiconductors designed by other companies.</p>
+<p>Cluster: a group of interconnected servers or processors that work in coordination.</p>
+<p>The framework simplifies a complex chain for didactic purposes. Concentration percentages use different metrics depending on the nature of each market, such as the share of the leader, the top three participants or a specific subsegment. The layers represent economic and technological dependencies rather than a strictly linear industrial sequence.</p>
+</section>
+<section class="sources-block" id="referencias"><div class="label-mono">References</div><ol>
+<li id="ref-1"><a href="https://www.reuters.com/business/media-telecom/nasdaq-faces-2-trillion-wipeout-october-ai-spending-fears-deepen-2026-10-30/" rel="noopener" target="_blank">Reuters, 30 out. 2026 — Nasdaq faces $2 trillion wipeout in October as AI spending fears deepen.</a></li>
+<li id="ref-2"><a href="https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share" rel="noopener" target="_blank">Counterpoint Research, set. 2026 — Global DRAM and HBM Market Share: Quarterly.</a></li>
+<li id="ref-3"><a href="https://www.trendforce.com/presscenter/news/20260909-13225.html" rel="noopener" target="_blank">TrendForce, 9 set. 2026 — Global Foundry Revenue Approaches US$53.49 Billion in 2Q26.</a></li>
+<li id="ref-4"><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026SC0504" rel="noopener" target="_blank">European Commission, 2026 — semiconductor supply-chain analysis, including concentration in EUV lithography.</a></li>
+<li id="ref-5"><a href="https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/" rel="noopener" target="_blank">Reuters, Oct. 19, 2026 — S&amp;P Global estimates more than US$7 trillion in AI- and data-center-related investment by six hyperscalers between 2025 and 2030.</a></li>
+</ol></section>
+<section class="private-comments" id="mensagem-autor"><div class="label-mono">Private message to the author</div><p class="comments-copy">Want to comment, disagree or go deeper on any point? Your message goes directly to the author.</p><form action="https://formspree.io/f/xbgjevaj" id="private-message-form" method="POST"><div class="field"><label for="nome">Name</label><input id="nome" name="nome" required="" type="text"/></div><div class="field"><label for="email">Email</label><input id="email" name="email" required="" type="email"/></div><div class="field"><label for="mensagem">Message</label><textarea id="mensagem" name="mensagem" required=""></textarea></div><p class="form-note">Private message. Your information will not be published.</p><button type="submit">Send message</button></form></section>
+</main>
+<hr class="dashed"/>
+<footer><p class="disclaimer">Moat Radar is an independent editorial project about artificial intelligence, strategy, technology and competitive advantage. It does not constitute investment advice.</p><div class="signature">Jorge Rocha</div><div class="bio">Board member · Angel investor · Author of Moat Radar</div><div class="contact"><a href="mailto:jorge@ginvest.com.br">jorge@ginvest.com.br</a></div></footer>
+<div class="end-nav"><a class="end-back" href="/en/articles/">← Back to Articles</a></div>
+</div>
+<script>
+(function(){
+  function moatEvent(name, params){
+    params = params || {};
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, params);
+    } else if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push(Object.assign({event:name}, params));
+    }
+  }
+
+  var fired = {};
+  function once(name, params){
+    if (fired[name]) return;
+    fired[name] = true;
+    moatEvent(name, params);
+  }
+
+  function articleProgress(){
+    var doc = document.documentElement;
+    var max = Math.max(doc.scrollHeight - window.innerHeight, 1);
+    var pct = ((window.scrollY || doc.scrollTop) / max) * 100;
+    if (pct >= 50) once('article_50_percent', {
+      article_title: 'Understanding AI from the Inside',
+      article_edition: '05',
+      language: 'en'
+    });
+  }
+  window.addEventListener('scroll', articleProgress, {passive:true});
+  articleProgress();
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        if (entry.target.id === 'infografico-stack-ia') {
+          once('infographic_view', {
+            article_title: 'Understanding AI from the Inside',
+            infographic: 'stack_ia_infraestrutura'
+          });
+        }
+        if (entry.target.id === 'perguntas-respostas') {
+          once('faq_view', {
+            article_title: 'Understanding AI from the Inside'
+          });
+        }
+      });
+    }, {threshold:0.35});
+    var infographic = document.getElementById('infografico-stack-ia');
+    var faq = document.getElementById('perguntas-respostas');
+    if (infographic) observer.observe(infographic);
+    if (faq) observer.observe(faq);
+  }
+
+  document.addEventListener('click', function(e){
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    try {
+      var u = new URL(link.href, location.href);
+      if (u.hostname && u.hostname !== location.hostname) {
+        moatEvent('reference_click', {
+          article_title: 'Understanding AI from the Inside',
+          link_url: u.href,
+          link_text: (link.textContent || '').trim().slice(0,120)
+        });
+      }
+    } catch(err){}
+  });
+
+  var form = document.getElementById('private-message-form');
+  if (form) {
+    form.addEventListener('submit', function(){
+      moatEvent('private_message_submit', {
+        article_title: 'Understanding AI from the Inside',
+        article_edition: '05'
+      });
+    });
+  }
+})();
+</script>
+</body></html>
