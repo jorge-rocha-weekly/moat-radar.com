@@ -1,0 +1,39 @@
+           article_title: 'Entendendo a IA por dentro'
+          });
+        }
+      });
+    }, {threshold:0.35});
+    var infographic = document.getElementById('infografico-stack-ia');
+    var faq = document.getElementById('perguntas-respostas');
+    if (infographic) observer.observe(infographic);
+    if (faq) observer.observe(faq);
+  }
+
+  document.addEventListener('click', function(e){
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    try {
+      var u = new URL(link.href, location.href);
+      if (u.hostname && u.hostname !== location.hostname) {
+        moatEvent('reference_click', {
+          article_title: 'Entendendo a IA por dentro',
+          link_url: u.href,
+          link_text: (link.textContent || '').trim().slice(0,120)
+        });
+      }
+    } catch(err){}
+  });
+
+  var form = document.getElementById('private-message-form');
+  if (form) {
+    form.addEventListener('submit', function(){
+      moatEvent('private_message_submit', {
+        article_title: 'Entendendo a IA por dentro',
+        article_edition: '05'
+      });
+    });
+  }
+})();
+</script>
+
+</body></html>
